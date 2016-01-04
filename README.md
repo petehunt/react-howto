@@ -79,7 +79,7 @@ If you have decided to use Flux, the most popular and well-documented Flux libra
 
 ## Learning Immutable.js
 
-Immutable.js provides a set of data structures that can help to solve certain performance issues when building React apps. It's a great library, and you'll probably use it a lot in your apps moving forward, but it's completely unnecessary until you have an appreciation of the performance implications. 
+[Immutable.js](https://facebook.github.io/immutable-js/) provides a set of data structures that can help to solve certain performance issues when building React apps. It's a great library, and you'll probably use it a lot in your apps moving forward, but it's completely unnecessary until you have an appreciation of the performance implications. 
 
 ## Learning Relay, Falcor etc
 
