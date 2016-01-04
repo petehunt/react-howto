@@ -26,6 +26,7 @@ You should learn, in this order, **without skipping ahead or learning concurrent
 * ES6
 * Routing
 * Flux
+* Immutable.js
 * Relay, Falcor, etc
 
 Also: **you don't need to learn all of these to be productive with React.** Only move to the next step if you have a problem that needs to be solved.
@@ -75,6 +76,10 @@ React components are arranged in a hierarchy. Most of the time, your data model 
 **You’ll know when you need Flux. If you aren’t sure if you need it, you don’t need it.**
 
 If you have decided to use Flux, the most popular and well-documented Flux library is [Redux](http://redux.js.org/). There are *a lot* of alternatives out there, and you’ll be tempted to evaluate lots of them, but my advice is to just stick with the most popular one.
+
+## Learning Immutable.js
+
+Immutable.js provides a set of data structures that can help to solve certain performance issues when building React apps. It's a great library, and you'll probably use it a lot in your apps moving forward, but it's completely unnecessary until you have an appreciation of the performance implications. 
 
 ## Learning Relay, Falcor etc
 
