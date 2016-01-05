@@ -84,3 +84,13 @@ If you have decided to use Flux, the most popular and well-documented Flux libra
 ## Learning Relay, Falcor etc
 
 These are technologies that help you reduce the number of AJAX requests. They’re still very cutting-edge, so if you don’t have a problem with too many AJAX requests, you don’t need Relay or Falcor.
+
+## Courses and Learning Material
+
+* [React For Beginners](https://ReactForBeginners.com) [watch]
+* [EggHead.io React Tutorials](https://egghead.io/technologies/react) [watch]
+* [React For Everyone](https://www.youtube.com/playlist?list=PLLnpHn493BHFfs3Uj5tvx17mXk4B4ws4p) [watch]
+* [Full Stack React / Redux / Immutable](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html) [read]
+* [React.js Introduction For People Who Know Just Enough jQuery To Get By](http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/) [read]
+* A cartoon guide to [flux](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207) and [redux](https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6) [read]
+* [Learn You React](https://github.com/kohei-takata/learnyoureact) [code along]
