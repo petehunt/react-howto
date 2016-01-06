@@ -1,4 +1,4 @@
-# react-roadmap
+# react-howto
 
 If you’re new to React (or frontend in general) you may find the ecosystem confusing. There are a few reasons for this.
 
