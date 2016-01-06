@@ -20,14 +20,14 @@ All software is built on a stack of technologies, and you need to understand eno
 
 You should learn, in this order, **without skipping ahead or learning concurrently**:
 
-* React itself
-* `npm`
-* JavaScript “bundlers”
-* ES6
-* Routing
-* Flux
-* Immutable.js
-* Relay, Falcor, etc
+* [React itself](#learning-react-itself)
+* [`npm`](#learning-npm)
+* [JavaScript “bundlers”](#learning-javascript-bundlers)
+* [ES6](#learning-es6)
+* [Routing](#learning-routing)
+* [Flux](#learning-flux)
+* [Immutable.js](#learning-immutablejs)
+* [Relay, Falcor, etc](#learning-relay-falcor-etc)
 
 Also: **you don't need to learn all of these to be productive with React.** Only move to the next step if you have a problem that needs to be solved.
 
