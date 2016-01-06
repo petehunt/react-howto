@@ -39,7 +39,7 @@ I still think the easiest way to learn React is [the official tutorial](https://
 
 ## Learning `npm`
 
-`npm` is the Node.js package manager and is the most popular way front-end engineers and designers share JavaScript code. It includes a module system called `CommonJS` (Google it -- it’s important) and lets you install command-line tools written in JavaScript.
+`npm` is the Node.js package manager and is the most popular way front-end engineers and designers share JavaScript code. It includes a module system called `CommonJS` ([read up on it](https://webpack.github.io/docs/commonjs.html) -- it’s important) and lets you install command-line tools written in JavaScript.
 
 Most reusable components, libraries and tools in the React ecosystem are available as `CommonJS` modules and are installed with `npm`.
 
