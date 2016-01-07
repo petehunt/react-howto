@@ -1,3 +1,5 @@
+这是一篇很好的指导和学习React的介绍文章, 原文在[这里](https://github.com/petehunt/react-howto).
+
 # react-howto
 
 如果你是一个React的初学者（或者是前端的初学者）你可能会对React的生态系统感到疑惑.原因是因为以下.
