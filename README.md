@@ -26,10 +26,14 @@ You should learn, in this order, **without skipping ahead or learning concurrent
 * [ES6](#learning-es6)
 * [Routing](#learning-routing)
 * [Flux](#learning-flux)
+
+**You don't need to learn all of these to be productive with React.** Only move to the next step if you have a problem that needs to be solved.
+
+Additionally, there are a few topics that are often mentioned in the React community that are "bleeding edge". The topics below are interesting, but they're difficult to understand and **aren't required for most apps**.
+* [Inline styles](#learning-inline-styles)
+* [Server rendering](#learning-server-rendering)
 * [Immutable.js](#learning-immutablejs)
 * [Relay, Falcor, etc](#learning-relay-falcor-etc)
-
-Also: **you don't need to learn all of these to be productive with React.** Only move to the next step if you have a problem that needs to be solved.
 
 ## Learning React itself
 
@@ -76,6 +80,18 @@ React components are arranged in a hierarchy. Most of the time, your data model 
 **You’ll know when you need Flux. If you aren’t sure if you need it, you don’t need it.**
 
 If you have decided to use Flux, the most popular and well-documented Flux library is [Redux](http://redux.js.org/). There are *a lot* of alternatives out there, and you’ll be tempted to evaluate lots of them, but my advice is to just stick with the most popular one.
+
+## Learning inline styles
+
+A lot of people reuse CSS styles with complicated style sheets. Since React makes writing reusable components easy, your stylesheets can be less complicated. Many in the community (including myself) are experimenting with getting rid of stylesheets altogether.
+
+This is a fairly crazy idea for a number of reasons. It makes media queries more difficult, and it's possible that there are  performance limitations using this technique. **When starting out with React, just style things the way you normally would.** Once you've got a feel for how React works, you can look at alternate techniques. One popular one is [BEM](https://en.bem.info/).
+
+## Learning server rendering
+
+Server rendering is often called "universal" or "isomorphic" JS. It means that you can take your React components and render them to static HTML on the server. You need server rendering if you notice that your initial render is too slow (because the browser needs to download a bunch of JavaScript) or if you want to improve your search engine ranking (while it's true that Google now indexes client-rendered content, as of January 2016 every time it's been measured it's been shown to negatively affect ranking, potentially because of initial render performance).
+
+Server rendering still requires a lot of tooling to get right. Since it transparently supports React components written without server rendering in mind, you should build your app first and worry about server rendering later. You won't need to rewrite all of your components to support it.
 
 ## Learning Immutable.js
 
