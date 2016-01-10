@@ -22,14 +22,20 @@
 
 * [React](#user-content-学习-react-本身)
 * [`npm`](#user-content-学习-npm)
-* [JavaScript “bundlers”](#user-content-学习-javascript-打包工具)
+* [JavaScript “打包工具”](#user-content-学习-javascript-打包工具)
 * [ES6](#user-content-学习-es6)
 * [Routing](#user-content-学习路由-routing)
 * [Flux](#user-content-学习-flux)
-* [Immutable.js](#user-content-学习-immutablejs)
-* [Relay, Falcor 等](#user-content-learning-relay-falcor-等)
 
-并且: **你不需要把这些都学完才去使用 React.** 只需要在你遇到问题需要解决的时候, 才进入下一步的学习.
+
+**你不需要把这些都学完才去使用 React.** 只需要在你遇到问题需要解决的时候, 才进入下一步的学习.
+
+另外, 在 React 社区中, 有一些前沿主题是经常被提及到的, 以下的这些主题很有意思, 但也很难弄懂, 所以它们远没有上面的主题流行, **大多数应用也不需要用到这些.**
+
+* [内联样式](#user-content-学习内联样式)
+* [服务器端渲染](#user-content-学习服务器端渲染)
+* [Immutable.js](#user-content-学习-immutablejs)
+* [Relay, Falcor 等](#user-content-学习-relay-falcor-等)
 
 ## 学习 React 本身
 
@@ -65,6 +71,22 @@ JavaScript 打包工具包括有 `webpack` 和 `browserify`. 它们都是好的�
 
 **如果你创建的并非单页面应用, 请不要使用路由.** 无论如何, 大部分项目都是从大型应用中的小组件开始的.
 
+## 学习内联样式
+
+在 React 出现之前, 很多人通过像 SASS 这样的预处理器来重用复杂的 CSS 样式表. 鉴于 React 使开发可重用组件变得容易, 你的样式表可以变得没那么复杂了. 社区中许多人 (包括我) 正尝试完全抛弃样式表.
+
+由于一些原因, 其实这是个相当疯狂的主意. 这让媒体查询 (media quries) 更加困难了, 而且这种技术可能有性能上的局限性. **当你开始用 React 的时候, 只要用你平常使用的方法去写就好了.**
+
+一旦你找到了用 React 开发的感觉, 你就可以关注那些可作为替代的技术了. 其中一种流行技术是 [BEM](https://en.bem.info/). 我建议你逐渐停用 CSS 预处理器, 因为 React 给了你一种更强大的方式去重用样式 (通过重用组件), 并且 JavaScript 打包工具可以为你生成更高效的样式表 (我曾经[在 OSCON 上发表过关于这个的演讲](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). 说了这么多, 总之 React 就像其他 JavaScript 库一样, 可以和 CSS 预处理器很好地配合工作.
+
+## 学习服务器端渲染
+
+服务器端渲染经常被称为 "universal" 或 "isomorphic" JS. 这意味着你可以用 React 组件在服务器端渲染出静态 HTML. 这样做可以提高初始化加载的性能, 因为用户不用等到 JS 下载完才看得见初始界面, 并且 React 可以重用服务器端渲染出的 HTML, 无需客户端重新生成.
+
+如果你发现首屏渲染速度过慢, 或者想提高网站在搜索引擎的排行, 你就需要服务器端渲染了. 尽管 Google 现在也会索引客户端渲染的内容, 但截至 2016 年 1 月, 这样做被证实会对排行有负面影响, 这可能是由于客户端渲染的性能问题所造成的.
+
+服务器端渲染还需要许多工具的辅助, 因为显然 React 组件不是在考虑服务器端渲染的情况下写出来的, 你应该先构建你的应用, 之后再关心服务器端渲染的问题. 你不用担心重写所有组件才能支持它.
+
 ## 学习 Flux
 
 你可能听过 Flux, 不过关于 Flux 有大量的错误资讯.
@@ -81,6 +103,6 @@ React 组件之间存在层级关系. 在很多时候, 你的数据模型也跟�
 
 [Immutable.js](https://facebook.github.io/immutable-js/) 提供了一系列的数据结构, 以帮助解决构造 React 应用时的某些性能问题. 这是一个很棒的库, 你可能会在应用发展的过程里大量用到它, 但直到你在意识到性能问题以前, 它是完全不必要的.
 
-## Learning Relay, Falcor 等
+## 学习 Relay, Falcor 等
 
 这些技术可以帮你减少 AJAX 请求数, 它们仍然是非常前沿的, 所以如果你没有遇到过多 AJAX 请求的问题, 就不需要用到 Relay 或者 Falcor.
