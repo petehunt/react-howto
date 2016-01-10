@@ -45,7 +45,7 @@
 
 ## 学习 `npm`
 
-`npm` 是 Node.js 包管理工具, 也是前端工程师和设计师分享 JavaScript 代码最流行的方式. 它包含了名为 `CommonJS` (请 Google 一下 -- 它很重要) 的模块系统, 让你可以安装 JavaScript 写的命令行工具.
+`npm` 是 Node.js 包管理工具, 也是前端工程师和设计师分享 JavaScript 代码最流行的方式. 它包含了名为 `CommonJS` 的模块系统, 让你可以安装 JavaScript 写的命令行工具. 作为背景知识, 可以阅读 [这篇文章](http://0fps.net/2013/01/22/commonjs-why-and-how/) 了解 `CommonJS` 对于浏览器的重要性, 阅读  [CommonJS Spec Wiki](http://wiki.commonjs.org/wiki/Introduction) 了解关于 `CommonJS` API 的更多内容
 
 在 React 生态圈中, 大部分可重用的组件、库和工具遵循 `CommonJS` 模块规范, 可通过 `npm` 来安装.
 
@@ -59,7 +59,7 @@ JavaScript 打包工具包括有 `webpack` 和 `browserify`. 它们都是好的�
 
 ## 学习 ES6
 
-在 JSX (你会在 React tutorial 中学习到) 以外, 你可能会注意到 React 例子中一些有趣的语法. 这被称为 ECMAScript6, 是 JavaScript 的最新版本. 由于 ES6 很新, 你可能还没学习到, 浏览器也可能尚未兼容, 但别担心, 你的打包工具会为你自动转换成兼容代码.
+在 JSX (你会在 React tutorial 中学习到) 以外, 你可能会注意到 React 例子中一些有趣的语法. 这被称为 ECMAScript6, 是 JavaScript 的最新版本. 由于 ES6 很新, 你可能还没学习到, 浏览器也可能尚未兼容, 但别担心, 通过合适的配置, 你的打包工具会为你自动转换成兼容代码.
 
 如果你只想要使用 React 来把事情做完, **你可以跳过 ES6 的学习,** 或者留到以后再学习.
 
