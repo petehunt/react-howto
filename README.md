@@ -61,6 +61,8 @@ Outside of JSX (which you learned in the React tutorial), you may see some funny
 
 If you just want to get things done with React, **you can skip learning ES6**, or try to pick it up along the way.
 
+You may see some talk about ES6 classes being the preferred way to create React components. This is untrue. Most people (including Facebook) are using `React.createClass()`.
+
 ## Learning routing
 
 “Single-page applications” are all the rage these days. These are web pages that load once, and when the user clicks on a link or a button, JavaScript running on the page updates the address bar, but the web page is not refreshed. Management of the address bar is done by something called a **router**.
