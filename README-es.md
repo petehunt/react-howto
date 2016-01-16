@@ -20,20 +20,20 @@ Todo software se construye con un stack tecnológico, y es necesario entender lo
 
 Debes aprenderlo en este orden, **sin saltarte ningún paso o hacerlo concurrentemente**:
 
-* [React en sí](#learning-react-itself)
-* [`npm`](#learning-npm)
-* [JavaScript “bundlers”](#learning-javascript-bundlers)
-* [ES6](#learning-es6)
-* [Enrutamiento](#learning-routing)
-* [Flux](#learning-flux)
+* [React en sí](#aprendiendo-react-en-sí)
+* [`npm`](#aprendiendo-npm)
+* [JavaScript “bundlers”](#aprendiendo-javascript-bundlers)
+* [ES6](#aprendiendo-es6)
+* [Enrutamiento](#aprendiendo-enrutamiento)
+* [Flux](#aprendiendo-flux)
 
 **No necesitas aprender todas ellas para ser productivo con React.** Sólo muévete al siguiente paso si tienes un problema que necesita ser resuelto.
 
 Adicionalmente, hay unos cuantos temas que a menudo son categorizados en la comunidad de React como "bleeding edge"<sup>[1](#f1)</sup>. Los temas de abajo son interesantes, pero difíciles de entender, de lejos menos populares que los de arriba y **no son requeridos para la mayoría de aplicaciones**.
-* [Estilos inline](#learning-inline-styles)
-* [Renderizado en el servidor](#learning-server-rendering)
-* [Immutable.js](#learning-immutablejs)
-* [Relay, Falcor, etc.](#learning-relay-falcor-etc)
+* [Estilos inline](#aprendiendo-estilos-inline)
+* [Renderizado en el servidor](#aprendiendo-renderizado-en-el-servidor)
+* [Immutable.js](#aprendiendo-immutablejs)
+* [Relay, Falcor, etc.](#aprendiendo-relay-falcor-etc)
 
 ## Aprendiendo React en sí
 
@@ -89,7 +89,7 @@ Esta es una idea bastante loca por un buen número de razones. Hace las media qu
 
 Una vez entiendes cómo funciona React, puedes considerar técnicas alternativas. Una de las más populares es [BEM](https://en.bem.info/). Te recomiendo reducir gradualmente tus pre-procesadores CSS, ya que React te ofrece una manera más potente de reusar los estilos (reutilizando componentes) y tu bundler de JavaScript puede generar hojas de estilos más eficientes por ti (di [una charla sobre esto en la OSCON](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). Dicho esto, React, como cualquier otra librería de JavaScript, funcionará bien con un pre-procesador CSS.
 
-## Aprendiendo renderizado en el servidor (server rendering)
+## Aprendiendo renderizado en el servidor
 
 El renderizado en el servidor (o server rendering) es a menudo llamado JavaScript "universal" o "isomorfo". Esto significa que puedes tomar tus componentes de React y renderizarlos como HTML estático en el servidor. Es mejora el rendimiento de la carga inicial ya que el usuario no necesita esperar a que el JS sea descargado para ver la interfaz inicial, y React puede reusar el HTML renderizado en el servidor así que no necesita generarlo en el lado del cliente.
 
@@ -105,4 +105,5 @@ El renderizado en el servidor todavía requiere de muchas herramientas para hace
 
 Son tecnologías que te ayudan a reducir el número de peticiones AJAX. Son todavía muy innovadoras, así que si no tienes problemas con demasiadas peticiones AJAX, no necesitas Relay o Falcor.
 
-<a name="f1">1</a>: https://es.wikipedia.org/wiki/Bleeding_edge_technology
+----------
+<a name="f1">1</a>: Tecnologías beeding-edge https://es.wikipedia.org/wiki/Bleeding_edge_technology
