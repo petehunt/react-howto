@@ -73,15 +73,15 @@
 
 ## Изучение Flux
 
-You’ve probably heard of Flux. There’s a *ton* of misinformation about Flux out there.
+Скорее всего, вы слышали о Flux. Про него имеется *тонна* дезинформации в сети.
 
-A lot of people sit down to build an app and want to define their data model, and they think they need to use Flux to do it. **This is the wrong way to adopt Flux. Flux should only be added once many components have already been built.**
+Куча людей пытаются определиться с моделью данных и считают, что для этого им обязательно нужно использовать Flux. **Это неправильный путь к внедрению Flux на свой проект. Flux должн быть добавлен только после того, как большинство компонентов уже будут созданы.**
 
-React components are arranged in a hierarchy. Most of the time, your data model also follows a hierarchy. In these situations Flux doesn’t buy you much. Sometimes, however, your data model is not hierarchical. When your React components start to receive `props` that feel extraneous, or you have a small number of components starting to get very complex, then you might want to look into Flux.
+Компоненты React'а собраны в иерархию. В большинстве случаев, ваша модель данных также будет следовать этой иерархии. В этих ситуациях Flux не приносит особого выйгрыша. Иногда, тем не менее, ваша модель данных не иерархична. Если ваши React компоненты получают `props`, которые кажутся "внешними", или у вас есть некоторое количество компонентов, которые начинают становится сильно сложными, возможно вам стоит присмотреться к Flux.
 
-**You’ll know when you need Flux. If you aren’t sure if you need it, you don’t need it.**
+**Вы поймете, когда вам понадобится Flux. Если вы не уверены, что он вам нужен, то он вам не нужен.**
 
-If you have decided to use Flux, the most popular and well-documented Flux library is [Redux](http://redux.js.org/). There are *a lot* of alternatives out there, and you’ll be tempted to evaluate lots of them, but my advice is to just stick with the most popular one.
+Если вы решили использовать Flux, самой популярной и документированной Flux-библиотекой является [Redux](http://redux.js.org/). Также есть *множество* альтернатив, возможно вы соблазнитесь попробовать их, но мой совет - использовать самую популярную.
 
 ## Изучение инлайновых стилей
 
