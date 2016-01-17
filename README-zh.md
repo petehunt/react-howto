@@ -63,6 +63,8 @@ JavaScript 打包工具包括有 `webpack` 和 `browserify`. 它们都是好的�
 
 如果你只想要使用 React 来把事情做完, **你可以跳过 ES6 的学习,** 或者留到以后再学习.
 
+你可能会看到一些讨论说更适合用 ES6 的 class 来创建 React 组件. 这并不是真的, 大多数人 (包括 Facebook) 用的还是 `React.createClass()`.
+
 ## 学习路由 (routing)
 
 “单页面应用” 是时下的技术热点. 当网页加载完成, 用户点击链接或者按钮的时候, JavaScript 会更新页面和改变地址栏, 但网页不会刷新. 地址栏的管理就是通过 **路由(router)** 来完成的.
