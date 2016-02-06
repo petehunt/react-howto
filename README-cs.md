@@ -21,21 +21,21 @@ Každý software je postaven na několika vrstvách různých technologií. Abys
 
 Měli byste se držet tohoto pořadí, **bez přeskakování nebo učení se více věcí naráz**:
 
-* [Samotný React](#naucte-se-samotny-react)
-* [`npm`](#naucte-se-npm)
-* [JavaScript “bundlers”](#naucte-se-javascript-bundlery)
-* [ES6](#naucte-se-es6)
-* [Routing](#naucte-se-routing)
-* [Flux](#naucte-se-flux)
+* [Samotný React](#user-content-naučte-se-samotný-react)
+* [`npm`](#user-content-naučte-se-npm)
+* [JavaScript “bundlers”](#user-content-naučte-se-javascript-bundlery)
+* [ES6](#user-content-naučte-se-es6)
+* [Routing](#user-content-naučte-se-routing)
+* [Flux](#user-content-naučte-se-flux)
 
 **Nemusíte znát všechno, abyste byli s Reactem produktivní.** Přejděte k dalšímu kroku pouze tehdy, pokud máte zásadní problém, který s ním můžete vyřešit.
 
 Můžete narazit i na několik dalších témat, která se v souvislosti s Reactem skloňují. Jde převážně o nejnovější "výstřelky". Jsou zajímavé, ale také poměrně složité k pochopení a daleko méně populární než ty, které jsem již zmínil výše. **K většině aplikací je nepotřebujete**.
 
-* [Inline styly](#naucte-se-inline-styly)
-* [Server rendering](#naucte-se-server-rendering)
-* [Immutable.js](#naucte-se-immutablejs)
-* [Relay, Falcor, atd](#naucte-se-relay-falcor-atd)
+* [Inline styly](#user-content-naučte-se-inline-styly)
+* [Server rendering](#user-content-naučte-se-server-rendering)
+* [Immutable.js](#user-content-naučte-se-immutablejs)
+* [Relay, Falcor, atd](#user-content-naučte-se-relay-falcor-atd)
 
 ## Naučte se samotný React
 
