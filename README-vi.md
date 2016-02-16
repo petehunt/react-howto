@@ -48,13 +48,13 @@ Tôi vẫn nghĩ cách học React đơn giản nhất đó là [tài liệu ch�
 
 Hầu hết các components, thư viện và công cụ tái sử dụng trong hệ sinh thái của React đều được triển khai như là thành các module `CommonJS` và có thể cài đặt thông qua `npm`.
 
-## Learning JavaScript bundlers
+## Học về các công cụ đóng gói Javascript
 
-For a number of good technical reasons `CommonJS` modules (i.e. everything in `npm`) cannot be used natively in the browser. You need a JavaScript “bundler” to “bundle” these modules into `.js` files that you can include in your web page with a `<script>` tag.
+Vì một vài lí do kĩ thuật mà module `CommonJS` (ví dụ, các thư viện trên `npm`) không thể sử dụng native trên trình duyệt. Bạn cần có một "công cụ đóng gói" Javascript để "đóng gói" các modules này thành các files `.js` mà có thể include được trên trang web qua thẻ `<script>`.
 
-Examples of JavaScript bundlers include `webpack` and `browserify`. Both are good choices, but I prefer `webpack` since it has a lot of features that make development of large apps easier. Since its documentation can be confusing, I have a [plug-and-play template for getting started](https://github.com/petehunt/react-webpack-template) and I wrote a [how-to guide for webpack](https://github.com/petehunt/webpack-howto) for more complex use cases.
+Một số ví dụ về công cụ đóng gói Javascript bao gồm `webpack` và `browserify`. Cả hai đều là sự lựa chọn tốt, nhưng tôi thích `webpack` hơn vì nó có nhiều tính năng hỗ trợ tốt cho việc xây dựng lớn một cách dễ dàng hơn. Vì tài liệu của nó khá khó hiểu, tôi có tạo ra [template để bắt đầu ngay](https://github.com/petehunt/react-webpack-template) và tôi có viết [hướng dẫn về webpack](https://github.com/petehunt/webpack-howto) với các use cases phức tạp hơn.
 
-One thing to keep in mind: `CommonJS` uses the `require()` function to import modules, so a lot of people get confused and think that it has something to do with a project called `require.js`. For a number of technical reasons, I would suggest that you avoid `require.js`. It’s also not very popular in the React ecosystem.
+Một điều nên nhớ là `CommonJS` sử dụng hàm `require()` để nhập liên kết các modules, vì thế nhiều người trỏ nên thắc mắc và nghĩ nó có liên quan gì đó tới một project khác có tên là `require.js`. Vì nhiều lý do kĩ thuật, tôi khuyên bạn nên tránh sử dụng `require.js`. Nó cũng không được sử dụng phổ biến trong môi trường của React.
 
 ## Learning ES6
 
