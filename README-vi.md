@@ -20,21 +20,21 @@ Tất cả các phần mềm đều được xây dựng dựa trên một tập
 
 Bạn nền học, theo thứ tự này, **không cần bỏ qua phía trước hoặc học đồng thời**:
 
-* [Thư viện React](#learning-react-itself)
-* [`npm`](#learning-npm)
-* [JavaScript “bundlers”](#learning-javascript-bundlers)
-* [ES6](#learning-es6)
-* [Routing](#learning-routing)
-* [Flux](#learning-flux)
+* [Thư viện React](#tìm-hiểu-về-react)
+* [`npm`](#tìm-hiểu-về-npm)
+* [JavaScript “bundlers”](#tìm-hiểu-về-các-công-cụ-đóng-gói-javascript)
+* [ES6](#tìm-hiểu-về-es6)
+* [Routing](#tìm-hiểu-về-routing)
+* [Flux](#tìm-hiểu-về-flux)
 
 **Bạn không cần phải học tất cả những thứ này để có thể làm việc hiệu quả với React.** Chỉ nên chuyển sang bước tiếp theo nếu như bạn thấy có vấn đề cần được giải quyết.
 
 Thêm nữa, có vài chủ đề thường được nhắc đến trong cộng đồng React mà khá "nóng hổi". Những chủ đề dưới đây khá là thú vị nhưng khó để có thể hiểu được và ít phổ biến hơn so với các chủ đề trên và **không cần thiết khi xây dựng ứng dụng**.
 
-* [Inline styles](#learning-inline-styles)
-* [Server rendering](#learning-server-rendering)
-* [Immutable.js](#learning-immutablejs)
-* [Relay, Falcor, etc](#learning-relay-falcor-etc)
+* [Inline styles](#tìm-hiểu-về-inline-styles)
+* [Server rendering](#tìm-hiểu-về-server-rendering)
+* [Immutable.js](#tìm-hiểu-về-immutablejs)
+* [Relay, Falcor, etc](#tìm-hiểu-về-relay-falcor-etc)
 
 ## Tìm hiểu về React
 
