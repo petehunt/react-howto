@@ -56,54 +56,54 @@ Một số ví dụ về công cụ đóng gói Javascript bao gồm `webpack` v
 
 Một điều nên nhớ là `CommonJS` sử dụng hàm `require()` để nhập liên kết các modules, vì thế nhiều người trỏ nên thắc mắc và nghĩ nó có liên quan gì đó tới một project khác có tên là `require.js`. Vì nhiều lý do kĩ thuật, tôi khuyên bạn nên tránh sử dụng `require.js`. Nó cũng không được sử dụng phổ biến trong môi trường của React.
 
-## Learning ES6
+## Học ES6
 
-Outside of JSX (which you learned in the React tutorial), you may see some funny syntax in React examples. This is called ES6, and it’s the latest version of JavaScript so you may not have learned it yet. Since it’s so new, it’s not supported in browsers yet, but your bundler can translate it for you with the proper configuration.
+Ngoài JSX (mà bạn học trong các hướng dẫn về React), bạn sẽ thấy nhiều cú pháp thú vị trong các ví dụ. Chúng được gọi là ES6, và đó là phiên bản mới nhất của Javascript mà bạn chưa học tới. Vì còn quá mới nên chưa được hỗ trợ trên các trình duyệt, nhưng các công cụ đóng gói sẽ thực hiện phiên dịch với cấu hình đúng cho bạn để có thể sử dụng được trên trình duyệt.
 
-If you just want to get things done with React, **you can skip learning ES6**, or try to pick it up along the way.
+Nếu bạn muốn hoàn thiện nhanh với React, **bạn có thể bỏ qua việc học ES6**, hoặc có thể lựa chọn khi đang làm giữa chừng.
 
-You may see some talk about ES6 classes being the preferred way to create React components. This is untrue. Most people (including Facebook) are using `React.createClass()`.
+Bạn có thể thấy nhiều hội thảo về lớp trong ES6 là cách tốt nhất để tạo các React components. Điều này là không đúng. Hầu hết mọi người (bao gồm cả Facebook) đang sử dụng `React.createClass()`.
 
-## Learning routing
+## Học về routing
 
-“Single-page applications” are all the rage these days. These are web pages that load once, and when the user clicks on a link or a button, JavaScript running on the page updates the address bar, but the web page is not refreshed. Management of the address bar is done by something called a **router**.
+"Các ứng dụng single-page" trở nên khá rầm rộ ngày nay. Đây là những trang web mà chỉ thực hiện khởi tạo một lần, và khi người dùng ấn vào một đường dẫn hay nút ấn thì Javascript trên trang web sẽ thực thi mà trang web không cần phải reload lại. Việc quản lý địa chỉ trên thanh địa chỉ được thực hiện bở **router**.
 
-The most popular router in the React ecosystem is [react-router](https://github.com/rackt/react-router). If you’re building a single-page application, use it unless you have a good reason not to.
+Router được sử dụng phổ biến nhất trong hệ sinh thái React là [react-router](https://github.com/rackt/react-router). Nếu như bạn đang xây dựng một ứng dụng single-page, hãy sử dụng nó trừ khi bạn có lý do mà không thể sử dụng.
 
-**Don’t use a router if you aren’t building a single-page application**. Most projects start out as smaller components inside of a larger application anyway.
+**Đừng nên sử dụng router nếu như bạn không xây dựng ứng dụng single-page**. Hầu hết các dự án đều bắt đầu từ một component nhỏ bên trong của một ứng dụng lớn.
 
-## Learning Flux
+## Học về Flux
 
-You’ve probably heard of Flux. There’s a *ton* of misinformation about Flux out there.
+Chắc hẳn bạn đã từng nghe về Flux. Có **quá nhiều** thông tin không đúng về Flux.
 
-A lot of people sit down to build an app and want to define their data model, and they think they need to use Flux to do it. **This is the wrong way to adopt Flux. Flux should only be added once many components have already been built.**
+Nhiều người cùng tập hợp lại để xây dựng một ứng dụng và muốn định nghĩa cấu trúc dữ liệu và họ nghĩ sẽ cần sử dụng tới Flux để làm được việc đó. **Tiếp cận Flux như thế là sai. Flux chỉ nên được thêm khi mà các components đã được xây dựng rồi.**
 
-React components are arranged in a hierarchy. Most of the time, your data model also follows a hierarchy. In these situations Flux doesn’t buy you much. Sometimes, however, your data model is not hierarchical. When your React components start to receive `props` that feel extraneous, or you have a small number of components starting to get very complex, then you might want to look into Flux.
+Các components trong React được sắp xếp phân bậc. Phần lớn thời gian, cấu trúc dữ liệu cũng đi theo một cấp. Trong những tình huống này thì Flux không thể giúp được gì nhiều. Tuy nhiên, đôi lúc cấu trúc dữ liệu của bạn lại không theo tầng nào cả. Khi các React components bắt đầu nhận `props` mà có vẻ không liên quan, hoặc bạn có một số lượng nhỏ các components bắt đầu trở nên phức tạp, thì bạn có thể muốn thử với Flux.
 
-**You’ll know when you need Flux. If you aren’t sure if you need it, you don’t need it.**
+**Bạn sẽ biết khi nào bạn cần Flux. Nếu bạn không chắc chắn là bạn cần, thì bạn không cần.**
 
-If you have decided to use Flux, the most popular and well-documented Flux library is [Redux](http://redux.js.org/). There are *a lot* of alternatives out there, and you’ll be tempted to evaluate lots of them, but my advice is to just stick with the most popular one.
+Một khi bạn đã quyết định sử dụng Flux, sử dụng thư viện phổ biến và đầy đủ tài liệu nhất là [Redux](http://redux.js.org/). Có **rất nhiều** sự lựa chọn khác, và bạn sẽ bị cám dỗ vào việc đi đánh giá so sánh chúng, nhưng lời khuyên của tôi dành cho bạn là chỉ nên chọn với thư viện dược dùng phổ biến nhất.
 
-## Learning inline styles
+## Học về inline styles
 
-Pre-React, a lot of people reused CSS styles with complicated style sheets built by preprocessors like SASS. Since React makes writing reusable components easy, your stylesheets can be less complicated. Many in the community (including myself) are experimenting with getting rid of stylesheets altogether.
+Trước React, nhiều người tái sử dụng CSS với các định dạng văn bản phức tạp xây dựng qua các tiền xử lý CSS như SASS. Nhưng sau đó React hỗ trợ để tạo các compoents có thể tái sử dụng một cách đơn giản, các định dạng CSS cũng trỏ nên đỡ phức tạp. Đa phần trong cộng đồng (bao gồm cả tôi) cũng đang thí nghiệm với việc loại bỏ các định dạng đó.
 
-This is a fairly crazy idea for a number of reasons. It makes media queries more difficult, and it's possible that there are  performance limitations using this technique. **When starting out with React, just style things the way you normally would.**
+Đây có thể là một ý tưởng điên rồ vì mấy lí do. Nó làm cho media queries trở nên khó hơn, và có thể sinh ra hạn chế về hiệu năng khi sử dụng kĩ thuật này. **Khi bắt đầu với React, chỉ cần style như bình thường**.
 
-Once you've got a feel for how React works, you can look at alternate techniques. One popular one is [BEM](https://en.bem.info/). I recommend phasing out your CSS preprocessor, since React gives you a more powerful way to reuse styles (by reusing components) and your JavaScript bundler can generate more efficient stylesheets for you (I gave [a talk about this at OSCON](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). With that said, React, like any other JavaScript library, will work just fine with a CSS preprocessor.
+Một khi bạn hiểu được React hoạt động thế nào, bạn có thể thử qua các phương pháp khác. Một phương pháp phổ biến đó là [BEM](https://en.bem.info/). Tôi khuyên các bạn bỏ các tiền xử lý CSS, vì React hỗ trợ bạn một cách tái sử dụng styles tốt hơn và công cụ đóng gói Javascript có thể sinh ra các stylesheets tối ưu hơn (tôi có [chia sẻ này tại OSCON](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). React, như bất cứ một thư viện Javascript nào khác, vẫn hoạt động bình thường với các tiền xử lý CSS.
 
-## Learning server rendering
+## Học về server rendering
 
-Server rendering is often called "universal" or "isomorphic" JS. It means that you can take your React components and render them to static HTML on the server. This improves initial startup performance because the user does not need to wait for JS to download in order to see the initial UI, and React can re-use the server-rendered HTML so it doesn't need to generate it client-side.
+Server rendering thường được gọi là "toàn bộ" hay "đồng bộ" JS. Điều đó có nghĩa là bạn có thể lấy bất cứ React components nào và render chúng thành HTML tĩnh trên server. Điều này cải thiện được tốc độ ban đầu vì người dùng không cần phải chờ JS thực hiện download để có thể thấy được UI ban đầu, và React có thể tái sử dụng HTML đã được render phía server, vì vậy mà không cần xử lý ở phía client.
 
-You need server rendering if you notice that your initial render is too slow or if you want to improve your search engine ranking. While it's true that Google now indexes client-rendered content, as of January 2016 every time it's been measured it's been shown to negatively affect ranking, potentially because of the performance penalty of client-side rendering.
+Bạn cần sử dụng server rendering khi mà bạn thấy việc render ban đầu trở nên quá chậm hoặc bạn muốn cải thiện thứ hạng tìm kiếm. Mặc dù Google bây giờ đã thực hiện index các nội dung render phía client, nhưng tại thời điểm tháng một 2016, mỗi khi được lấy ra đo lường thì thấy rõ thứ hạng bị ảnh hướng đi xuống, có khả năng là do vi phạm về tốc độ render phía client.
 
-Server rendering still requires a lot of tooling to get right. Since it transparently supports React components written without server rendering in mind, you should build your app first and worry about server rendering later. You won't need to rewrite all of your components to support it.
+Việc render phía server vẫn cần nhiều công cụ để làm cho nó trở nên chính xác. Vì việc này mặc định được hỗ trợ trong các React components mà không cần quan tâm tới việc render phía server, bạn nên xây dựng ứng dụng trước và quan tâm tới việc render phía server sau. Bạn sẽ không cần thiết phải viết lại tất cả các components để xử lý việc dó.
 
-## Learning Immutable.js
+## Học về Immutable.js
 
-[Immutable.js](https://facebook.github.io/immutable-js/) provides a set of data structures that can help to solve certain performance issues when building React apps. It's a great library, and you'll probably use it a lot in your apps moving forward, but it's completely unnecessary until you have an appreciation of the performance implications.
+[Immutable.js](https://facebook.github.io/immutable-js/) cung cấp một tập hợp cấu trúc dữ liệu có thể hỗ trợ giải quyết các vấn đề về tối ưu hoá khi xây dựng ứng dụng React. Đấy là một thư viện tuyệt vời, và bạn chắc hẳn sẽ sử dụng khá nhiều khi xây dựng ứng dụng về sau. Tuy nhiên thì nó lại không cần thiết cho tới khi bạn quan tâm tới tối ưu hoá.
 
-## Learning Relay, Falcor etc
+## Học về Relay, Falcor etc
 
-These are technologies that help you reduce the number of AJAX requests. They’re still very cutting-edge, so if you don’t have a problem with too many AJAX requests, you don’t need Relay or Falcor.
+Đây là những công nghệ giúp bạn giảm số lượng AJAX requests. Những kĩ thuật này vẫn còn khá là mới mẻ, vì vậy, nếu bạn không có vấn đề với quá nhiều AJAX requests thì bạn không cần tới Relay hay Falcor.
