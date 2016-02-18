@@ -81,6 +81,8 @@ JavaScript 打包工具包括有 `webpack` 和 `browserify`. 它们都是好的�
 
 一旦你找到了用 React 开发的感觉, 你就可以关注那些可作为替代的技术了. 其中一种流行技术是 [BEM](https://en.bem.info/). 我建议你逐渐停用 CSS 预处理器, 因为 React 给了你一种更强大的方式去重用样式 (通过重用组件), 并且 JavaScript 打包工具可以为你生成更高效的样式表 (我曾经[在 OSCON 上发表过关于这个的演讲](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). 说了这么多, 总之 React 就像其他 JavaScript 库一样, 可以和 CSS 预处理器很好地配合工作.
 
+另一种可选项是 [CSS 模块](http://glenmaddern.com/articles/css-modules), 更具体地说, 是 [react-css-modules](https://github.com/gajus/react-css-modules). 虽然有了这些 CSS 模块, 你还是写 CSS (或者是 SASS/LESS/Stylus), 但你可以像处理 React 中的内联样式那样管理和组织 CSS 文件. 你也不需要担心用到 BEM 那样的方法学去管理类名, 因为模块系统在底层已经帮你处理好了.
+
 ## 学习服务器端渲染
 
 服务器端渲染经常被称为 "universal" 或 "isomorphic" JS. 这意味着你可以用 React 组件在服务器端渲染出静态 HTML. 这样做可以提高初始化加载的性能, 因为用户不用等到 JS 下载完才看得见初始界面, 并且 React 可以重用服务器端渲染出的 HTML, 无需客户端重新生成.
