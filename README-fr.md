@@ -53,7 +53,7 @@ La plupart des composants réutilisables, bibliothèques et outils de l'écosyst
 
 En raison de limitations techniques pertinentes, les modules `CommonJS` (ceux qu'on trouve sur `npm`) ne peuvent pas être utilisés tels quels dans le navigateur. Il faut un concaténateur JavaScript pour empaqueter ces modules dans des fichiers `.js` qu'on pourra inclure grâce à une balise `<script>` dans une page web.
 
-`webpack` et `broserify` sont des concaténateurs disponibles. Les deux sont satisfaisants, mais je préfère `webpack` car il propose des fonctionnalités qui facilitent le développement de grosses applications. Sa documentation pouvant être troublante, j'ai un [projet tout prêt pour commencer](https://github.com/petehunt/react-webpack-template) et j'ai écrit un [guide pour webpack](https://github.com/petehunt/webpack-howto) pour des cas plus complexes.
+`webpack` et `browserify` sont des concaténateurs disponibles. Les deux sont satisfaisants, mais je préfère `webpack` car il propose des fonctionnalités qui facilitent le développement de grosses applications. Sa documentation pouvant être troublante, j'ai un [projet tout prêt pour commencer](https://github.com/petehunt/react-webpack-template) et j'ai écrit un [guide pour webpack](https://github.com/petehunt/webpack-howto) pour des cas plus complexes.
 
 Ne pas confondre : `CommonJS` utilise la fonction `require()` pour importer des modules, et beaucoup de personnes pensent à tort que c'est lié au projet `require.js`. Pour des raisons techniques, je vous conseille de ne pas utiliser `require.js`. De plus il n'est pas très répandu dans l'écosystème React.
 
@@ -67,7 +67,7 @@ Il est possible que vous tombiez sur des exemples qui laissent supposer que les 
 
 ## Apprendre le routage
 
-Les applications "Single-page" sont à la mode en ce moment. Ce sont des pages web qui ne charge qu'une fois, et quand l'utilisateur clique sur un lien ou un bouton, le JavaScript de la page met à jour la barre d'adresse, mais la page n'est pas rafraîchie. La gestion de la barre d'adresse est prise en charge par un **routeur**.
+Les applications "Single-page" sont à la mode en ce moment. Ce sont des pages web qui ne chargent qu'une fois, et quand l'utilisateur clique sur un lien ou un bouton, le JavaScript de la page met à jour la barre d'adresse, mais la page n'est pas rafraîchie. La gestion de la barre d'adresse est prise en charge par un **routeur**.
 
 
 Le routeur le plus populaire dans l'écosystème React est [react-routeur](https://github.com/rackc/react-routeur). Si vous construisez une application single-page, utilisez-le, sauf si vous avez de bonnes raisons de ne pas le faire.
@@ -94,7 +94,7 @@ C'est un peu fou pour un bon nombre de raisons. Ça rend les mediaqueries plus c
 
 Une fois que vous êtes à l'aise avec React, vous pouvez tester des méthodes alternatives. [BEM](https://en.bem.info/) en est une assez répandue. Je vous conseille d'éliminer votre préprocesseur CSS, car React vous donne un meilleur moyen de réutiliser les styles (en réutilisant les composants) et votre concaténateur peut générer des feuilles de style plus efficaces pour vous ([j'en ai parlé à OSCON](https://www.youtube.com/watch?v=VkTCL6NqmM6Y)). Malgré tout React fonctionne très bien avec un préprocesseur CSS.
 
-Une autre option est d'utiliser [CSS modules](http://glenmaddern.com/articles/css-modules), plus particulièrement [react-css-modules](https://github.com/gajus/react-css-modules). Avec les modules CSS vous allez toujours écrire du CSS (ou SASS, LESS, Stylus), mais vous allez pouvoir organiser et composer vos fichiers CSS comme vous l'auriez fait avec les styles en ligne avec React. En utilisant des méthodes comme BEM, vous n'aurez même plus à vous souucier de vos noms de classes, le système de module va s'en charger pour vous.
+Une autre option est d'utiliser [CSS modules](http://glenmaddern.com/articles/css-modules), plus particulièrement [react-css-modules](https://github.com/gajus/react-css-modules). Avec les modules CSS vous allez toujours écrire du CSS (ou SASS, LESS, Stylus), mais vous allez pouvoir organiser et composer vos fichiers CSS comme vous l'auriez fait avec les styles en ligne avec React. En utilisant des méthodes comme BEM, vous n'aurez même plus à vous soucier de vos noms de classes, le système de module va s'en charger pour vous.
 
 ## Apprendre le rendu côté serveur
 
