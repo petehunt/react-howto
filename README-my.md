@@ -23,24 +23,24 @@ Anda sepatutya belajar, di dalam susunan ini, **tanpa melangkau ke hadapan atau 
 
 * [React](#belajar-react)
 * [`npm`](#belajar-npm)
-* [JavaScript “bundlers”](#learning-javascript-bundlers)
-* [ES6](#learning-es6)
-* [Routing](#learning-routing)
-* [Flux](#learning-flux)
+* [JavaScript “bundlers”](#belajar-javascript-bundlers)
+* [ES6](#belajar-es6)
+* [Routing](#belajar-routing)
+* [Flux](#belajar-flux)
 
 **Anda tidak perlu mempelajari semua ini untuk menjadi produktif menggunakan React.** Anda hanya perlu melangkah ke hadapan sekiranya ada masalah yang memerlukan langkah tersebut sebagai penyelesaian.
 
 Sebagai tambahan, terdapat beberapa topik yang selalu dibincangkan di dalam komuniti React adalah tergolong di dalam "bleeding edge".  Topik-topik di bawah adalah menarik, tetapi mereka selalunya susah untuk difahami, tidak sebegitu popular sebagaimana topik-topik di atas dan **tidak semestinya digunakan oleh kebanyakan perisian**.
-* [Inline styles](#learning-inline-styles)
-* [Server rendering](#learning-server-rendering)
-* [Immutable.js](#learning-immutablejs)
-* [Relay, Falcor, etc](#learning-relay-falcor-etc)
+* [Inline styles](#belajar-inline-styles)
+* [Server rendering](#belajar-server-rendering)
+* [Immutable.js](#belajar-immutablejs)
+* [Relay, Falcor, etc](#belajar-relay-falcor-dan-lain-lain)
 
 ## Belajar React
 
 Silapfaham yang paling biasa adalah anda perlu membuang banyak masa membuat `tooling setup` untuk mula belajar React.  Di dalam dokumentasi rasmi anda akan menjumpai [copy-paste HTML template](https://facebook.github.io/react/docs/getting-started.html#quick-start-without-npm) yang anda boleh simpan di dalam fail '.html' dan terus bermula. 
 
-Saya masih berpendapat cara paling mudah untuk belajar React adalah [tutorial rasmi](https://facebook.github.io/react/docs/tutorial.html).
+Saya masih berpendapat cara paling mudah untuk belajar React adalah melalui [tutorial rasmi](https://facebook.github.io/react/docs/tutorial.html).
 
 ## Belajar `npm`
 
@@ -62,7 +62,7 @@ Selain daripada JSX (yang anda pelajari di dalam tutorial React), anda mungkin a
 
 Sekiranya anda cuma mahu menghasilkan sesuatu hanya dengan React, **anda boleh abaikan belajar ES6**, atau ambil masa belajar sedikit demi sedikit.
 
-Anda mungkin telah menonton beberapa ceramah yang mengatakan penggunaan `ES6 classes` adalah cara yang sepatutnya digunakan untuk membina komponen React. Ini tidak benar.  Kebannyakan pengguna (termasuk Facebook) menggunakan kaedah `React.createClass()`.
+Anda mungkin telah menonton beberapa ceramah yang mengatakan penggunaan `ES6 classes` adalah cara yang sepatutnya digunakan untuk membina komponen React. Ini tidak benar.  Kebanyakan pengguna (termasuk Facebook) menggunakan kaedah `React.createClass()`.
 
 ## Belajar `routing`
 
@@ -70,7 +70,7 @@ Anda mungkin telah menonton beberapa ceramah yang mengatakan penggunaan `ES6 cla
 
 `Router` yang paling popular di dalam ekosistem React adalah [react-router](https://github.com/rackt/react-router).  Sekiranya anda mebangunkan aplikasi berbentuk `single-page application`, penggunaannya adalah disarankan, kecuali jika anda mempuyai alasan untuk menghindarinya.
 
-**Jangan gunakan `router` sekiranya anda bukan membilan aplikasi berbentuk `single-page application`**.  Lagipun, kebanyakan projek bermula sebagai komponen di dalam satu aplikasi yang lebih besar.
+**Jangan gunakan `router` sekiranya anda bukan membina aplikasi berbentuk `single-page application`**.  Lagipun, kebanyakan projek bermula sebagai komponen di dalam satu aplikasi yang lebih besar.
 
 ## Belajar Flux
 
