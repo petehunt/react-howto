@@ -34,7 +34,7 @@ Sebagai tambahan, terdapat beberapa topik yang selalu dibincangkan di dalam komu
 * [Inline styles](#belajar-inline-styles)
 * [Server rendering](#belajar-server-rendering)
 * [Immutable.js](#belajar-immutablejs)
-* [Relay, Falcor, etc](#belajar-relay-falcor-dan-lain-lain)
+* [Relay, Falcor, dan lain-lain](#belajar-relay-falcor-dan-lain-lain)
 
 ## Belajar React
 
@@ -96,7 +96,7 @@ Sebagai alternatif, anda juga boleh menggunakan [CSS Modules](http://glenmaddern
 
 ## Belajar `server rendering`
 
-`Server rendering` juga dikenali sebagai "uiversal" atau "isomorphic" JS. Ianya bermakna anda boleh mengambil komponen React dan `render` komponen tersebut ke dalam bentuk HTML statik di `server`.  Ini meningkatkan prestasi `startup` oleh kerana pengguna tidak perlu untuk menunggu untuk JS di-download untuk melihat UI awal, dan React dapat menggunakan komponen dari HTML di server supaya tidak perlu menjana UI tersebut di bahagian `client`.
+`Server rendering` juga dikenali sebagai "universal" atau "isomorphic" JS. Ianya bermakna anda boleh mengambil komponen React dan `render` komponen tersebut ke dalam bentuk HTML statik di `server`.  Ini meningkatkan prestasi `startup` oleh kerana pengguna tidak perlu untuk menunggu untuk JS di-download untuk melihat UI awal, dan React dapat menggunakan komponen dari HTML di server supaya tidak perlu menjana UI tersebut di bahagian `client`.
 
 Anda memerlukan `server rendering` apabila anda mendapati prestasi `render` awal anda terlalu perlahan atau and ingin membaiki `search engine ranking`.  Walaupun sekarang Google mengindeks kandungan yang disediakan melalui `client-render`, bermula pada Januari 2016, setiap kali pemantauan dijalankan, didapati kadungan tersebut memberikan impak negatif kemungkinan disebabkan oleh kekangan prestasi pada `client-side rendering`.
 
