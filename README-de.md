@@ -29,7 +29,7 @@ Du solltest React und seine Tools in folgender Reihenfolge lernen - **ohne nach 
 
 **Du musst nicht alle Themenblöcke lernen um React produktiv einsetzen zu können.** Schau dir den nächsten Themenblock erst an, wenn du im aktuellen Probleme hast, die du mit den bestehenden Mitteln nicht lösen kannst.
 
-Des weiteren gibt es ein paar Themen, die in der React-Community viel diskutiert werden, die „bleeding edge“ sind. Die folgenden Themen sind interessant, aber schwer zu verstehen und viel weniger weitverbreitet als die eben genannten. **Für die meisten Anwendungen sind sie nicht notwendig.**
+Des weiteren gibt es ein paar Themen, die in der React-Community viel diskutiert werden, die „bleeding edge“ sind. Die folgenden Themen sind interessant, aber schwer zu verstehen und viel weniger verbreitet als die eben genannten. **Für die meisten Anwendungen sind sie nicht notwendig.**
 
 * [Inline Styles](#inline-styles-lernen)
 * [Serverseitiges Rendern](#serverseitiges-rendern-lernen)
