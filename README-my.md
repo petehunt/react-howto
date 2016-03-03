@@ -1,8 +1,9 @@
 # react-howto
 
-Sekiranya anda baru kepada React (atau `frontend` secara am) and mungkin mendapati ekosistemnya bercelaru. 
+Sekiranya anda baru kepada React (atau `frontend` secara am) anda mungkin mendapati ekosistemnya bercelaru. 
 
 Berikut adalah beberapa sebab kenapa ianya berlaku:
+
 * React dari segi sejarahnya disasarkan kepada para `early-adopters` dan para pakar.
 * Facebook hanya open-source apa yang mereka sendiri guna, jadi ia tidak memberi fokus kepada tooling untuk projek yang lebih kecil dari Facebook.
 * Terdapat banyak bahan marketing yang disalahgambarkan sebagai paduan kepada React
@@ -31,6 +32,7 @@ Anda sepatutya belajar, di dalam susunan ini, **tanpa melangkau ke hadapan atau 
 **Anda tidak perlu mempelajari semua ini untuk menjadi produktif menggunakan React.** Anda hanya perlu melangkah ke hadapan sekiranya ada masalah yang memerlukan langkah tersebut sebagai penyelesaian.
 
 Sebagai tambahan, terdapat beberapa topik yang selalu dibincangkan di dalam komuniti React adalah tergolong di dalam "bleeding edge".  Topik-topik di bawah adalah menarik, tetapi mereka selalunya susah untuk difahami, tidak sebegitu popular sebagaimana topik-topik di atas dan **tidak semestinya digunakan oleh kebanyakan perisian**.
+
 * [Inline styles](#belajar-inline-styles)
 * [Server rendering](#belajar-server-rendering)
 * [Immutable.js](#belajar-immutablejs)
