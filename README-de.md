@@ -12,7 +12,7 @@ Dieses Dokument setzt voraus, dass der Leser bereits eine Webseite mit HTML, CSS
 
 Es gibt jede Menge widersprüchliche Empfehlungen und Best Practices zu React da draußen - warum solltest du auf mich hören?
 
-Ich war Mitglied des ursprünglichen Teams bei Facebook, das React gebaut und als Open-Source veröffentlicht hat. Mittlerweile arbeite ich nicht mehr bei Facebook sondern bei einem kleinen Startup, wodurch ich auch die Perspektive von außerhalb Facebooks kenne.
+Ich war Mitglied des ursprünglichen Teams bei Facebook, das React gebaut und als Open-Source veröffentlicht hat. Mittlerweile arbeite ich nicht mehr bei Facebook, sondern bei einem kleinen Startup, wodurch ich auch die Perspektive von außerhalb Facebooks kenne.
 
 ## Wie man ins React Ökosystem reinkommt
 
@@ -62,11 +62,11 @@ Neben JSX, das ihr im React Tutorial gelernt habt, kann euch noch andere merkwü
 
 Wenn ihr einfach nur mit React loslegen wollt **könnt ihr ES6 lernen überspringen**, oder es beiläufig lernen während ihr eure React Anwendungen baut.
 
-Wohlmöglich wird euch gesagt, dass ES6 Klassen jetzt der neue Standardweg sein sollen React-Komponenten zu schreiben. Das ist nicht wahr. Die meisten Leute (inklusive Facebook) benutzen weiterhin `React.createClass()`.
+Womöglich wird euch gesagt, dass ES6 Klassen jetzt der neue Standardweg sein sollen React-Komponenten zu schreiben. Das ist nicht wahr. Die meisten Leute (inklusive Facebook) benutzen weiterhin `React.createClass()`.
 
 ## Routing lernen
 
-„Single-page Applications“ sind gerade der letzte Schrei. Sie sind Webseiten die nur einmal geladen werden und wenn der Nutzer auf einen Link oder Button klickt sorgt das JavaScript das auf der Seite läuft dafür, dass die URL in der Adresszeile aktualisiert wird ohne dass die Seite refresht wird. Das verwalten der URL in der Adresszeile wird vom sogenannten **Router** übernommen.
+„Single-page Applications“ sind gerade der letzte Schrei. Sie sind Webseiten die nur einmal geladen werden und wenn der Nutzer auf einen Link oder Button klickt, sorgt das JavaScript das auf der Seite läuft dafür, dass die URL in der Adresszeile aktualisiert wird ohne dass die Seite refresht wird. Das Verwalten der URL in der Adresszeile wird vom sogenannten **Router** übernommen.
 
 Der beliebteste Router im React Ökosystem ist der [react-router](https://github.com/rackt/react-router). Wenn ihr eine Single-page Application schreibt, solltet ihr ihn nutzen - außer ihr habt einen triftigen Grund, der dagegen spricht. 
 
@@ -88,11 +88,11 @@ Wenn ihr euch entschieden habt Flux zu nutzen: [Redux](http://redux.js.org/) ist
 
 In der Zeit vor React haben viele Leute CSS Styles wiederverwendbar gemacht mithilfe komplizierter Stylesheets, die von CSS-Präprozessoren wie SASS erstellt wurden. Da es React einfach macht, wiederverwendbare Komponenten zu schreiben, kann euch das helfen weniger kompliziertes CSS zu schreiben. Viele in der Community, darunter auch ich, experimentieren mit verschiedenen Lösungen, die Stylesheets ganz abschaffen.
 
-Aus mehreren Gründen ist das ist eine ziemlich verrückte. Media Queries werden schwieriger und es gibt mögliche Performanceeinschränkungen. **Wenn ihr mitten im React-Einstieg steckt, stylet alles wie ihr es bisher immer getan habt.**
+Aus mehreren Gründen ist das eine ziemlich verrückte Idee. Media Queries werden schwieriger und es gibt mögliche Performanceeinschränkungen. **Wenn ihr mitten im React-Einstieg steckt, stylet alles wie ihr es bisher immer getan habt.**
 
 Sobald ihr ein Gefühl dafür bekommen habt wie React funktioniert, könnt ihr euch nach Alternativen umschauen. Eine beliebte davon ist [BEM](https://en.bem.info). Ich empfehle, euer CSS immer weniger von einem CSS-Präprozessor bauen zu lassen, da React eine bessere Lösung bietet Styles wiederzuverwenden - durch wiederverwendbare Komponenten - und da euer JavaScript Bundler effizientere Stylesheets für euch generieren kann (hierzu habe ich [einen Vortrag bei der OSCON](https://www.youtube.com/watch?v=VkTCL6Nqm6Y) gehalten). Ansonsten funktioniert React, wie jede JavaScript Bibliothek, natürlich hervorragend mit CSS-Präprozessoren.
 
-Alternativ könnt ihr auch [CSS Modules](http://glenmaddern.com/articles/css-modules) nutzen, oder genauer [react-css-modules](https://github.com/gajus/react-css-modules). Mit CSS Modules schreibt ihr wie gewohnt CSS (oder SASs/LESS/Stylus) aber ihr könnt trotzdem eure CSS-Dateien wie React Inline Styles verwalten und zusammenstellen. Und ihr müsst euch dabei keine Sorgen darum machen eure Klassennamen mit Methodologien wie BEM einmalig zu halten - CSS Modules sorgen mit ihrem Modulsystem für euch hinter den Kulissen dafür.
+Alternativ könnt ihr auch [CSS Modules](http://glenmaddern.com/articles/css-modules) nutzen, oder genauer [react-css-modules](https://github.com/gajus/react-css-modules). Mit CSS Modules schreibt ihr wie gewohnt CSS (oder Sass/LESS/Stylus) aber ihr könnt trotzdem eure CSS-Dateien wie React Inline Styles verwalten und zusammenstellen. Und ihr müsst euch dabei keine Sorgen darum machen eure Klassennamen mit Methodologien wie BEM einmalig zu halten - CSS Modules sorgen mit ihrem Modulsystem für euch hinter den Kulissen dafür.
 
 ## Serverseitiges Rendern lernen
 
