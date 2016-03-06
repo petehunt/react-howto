@@ -49,7 +49,7 @@
 
 ## JavaScript 번들러 배우기
 
-몇가지 많은 기술적 이유들 때문에 `CommonJS` 모듈 (`npm` 에 있는 모든 모듈)들은 브라우저에서 그대로 사용할 수 없습니다. 이 모듈들을 웹페이지의 <script> 태그에 포함된 `.js` 파일들을 포함하기 위해서는 Javascript 번들러가 필요합니다.
+몇가지 많은 기술적 이유들 때문에 `CommonJS` 모듈 (`npm` 에 있는 모든 모듈)들은 브라우저에서 그대로 사용할 수 없습니다. 이 모듈들을 웹페이지의 `<script>` 태그에 포함된 `.js` 파일들을 포함하기 위해서는 Javascript 번들러가 필요합니다.
 
 Javascript 번들러의 예를 들자면 `webpack` 과 `browserify`가 있습니다. 모두 좋은 선택입니다. 하지만 저는 큰 애플리케이션의 개발을 쉽게 도와주는 기능이 많은 `webpack` 을 선호합니다. 문서화가 좀 헷갈린다면 [개발 시작을 위한 플러그앤 플레이 템플릿](https://github.com/petehunt/react-webpack-template)이 있고, 조금 더 복잡한 경우에는 제가 작성한 [webpack 사용기](https://github.com/petehunt/webpack-howto)도 있습니다.
 
