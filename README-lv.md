@@ -20,21 +20,21 @@ Jebkurš programnodrošinājums ir izstrādāts pamatojoties uz kāda noteikta t
 
 Jums būtu jāmācās, lūk šādā kārtībā, **neko neizlaižot un nemācoties vairākas lietas vienlaicīgi**:
 
-* [React apguve](#user-content-React-apguve)
-* [`npm`](#user-content-NPM-apguve)
-* [JavaScript “bundlers” (pakotāji)](#user-content-JavaScript-pakotāju-apguve)
-* [ES6](#user-content-ES6-apguve)
-* [Maršrutēšana](#user-content-Maršrutēšanas-apguve)
-* [Flux](#user-content-Flux-apguve)
+* [React apguve](#react-apguve)
+* [`npm`](#npm-apguve)
+* [JavaScript “bundlers” (pakotāji)](#javascript-pakotāju-apguve)
+* [ES6](#es6-apguve)
+* [Maršrutēšana](#maršrutēšanas-apguve)
+* [Flux](#flux-apguve)
 
 **Jums nav jāapgūst viss no šī, lai būtu produktīvi izmantojot React.** 
 Pārejiet pie nākamā soļa tikai tad, kad Jums ir problēma, kuru tas risina.
 
 Kā arī, React kopienā ir dažas tēmas, kuras ir "super-mūsdienīgas prakses" ("bleeding edge"). Šīs tēmas ir interesantas, taču ar tām ir sarežģītāk tikt skaidrībā, salīdzinot ar tām, kas ir pieminētas augstāk, kā arī **izstrādājot vairumu lietojumu, tās nav nepieciešamas**
-* [Iekļautie stili](#user-content-Iekļauto-stilu-apguve)
-* [Renderēšana servera pusē](#user-content-Renderēšana-servera-pusē)
-* [Immutable.js](#user-content-Immutablejs-apguve)
-* [Relay, Falcor, utt.](#user-content-Relay-falcor-utt-apguve)
+* [Iekļautie stili](#ekļauto-stilu-apguve)
+* [Renderēšana servera pusē](#renderēšana-servera-pusē)
+* [Immutable.js](#immutablejs-apguve)
+* [Relay, Falcor, utt.](#relay-falcor-utt-apguve)
 
 ## React apguve
 
