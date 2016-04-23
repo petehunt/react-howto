@@ -80,7 +80,7 @@ Vous avez probablement entendu parler de flux. Il y a des *tas* de mauvaises inf
 
 Beaucoup de gens qui veulent développer une application cherchent à définir leur modèle de données et pensent avoir besoin de flux pour ça. **Ce n'est pas la bonne manière d'intégrer Flux. Flux ne devrait être ajouté que lorsque beaucoup de composants ont déjà été construits.**
 
-Les composants React sont organisés en hiérarchie. La plupart du temps votre modèle de données suit également une hiérarchie. Dans cette situation Flux ne vous apporte pas beaucoup. Quelques fois cela dit, votre modèle de données n'est pas hiérarchique. Quand vos composants commencent à recevoir des `props` qui ne semblent pas lui être destinées, ou qu'un petit nombre de composants commencent à être très complexes, vous pouvez vous pencher sur Flux.
+Les composants React sont organisés en hiérarchie. La plupart du temps votre modèle de données suit également une hiérarchie. Dans cette situation Flux ne vous apporte pas grand chose. Quelques fois cela dit, votre modèle de données n'est pas hiérarchique. Quand vos composants commencent à recevoir des `props` qui ne semblent pas lui être destinées, ou qu'un petit nombre de composants commencent à être très complexes, vous pouvez vous pencher sur Flux.
 
 **Vous saurez quand vous aurez besoin de Flux. Si vous n'êtes pas sûr d'en avoir besoin, vous n'en avez pas besoin.**
 
