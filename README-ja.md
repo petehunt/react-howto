@@ -28,11 +28,15 @@ I was one of the original members of the Facebook team that built and open-sourc
 
 ## How to tackle the React ecosystem
 
-## 
+## React 開発環境（エコシステム）
 
 All software is built on a stack of technologies, and you need to understand enough of that stack to build your app. The reason why the React ecosystem of tooling seems overwhelming is because it’s always explained in the wrong order.
 
+すべてのソフトウェアはテクノロジーの積み重ねになっていてアプリケーションを作るのにはそれらを理解することが必要です。
+
 You should learn, in this order, **without skipping ahead or learning concurrently**:
+
+以下のもの**飛ばしたり同時に学ぶのではなく**順番に学んで行きましょう！：
 
 * [React itself](#learning-react-itself)
 * [`npm`](#learning-npm)
@@ -40,16 +44,22 @@ You should learn, in this order, **without skipping ahead or learning concurrent
 * [ES6](#learning-es6)
 * [Routing](#learning-routing)
 * [Flux](#learning-flux)
+ 
 
 **You don't need to learn all of these to be productive with React.** Only move to the next step if you have a problem that needs to be solved.
 
 Additionally, there are a few topics that are often mentioned in the React community that are "bleeding edge". The topics below are interesting, but they're difficult to understand, are far less popular than the above topics and **aren't required for most apps**.
+
+加えて、以下のいくつかのトピックは React コミュニティーでよく話題される試作的なものです。以下のトピックは興味深いものですが理解するのがむずかしく上記にトッピクスほどよく知られてはいません。**そして多くのアプリケーションで絶対必要なものではありません。 **
+
 * [Inline styles](#learning-inline-styles)
 * [Server rendering](#learning-server-rendering)
 * [Immutable.js](#learning-immutablejs)
 * [Relay, Falcor, etc](#learning-relay-falcor-etc)
 
 ## Learning React itself
+
+## React を学ぶ
 
 It’s a common misconception that you need to waste a lot of time setting up tooling to start to learn React. In the official documentation you’ll find a [copy-paste HTML template](https://facebook.github.io/react/docs/getting-started.html#quick-start-without-npm) that you can save in an `.html` file and get started right away. **No tooling is required for this step, and don’t start learning extra tooling until you’re comfortable with React basics.**
 
