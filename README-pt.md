@@ -70,4 +70,14 @@ Aplicações do tipo "Single Page" (uma única página) são a moda, hoje em dia
 
  **Não uses um router se não estás a criar uma aplicação single page**. Aliás, a maioria dos projetos começam com componentes pequenos dentro de uma aplicação grande.
 
- 
+## Aprendendo Flux
+
+Provavelmente já ouviste falar de Flux. Existem *toneladas* de má inflormação sobre Flux, por aí fora.
+
+Algumas pessoas sentam-se para criar uma app e querem definir o modelo de dados, e pensam que precisam de Flux para isso. **Essa é a maneira errada de adoptar Flux. Flux só deve ser adicionado quando muitos componentes estão já construidos**.
+
+Componentes React estão arranjados de forma hierárquica. Na maioria das vezes, o teu modelo de dados segue hierarquia também. Nessas situações, Flux não te ajuda assim muito. No entanto, o teu modelo de dados pode não ser hierárquico. Quando os teus componentes React começam a receber `props` que pareçam estranhos, ou tu tens um pequeno numero de componentes a começar a tornarem-se muito complexos, talvez queiras dar uma vista de olhos em Flux.
+
+**Tu vais ter a certeza quando precisares de usar Flux. Se não tens a certeza se precisas, então, não precisas.**
+
+Se decidiste que queres usar Flux, então, a mais popular e bem documentada libraria Flux é [Redux](http://redux.js.org/). Existem *imensas* alternativas por aí fora, e tu vais ficar tentado a avaliar muitas delas, mas o meu concelho é que fiques pela mais popular.
