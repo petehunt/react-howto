@@ -53,3 +53,11 @@ Para uma série de boas razões técnicas, os módulos de 'CommonJS' (ex. tudo e
 Exemplos de Javascript bundlers incluem 'webpack' e 'browserify'. Ambos são boas opções, mas eu prefiro 'webpack' pois tem muitas mais caracteristicas que fazem com que o desenvolvimento de aplicações grandes seja mais fácil. Como a sua documentação pode ser um pouco confusa, Eu tenho um [template plug-and-play para começares](https://github.com/petehunt/react-webpack-template) com casos de uso mais complexos
 
 Uma coisa para ter em mente: 'CommonJS' usa a função 'require()' para importar módulos, por isso muita gente fica confusa e pensa que tem alguma coisa haver com o projeto chamado 'require.js'. Por diferentes razões técnicas, eu sugiro que evites 'require.js'Também não é muito popular no ecossistema de React.
+
+## Aprendendo ES6
+
+Para além de JSX (que aprendeste no tutorial de React), podes encontrar alguma sintaxe engraçada nos exemplos de React. Chama-se ES6, e é a última versão de Javascript por isso, é provável que ainda não tenhas aprendido. Como é tão recente, ainda não é suportada nos browsers mas o teu bundler pode traduzir por ti configurando-o da melhor maneira.
+
+Se o que realmente queres é apenas saber trabalhar com React, **podes saltar à frente esta secção de ES6**, ou tenta voltar atrás daqui a uns tempos.
+
+podes já ter ouvido alguma talk sobre as classes ES6 serem uma melhor maneira de criar componentes React. Isto não é verdade. A maioria das pessoas (incluindo no Facebook), usam `React.createClass()`.
