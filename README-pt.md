@@ -29,10 +29,10 @@ Tu deves aprender por esta ordem, **sem passar nada a frente nem aprender as coi
 **Não precisas de aprender tudo isto para seres produtivo com React.** Passa apenas para o próximo passo se tiveres algum problema que precisas que seja resolvido.
 
 Adicionalmente, existem alguns tópicos mencionados pela comunidade de React que são "bleeding edge". Os tópicos a baixo são interessantes, mas são dificeis de entender e muito menos populares do que os de cima e **não são obrigatórios para a maioria das aplicações**.
-* [Inline styles](#learning-inline-styles)
-* [Server rendering](#learning-server-rendering)
-* [Immutable.js](#learning-immutablejs)
-* [Relay, Falcor, etc](#learning-relay-falcor-etc)
+* [Inline styles](#aprendendo-inline-styles)
+* [Server rendering](#aprendendo-server-rendering)
+* [Immutable.js](#aprendendo-immutablejs)
+* [Relay, Falcor, etc](#aprendendo-relay-falcor-etc)
 
 ## Aprendendo React
 
@@ -81,3 +81,13 @@ Componentes React estão arranjados de forma hierárquica. Na maioria das vezes,
 **Tu vais ter a certeza quando precisares de usar Flux. Se não tens a certeza se precisas, então, não precisas.**
 
 Se decidiste que queres usar Flux, então, a mais popular e bem documentada libraria Flux é [Redux](http://redux.js.org/). Existem *imensas* alternativas por aí fora, e tu vais ficar tentado a avaliar muitas delas, mas o meu concelho é que fiques pela mais popular.
+
+## Aprendendo inline styles
+
+Antes de React, muitas pessoas reutilizavam folhas de estilo CSS complicadas produzidas com pré processadores tipo SASS. Como React faz com que seja fácil escrever componentes reutilizáveis, a tua folha de estilos pode ser menos complicada. Muitas pessoas na comunidade (eu próprio incluido) estão a experimentar livrar-se completamnete das folhas de estilo.
+
+Esta é uma ideia completamente maluca por diversas razões. Faz com que as media querys sejam mais dificeis, e é possivel que existam limitações a nivel de performance com esta técnica. **Quando começas com React, faz o que normalmente fazias com os estilos**.
+
+Assim que saibas como React funciona, podes olhar a algumas tecnicas. Uma muito popular é [BEM](https://en.bem.info/). Eu recomendo eliminar progressivamente o teu pré processador CSS, pois React dá te formas mais poderosas de reutilizar estilos (reutilizando componentes) e o teu Bundler Javascript pode gerar folhas de estilo mais eficientes para ti. )Eu dei uma  [talk sobre isto na OSCON](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). Com isto dito, React, como qualquer outra libraria Javascript, funciona bem à mesma com pré processadores CSS.
+
+Em alternativa, tu podes usar [Módulos CSS](http://glenmaddern.com/articles/css-modules), mais espoecificamente, [react-css-modules](https://github.com/gajus/react-css-modules). Com módulos CSS, tu podes escrever CSS (ou SASS/LESS/Stylus), mas tu podes geri-los e compor os teus ficheiros CSS como tu farias com estilos inline em React. E não precisas de te preocupar com a gestão dos nomes das classes usando metodologias BEM, pois isso é lidado por ti, pelo módulo de Sistema.
