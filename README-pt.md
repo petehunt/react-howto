@@ -60,4 +60,14 @@ Para além de JSX (que aprendeste no tutorial de React), podes encontrar alguma 
 
 Se o que realmente queres é apenas saber trabalhar com React, **podes saltar à frente esta secção de ES6**, ou tenta voltar atrás daqui a uns tempos.
 
-podes já ter ouvido alguma talk sobre as classes ES6 serem uma melhor maneira de criar componentes React. Isto não é verdade. A maioria das pessoas (incluindo no Facebook), usam `React.createClass()`.
+Podes já ter ouvido alguma talk sobre as classes ES6 serem uma melhor maneira de criar componentes React. Isto não é verdade. A maioria das pessoas (incluindo no Facebook), usam `React.createClass()`.
+
+## Aprendendo routing
+
+Aplicações do tipo "Single Page" (uma única página) são a moda, hoje em dia. São páginas web que carregam uma vez e, quando o user clica num link ou botão, o Javascript atualiza a barra de endereço, mas a página web não é carregada novamente. A esta gestão da barra de endereços, chamamos **router**.
+
+ O router mais comum do ecossistema de React é [react-router](https://github.com/rackt/react-router). Se estás a criar uma single page, usa-o, a não ser que tenhas um bom motivo para não o fazeres.
+
+ **Não uses um router se não estás a criar uma aplicação single page**. Aliás, a maioria dos projetos começam com componentes pequenos dentro de uma aplicação grande.
+
+ 
