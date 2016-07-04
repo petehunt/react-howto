@@ -99,3 +99,7 @@ Server Rendering é usualmente chamado de Javascript "universal" ou "isomórfico
 Precisas de Server Rendering se reparares que o render inicial é demasiado lento ou se tu queres melhorar o sistema de ranking de pesquisas (SEO). Enquanto que é verdade que a Google indexa, agora, conteúdo de client-rendered,desde Janeiro de 2016 que, de todas as vezes que foi medido, mostra que afecta o ranking de forma negativa, potencialmente devido à penalização na performance de client-side rendering.
 
 Server rendering necessita ainda, de muitas ferramentas para ser feito da melhor maneira. Desde que ele suporta de forma transparente os componentes React escritos sem server rendering em mente, deves construir a tua app primeiro e só depois preocupar-te com server-rendering. Tu não precisas de re-escrever todos os componentes para suporta-lo.
+
+## Aprendendo Immutable.js
+
+[Immutable.js](https://facebook.github.io/immutable-js/) dá-nos uma série de estruturas de dados que podem ajudar a resolver alguns problemas de performance quando construimos Apps React. É uma óptima libraria, e tu provavelmente vais usa-la em bastantes apps daqui para a frente, mas é completamente desnecessária até que tenhas um bom conhecimento das implicações na performance.
