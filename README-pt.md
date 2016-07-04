@@ -103,3 +103,7 @@ Server rendering necessita ainda, de muitas ferramentas para ser feito da melhor
 ## Aprendendo Immutable.js
 
 [Immutable.js](https://facebook.github.io/immutable-js/) dá-nos uma série de estruturas de dados que podem ajudar a resolver alguns problemas de performance quando construimos Apps React. É uma óptima libraria, e tu provavelmente vais usa-la em bastantes apps daqui para a frente, mas é completamente desnecessária até que tenhas um bom conhecimento das implicações na performance.
+
+## Aprendendo Relay, Falcor etc
+
+São tecnologias que te podem ajudar a reduzir o número de pedidos AJAX. Estão, ainda, muito na vanguarda por isso, se não tens problemas com muitos AJAX requests, não precisas nem de Relay nem de Falcor.
