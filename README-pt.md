@@ -91,3 +91,11 @@ Esta é uma ideia completamente maluca por diversas razões. Faz com que as medi
 Assim que saibas como React funciona, podes olhar a algumas tecnicas. Uma muito popular é [BEM](https://en.bem.info/). Eu recomendo eliminar progressivamente o teu pré processador CSS, pois React dá te formas mais poderosas de reutilizar estilos (reutilizando componentes) e o teu Bundler Javascript pode gerar folhas de estilo mais eficientes para ti. )Eu dei uma  [talk sobre isto na OSCON](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). Com isto dito, React, como qualquer outra libraria Javascript, funciona bem à mesma com pré processadores CSS.
 
 Em alternativa, tu podes usar [Módulos CSS](http://glenmaddern.com/articles/css-modules), mais espoecificamente, [react-css-modules](https://github.com/gajus/react-css-modules). Com módulos CSS, tu podes escrever CSS (ou SASS/LESS/Stylus), mas tu podes geri-los e compor os teus ficheiros CSS como tu farias com estilos inline em React. E não precisas de te preocupar com a gestão dos nomes das classes usando metodologias BEM, pois isso é lidado por ti, pelo módulo de Sistema.
+
+## Aprendendo Server rendering
+
+Server Rendering é usualmente chamado de Javascript "universal" ou "isomórfico". Significa que pode pegar nos teus componentes React e transforma-los em HTML estático no servidor. Isto melhora a performance inicial pois o User não precisa de esperar pelo JS para fazer download para que consiga ver a interface inicial, e o React pode reutilizar o HTML do server-rendering para que não precise de gerar o client-side.
+
+Precisas de Server Rendering se reparares que o render inicial é demasiado lento ou se tu queres melhorar o sistema de ranking de pesquisas (SEO). Enquanto que é verdade que a Google indexa, agora, conteúdo de client-rendered,desde Janeiro de 2016 que, de todas as vezes que foi medido, mostra que afecta o ranking de forma negativa, potencialmente devido à penalização na performance de client-side rendering.
+
+Server rendering necessita ainda, de muitas ferramentas para ser feito da melhor maneira. Desde que ele suporta de forma transparente os componentes React escritos sem server rendering em mente, deves construir a tua app primeiro e só depois preocupar-te com server-rendering. Tu não precisas de re-escrever todos os componentes para suporta-lo.
