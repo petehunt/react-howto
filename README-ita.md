@@ -37,9 +37,10 @@ Inoltre, ci sono alguni argomenti che sono spesso citati dalla comunita' React, 
 
 ## Imparare React Stesso
 
-It’s a common misconception that you need to waste a lot of time setting up tooling to start to learn React. In the official documentation you’ll find a [copy-paste HTML template](https://facebook.github.io/react/docs/getting-started.html#quick-start-without-npm) that you can save in an `.html` file and get started right away. **No tooling is required for this step, and don’t start learning extra tooling until you’re comfortable with React basics.**
+E' un errore comune che sia necessario configurare un sacco di strumenti per iniziare ad imparara React. Nella guida ufficiale troverai [un template HTML da copiare-incollare](https://facebook.github.io/react/docs/getting-started.html#quick-start-without-npm) puoi salvarlo come file  `.html` ed iniziare subio. **Non hai bisogno di configurare nessuno strumento particolare per fare questo, E non cominciare a studiare nessun altro tool finche' non padroneggi le basi di React.**
 
-I still think the easiest way to learn React is [the official tutorial](https://facebook.github.io/react/docs/tutorial.html).
+
+Penso ancora che il modo piu' facile di imparare React sia [Il Tutorial Ufficiale](https://facebook.github.io/react/docs/tutorial.html).
 
 ## Learning `npm`
 
