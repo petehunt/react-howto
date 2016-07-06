@@ -27,7 +27,7 @@ Doveresti imparare, in questo orgine, **senza saltare niente o imparare contempo
 * [Routing](#learning-routing)
 * [Flux](#learning-flux)
 
-**Non ti serve imparare tutti questi tool per essere produttivo con React. **Passa al passo successivo solo se hai un problema da risolvere
+**Non ti serve imparare tutti questi tool per essere produttivo con React.** Passa al passo successivo solo se hai un problema da risolvere
 
 Inoltre, ci sono alguni argomenti che sono spesso citati dalla comunita' React, e che sono "bleeding edge", all'avanguardia. Gli argomenti sotto sono interessanti, ma sono difficili da comprendere, sono molto meno popolari degli argomenti sopra e **non sono richiesti nella maggior parte delle applicazioni**
 * [Inline styles](#learning-inline-styles)
