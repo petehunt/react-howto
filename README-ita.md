@@ -56,13 +56,13 @@ Esempi di JavaScript bundlers sono `webpack` e `browserify`. Entrambi sono buone
 Una cosa da tenere a mente: `CommonJS` usa la funzione `require()` per importare moduli, per questo molta gente si confonde e pensa che abbia qualcosa a che fare con un progetto chiamato  `require.js`. Per diverse ragioni tecniche, ti suggerirei di evitare `require.js`. Inoltre non e' molto popolare all'interno dell'ecosistema React.
 
 
-## Learning ES6
+## Imparare ES6
 
-Outside of JSX (which you learned in the React tutorial), you may see some funny syntax in React examples. This is called ES6, and it’s the latest version of JavaScript so you may not have learned it yet. Since it’s so new, it’s not supported in browsers yet, but your bundler can translate it for you with the proper configuration.
+Oltre a JSX (che hai imparato nel tutorial React) potresti vedere un po' di sintassi strana negli esempi di React. E' ES6, ed e' l'ultima versione di Javascript, quindi potresti non averla ancora imparata. Siccome e' molto nuova,  non e' ancora supportata dai browsers, ma il tuo bundler puo' tradurla per te se opportunamente configurato.
 
-If you just want to get things done with React, **you can skip learning ES6**, or try to pick it up along the way.
+Se vuoi iniziare velocemente con React, **puoi evitare di imparare ES6**, o puoi provare ad utilizzarlo strada facendo.
 
-You may see some talk about ES6 classes being the preferred way to create React components. This is untrue. Most people (including Facebook) are using `React.createClass()`.
+Potresti vedere qualche discussione sul fatto che le classi ES6 sono il modo principlare per creare i componenti React. Questo e' falso. Molta gente (Facebook inclusa) sta utilizzando `React.createClass()`.
 
 ## Learning routing
 
