@@ -64,13 +64,13 @@ Se vuoi iniziare velocemente con React, **puoi evitare di imparare ES6**, o puoi
 
 Potresti vedere qualche discussione sul fatto che le classi ES6 sono il modo principlare per creare i componenti React. Questo e' falso. Molta gente (Facebook inclusa) sta utilizzando `React.createClass()`.
 
-## Learning routing
+## Imparare il Routing
 
-“Single-page applications” are all the rage these days. These are web pages that load once, and when the user clicks on a link or a button, JavaScript running on the page updates the address bar, but the web page is not refreshed. Management of the address bar is done by something called a **router**.
+Le “Single-page applications” vanno di moda in questi giorni. Sono pagine web che vengono caricate in una volta, dopodiche' quando l'utente schiaccia un link od un bottone, Il Javascript si occupa di aggiornare la pagina e la barra degli indirizzi, senza refreshare la pagina. La gestione della barra degli indirizzi e' effattuata da qualcosa chiamato  **router**.
 
-The most popular router in the React ecosystem is [react-router](https://github.com/rackt/react-router). If you’re building a single-page application, use it unless you have a good reason not to.
+Il router piu' popolare nell'ecosistema di React e' il [react-router](https://github.com/rackt/react-router). Se stai facendo una single-page application, usalo a meno che tu non abbia una buona ragione per non farlo.
 
-**Don’t use a router if you aren’t building a single-page application**. Most projects start out as smaller components inside of a larger application anyway.
+**Non usare il router se non stai facendo una single-page application**. Molti progetti iniziano come un piccolo componente all'interno di una applicazion piu' grande.
 
 ## Learning Flux
 
