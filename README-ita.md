@@ -47,13 +47,14 @@ Penso ancora che il modo piu' facile di imparare React sia [Il Tutorial Ufficial
 
 La maggior parte dei componenti riusabili, le librerie ed i tools nell'ecosistema React sono disponibili sotto forma di moduli `CommonJS` e sono installabili con `npm`.
 
-## Learning JavaScript bundlers
+## Imparare i javascript Bundlers
 
-For a number of good technical reasons `CommonJS` modules (i.e. everything in `npm`) cannot be used natively in the browser. You need a JavaScript “bundler” to “bundle” these modules into `.js` files that you can include in your web page with a `<script>` tag.
+Per diverse ragioni tecniche i moduli `CommonJS` (i.e. qualunque cosa su `npm`) non puossono essere usati nativamente nel browser. Devi usare un Javascript "bundler" per creare un "impacchettare" questi moduli in un file   `.js` che puo' essere incluso nella tua pagina web tramita un tag `<script>`
 
-Examples of JavaScript bundlers include `webpack` and `browserify`. Both are good choices, but I prefer `webpack` since it has a lot of features that make development of large apps easier. Since its documentation can be confusing, I have a [plug-and-play template for getting started](https://github.com/petehunt/react-webpack-template) and I wrote a [how-to guide for webpack](https://github.com/petehunt/webpack-howto) for more complex use cases.
+Esempi di JavaScript bundlers sono `webpack` e `browserify`. Entrambi sono buone scelte, ma io preferisco `webpack` in quanto ha molte piu' funzionalita' che rendono lo sviluppo di grandi applicazioni piu' semplice. Visto che la documentazione puo' risultare di complicata, Ho un  [plug-and-play template per iniziare](https://github.com/petehunt/react-webpack-template) ed ho scrito una  [guida how-to per webpack](https://github.com/petehunt/webpack-howto) per casi piu' complessi.
 
-One thing to keep in mind: `CommonJS` uses the `require()` function to import modules, so a lot of people get confused and think that it has something to do with a project called `require.js`. For a number of technical reasons, I would suggest that you avoid `require.js`. It’s also not very popular in the React ecosystem.
+Una cosa da tenere a mente: `CommonJS` usa la funzione `require()` per importare moduli, per questo molta gente si confonde e pensa che abbia qualcosa a che fare con un progetto chiamato  `require.js`. Per diverse ragioni tecniche, ti suggerirei di evitare `require.js`. Inoltre non e' molto popolare all'interno dell'ecosistema React.
+
 
 ## Learning ES6
 
