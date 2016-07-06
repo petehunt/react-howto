@@ -84,15 +84,19 @@ I Componenti React sono organizzati in una  gerarchia. Molte bolte, il tuo data 
 
 Se hai deciso di usare Flux, La piu' famosa e meglio documentata libreria Flux e' [Redux](http://redux.js.org/). Ci sono  *un sacco* di alternative, e sarati tentatoto di provarne molte. Il mio consiglio e' di affidarti a quella piu' popolare.
 
-## Learning inline styles
+## Imparare gli  inline styles
+
+nell'era pre-React, molte persone riutilizzavano gli stili CSS conc complicati fogli di stile costruita da preprocessori come SASS. Visto che react rende lo scrivere componenti riutilizzabili facile, i tuoi fogli di stile possono essere meno complicati. Molti all'interno della comuniti (io compreso) stanno sperimentando il completo abbandono dei fogli di stile.
 
 Pre-React, a lot of people reused CSS styles with complicated style sheets built by preprocessors like SASS. Since React makes writing reusable components easy, your stylesheets can be less complicated. Many in the community (including myself) are experimenting with getting rid of stylesheets altogether.
+E' un'idea abbastanza folle per diverse ragioni. Rende le media queries difficili, ed e' possibile imbattersi in qualche problema di perfomance utilizzando qusta tecnica. **Quando inizi con React, utilizza gli stili come faresti normalmente.**
 
-This is a fairly crazy idea for a number of reasons. It makes media queries more difficult, and it's possible that there are  performance limitations using this technique. **When starting out with React, just style things the way you normally would.**
+Una volta che capisci come funziona React, puoi dare un occhio a tecniche alternative. Una molto popolare e' [BEM](https://en.bem.info/).
+Io raccomando la graduale eliminazione dei preprocessori CSS, in quanto React ti offre una modo piu' potente di riutilizzare gli stili (tramite il riutilizzo dei componenti) ed il tuoi Javascript bundler puo' ottimizzare gli stylesheets per te' (feci [un seminario riguardo questo all'OSCON](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)).
+Detto Questo, React, come altre librerie Javascript, funzionera' bene insieme ad un preprocessore CSS.
 
-Once you've got a feel for how React works, you can look at alternate techniques. One popular one is [BEM](https://en.bem.info/). I recommend phasing out your CSS preprocessor, since React gives you a more powerful way to reuse styles (by reusing components) and your JavaScript bundler can generate more efficient stylesheets for you (I gave [a talk about this at OSCON](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). With that said, React, like any other JavaScript library, will work just fine with a CSS preprocessor.
+In alternativa, puoi anche utilizzare i [CSS Modules](http://glenmaddern.com/articles/css-modules), nello specifico [react-css-modules](https://github.com/gajus/react-css-modules). Con i CSS Modules scrivi sempre CSS (o SASS/LESS/Stylus), ma puoi gestire e comporre i tuoi file CSS come se stessi usando gli inline styles di React. E non ti devi preoccupare di gestire i nomi delle tue classi utilizzando metodologie come BEM, in quanto saranno gestite automaticamente dal sistema di modularizazione.
 
-Alternatively, you can also use [CSS Modules](http://glenmaddern.com/articles/css-modules), more specifically [react-css-modules](https://github.com/gajus/react-css-modules). With CSS Modules you'll still write CSS (or SASS/LESS/Stylus), but you can manage and compose your CSS files like you'd do with inline styles in React. And you don't need to worry about managing your class names using methodologies like BEM, as this will be handled for you under the hood by the module system.
 
 ## Learning server rendering
 
