@@ -49,9 +49,10 @@ Eu ainda acho que a forma mais fácil para aprender React é o [tutorial oficial
 
 A Maioria dos componentes reutilizáveis, bibliotecas e ferramentas do ecossistema do React estão dispiníveis como módulos `CommonJS` e são instalados com `npm`.
 
-## Aprendendo JavaScript bundlers
+## Aprendendo JavaScript bundlers (empacotadores)
 
-For a number of good technical reasons `CommonJS` modules (i.e. everything in `npm`) cannot be used natively in the browser. You need a JavaScript “bundler” to “bundle” these modules into `.js` files that you can include in your web page with a `<script>` tag.
+Para um número de boas razões técnicas, módulos `CommonJS` (ex: tudo no `npm`) não pode ser usado nativamente no browser. Você precisa de um "empacotador" JavaScript para "empacotar" esses módulos dentro de arquivos `.js` que você pode incluir na sua página web com a tag `<script>`
+
 
 Examples of JavaScript bundlers include `webpack` and `browserify`. Both are good choices, but I prefer `webpack` since it has a lot of features that make development of large apps easier. Since its documentation can be confusing, I have a [plug-and-play template for getting started](https://github.com/petehunt/react-webpack-template) and I wrote a [how-to guide for webpack](https://github.com/petehunt/webpack-howto) for more complex use cases.
 
