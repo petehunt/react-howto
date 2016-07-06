@@ -49,7 +49,7 @@ La maggior parte dei componenti riusabili, le librerie ed i tools nell'ecosistem
 
 ## Imparare i javascript Bundlers
 
-Per diverse ragioni tecniche i moduli `CommonJS` (i.e. qualunque cosa su `npm`) non puossono essere usati nativamente nel browser. Devi usare un Javascript "bundler" per creare un "impacchettare" questi moduli in un file   `.js` che puo' essere incluso nella tua pagina web tramita un tag `<script>`
+Per diverse ragioni tecniche i moduli `CommonJS` (i.e. qualunque cosa su `npm`) non possono essere usati nativamente nel browser. Devi usare un Javascript "bundler" per creare un "impacchettare" questi moduli in un file   `.js` che puo' essere incluso nella tua pagina web tramita un tag `<script>`
 
 Esempi di JavaScript bundlers sono `webpack` e `browserify`. Entrambi sono buone scelte, ma io preferisco `webpack` in quanto ha molte piu' funzionalita' che rendono lo sviluppo di grandi applicazioni piu' semplice. Visto che la documentazione puo' risultare di complicata, Ho un  [plug-and-play template per iniziare](https://github.com/petehunt/react-webpack-template) ed ho scrito una  [guida how-to per webpack](https://github.com/petehunt/webpack-howto) per casi piu' complessi.
 
