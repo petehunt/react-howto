@@ -6,7 +6,7 @@ Se sei nuovo di React (o del frontend in generale) potresti trovare il suo ecosi
 * Facebook rilascia open source solamente le cose che utilizza, quindi il focus di React non e' su progetti piu' piccoli di Facebook
 * C'e' un sacco di cattivo marketing mascherato da "Guide per React"
 
-In questo documento, assumero' daro' per scontato che su che tu abbia fatto una pagina web con HTML, CSS e Javascript prima d'ora.
+In questo documento, assumero'che tu abbia gia' fatto una pagina web con HTML, CSS e Javascript prima d'ora.
 
 ## Perche' dovresti darmi retta?
 
