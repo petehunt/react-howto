@@ -16,7 +16,7 @@ Sono stato uno dei membri originari del Facebook team che ha costruito e rilasci
 
 ## Come affrontare l'ecosistema di React
 
-Tutto il software e' costruito su uno stack di tecnologie, e tu devi saperne abbastanza quello stack da essere in grado di creare la tua app. I tools di React sembrano troppo complicati perche' sono sempre spiegati nell'ordine sbagliato.
+Tutto il software e' costruito su uno stack di tecnologie, e tu devi saperne abbastanza di quello stack da essere in grado di creare la tua app. I tools di React sembrano troppo complicati perche' sono sempre spiegati nell'ordine sbagliato.
 
 Doveresti imparare, in questo orgine, **senza saltare niente o imparare contemporaneamente**: 
 
