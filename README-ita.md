@@ -1,41 +1,41 @@
 # react-howto
 
-If you’re new to React (or frontend in general) you may find the ecosystem confusing. There are a few reasons for this.
+Se sei nuovo di React (o del frontend in generale) potresti trovare il suo ecosistema disorientante. Ecco alcune ragioni di questo:
 
-* React has historically been targeted at early-adopters and experts
-* Facebook only open-sources what it actually uses, so it doesn’t focus on tooling for smaller-than-Facebook projects
-* There’s a lot of bad marketing masquerading as React guides
+* React storicamente e' pensato per early-adopters ed esperti
+* Facebook rilascia open source solamente le cose che utilizza, quindi il focus di React non e'  React non e' su progetti pu' piccoli di Facebook
+* C'e' un sacco di cattivo markeging mascherato da "Guide per React"
 
-Throughout this document, I’ll assume you’ve built a web page with HTML, CSS and JavaScript.
+In questo documento, assumero' daro' per scontato che su che tu abbia fatto una pagina web con HTML, CSS e Javascript prima d'ora.
 
-## Why should you listen to me?
+## Perche' dovresti darmi retta?
 
-There’s a ton of conflicting advice about React out there; why listen to me?
+Ci sono migliaia di consigli su React in conflitto tra di loro in giro, perche' dovresti ascoltarmi?
 
-I was one of the original members of the Facebook team that built and open-sourced React. I’m no longer at Facebook and I’m now at a small startup, so I have a non-Facebook perspective as well.
+Sono stato uno dei membri originari del Facebook team che ha costruito e rilasciato open source React. Non lavoro piu' a Facebook, attualmente sono in una piccola start up, quindi ho anche una prospettiva estranea a Facebook.
 
-## How to tackle the React ecosystem
+## Come affrontare l'ecosistema di React
 
-All software is built on a stack of technologies, and you need to understand enough of that stack to build your app. The reason why the React ecosystem of tooling seems overwhelming is because it’s always explained in the wrong order.
+Tutto il software e' costruitu su uno stack di tecnologie, e tu devi essere in gradio di capire abbastanza di quello stack per costruire la tua app. I tools di React sembrano troppo complicati perche' sono sempre spiegati nell'ordine sbagliato.
 
-You should learn, in this order, **without skipping ahead or learning concurrently**:
+Doveresti imparare, in questo orgine, **senza saltare niente o imparare contemporaneamente**: 
 
-* [React itself](#learning-react-itself)
+* [React stesso](#learning-react-itself)
 * [`npm`](#learning-npm)
 * [JavaScript “bundlers”](#learning-javascript-bundlers)
 * [ES6](#learning-es6)
 * [Routing](#learning-routing)
 * [Flux](#learning-flux)
 
-**You don't need to learn all of these to be productive with React.** Only move to the next step if you have a problem that needs to be solved.
+**Non ti serve imparare tutti questi tool per essere produttivo con React. **Passa al passo successivo solo se hai un problema da risolvere
 
-Additionally, there are a few topics that are often mentioned in the React community that are "bleeding edge". The topics below are interesting, but they're difficult to understand, are far less popular than the above topics and **aren't required for most apps**.
+Inoltre, ci sono alguni argomenti che sono spesso citati dalla comunita' React, e che sono "bleeding edge", all'avanguardia. Gli argomenti sotto sono interessanti, ma sono difficili da comprendere, sono molto meno popolari degli argomenti sopra e **non sono richiesti nella maggior parte delle applicazioni**
 * [Inline styles](#learning-inline-styles)
 * [Server rendering](#learning-server-rendering)
 * [Immutable.js](#learning-immutablejs)
 * [Relay, Falcor, etc](#learning-relay-falcor-etc)
 
-## Learning React itself
+## Imparare React Stesso
 
 It’s a common misconception that you need to waste a lot of time setting up tooling to start to learn React. In the official documentation you’ll find a [copy-paste HTML template](https://facebook.github.io/react/docs/getting-started.html#quick-start-without-npm) that you can save in an `.html` file and get started right away. **No tooling is required for this step, and don’t start learning extra tooling until you’re comfortable with React basics.**
 
