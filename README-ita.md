@@ -72,17 +72,17 @@ Il router piu' popolare nell'ecosistema di React e' il [react-router](https://gi
 
 **Non usare il router se non stai facendo una single-page application**. Molti progetti iniziano come un piccolo componente all'interno di una applicazion piu' grande.
 
-## Learning Flux
+## Imparare Flux
 
-You’ve probably heard of Flux. There’s a *ton* of misinformation about Flux out there.
+Probabilmente ai sentito parlare di Flux. Ci sono  *tonnellate* di false informazioni riguardo Flux.
 
-A lot of people sit down to build an app and want to define their data model, and they think they need to use Flux to do it. **This is the wrong way to adopt Flux. Flux should only be added once many components have already been built.**
+Molte persone iniziano a costruire una app e vogliono definire il loro Modello di dati, e pensano che sia necessario usare Flux per farlo. ** Questo e' il modo sbagliato di adottare Flux. Flux dovrebbe essere aggiunto solamente dopo che molti componenti sono stati create **
 
-React components are arranged in a hierarchy. Most of the time, your data model also follows a hierarchy. In these situations Flux doesn’t buy you much. Sometimes, however, your data model is not hierarchical. When your React components start to receive `props` that feel extraneous, or you have a small number of components starting to get very complex, then you might want to look into Flux.
+I Componenti React sono organizzati in una  gerarchia. Molte bolte, il tuo data model  segue una gerarchia a sua volta. In queste situazioni Flux non aiuta molto. A volte, invece, il tuo data model non e' gerarchico. Quando i tuoi componenti React iniziano a ricevere `props` che sembrano estranee, o hai un piccolo numero di componenti che iniziano a diventare molto complessi, allora potresti voler dare un'occhiata a Flux. 
 
-**You’ll know when you need Flux. If you aren’t sure if you need it, you don’t need it.**
+**Quando Flux ti servira', lo saprai. Se non sei sicuro di averne bisogno, non ti serve.**
 
-If you have decided to use Flux, the most popular and well-documented Flux library is [Redux](http://redux.js.org/). There are *a lot* of alternatives out there, and you’ll be tempted to evaluate lots of them, but my advice is to just stick with the most popular one.
+Se hai deciso di usare Flux, La piu' famosa e meglio documentata libreria Flux e' [Redux](http://redux.js.org/). Ci sono  *un sacco* di alternative, e sarati tentatoto di provarne molte. Il mio consiglio e' di affidarti a quella piu' popolare.
 
 ## Learning inline styles
 
