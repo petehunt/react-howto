@@ -107,10 +107,11 @@ Hai bisongno sel server rendering se noti che il tuo rendering iniziale e' tropp
 Il server rendering richiede ancora molta configurazione per funzionare correttamente. Sicoome e' supportato in maniera trasparente dai componenti React scritti senza il server side rendieng in mente, dovresti prima fare la tua app e solo successivamente preoccuparti del server rendering. Non ti servira' riscrivere ogni tuo componente per supportarlo.
 
 
-## Learning Immutable.js
+## Imparare Immutable.js
 
-[Immutable.js](https://facebook.github.io/immutable-js/) provides a set of data structures that can help to solve certain performance issues when building React apps. It's a great library, and you'll probably use it a lot in your apps moving forward, but it's completely unnecessary until you have an appreciation of the performance implications. 
+[Immutable.js](https://facebook.github.io/immutable-js/) fornisce un insieme di strutture dati che ti aiutano a risolvere certi problemi di prestazioni mentre sviluppi applicazioni React.
+E' una grande libraria, e probablimente la la userai molto andando avanti nelle tue apps, ma e' completamente non necessaria finche' non avrai problemi di performance.
 
-## Learning Relay, Falcor etc
+## Imparare Relay, Falcor etc
 
-These are technologies that help you reduce the number of AJAX requests. They’re still very cutting-edge, so if you don’t have a problem with too many AJAX requests, you don’t need Relay or Falcor.
+Sono tecnologie che ti aiutano a ridurre il numero di richieste AJAX. Sono ancora molto sperimentali, quindi se non hai un problema di troppe chiamate AJAX, non ti serve usare Realy o Falcor.
