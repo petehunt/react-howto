@@ -98,13 +98,14 @@ Detto Questo, React, come altre librerie Javascript, funzionera' bene insieme ad
 In alternativa, puoi anche utilizzare i [CSS Modules](http://glenmaddern.com/articles/css-modules), nello specifico [react-css-modules](https://github.com/gajus/react-css-modules). Con i CSS Modules scrivi sempre CSS (o SASS/LESS/Stylus), ma puoi gestire e comporre i tuoi file CSS come se stessi usando gli inline styles di React. E non ti devi preoccupare di gestire i nomi delle tue classi utilizzando metodologie come BEM, in quanto saranno gestite automaticamente dal sistema di modularizazione.
 
 
-## Learning server rendering
+## Imparare il server rendering
 
-Server rendering is often called "universal" or "isomorphic" JS. It means that you can take your React components and render them to static HTML on the server. This improves initial startup performance because the user does not need to wait for JS to download in order to see the initial UI, and React can re-use the server-rendered HTML so it doesn't need to generate it client-side.
+Il Server rendering e' spesso chiamato  "universal"(universale) o "isomorphic"(isomorfico) JS. Vuold dire che poi prendere i tuoi componenti React e renderizzarli come HTML statico sul server. Questo migliora la prestazione iniziale perche' l'utente non deve aspettare che il JS sia scaricato per vedere la UI iniziale, inoltre React puo' riutilizzare l'HTML renderizzato lato server che non deve essere quindi generato lato client
 
-You need server rendering if you notice that your initial render is too slow or if you want to improve your search engine ranking. While it's true that Google now indexes client-rendered content, as of January 2016 every time it's been measured it's been shown to negatively affect ranking, potentially because of the performance penalty of client-side rendering.
+Hai bisongno sel server rendering se noti che il tuo rendering iniziale e' troppo lento o se vuoi migliorare il tuo ranking sui motori di ricerca. Se e' vero che Goodle adesso indicizza il contenuto generato dal client, al Gennaio 2016 ogni volta che e' stato misurato a mostrato di influenzare negativamente il ranking, potenzialmente per via delle penalita' nella performance intodotte la client side rendering.
 
-Server rendering still requires a lot of tooling to get right. Since it transparently supports React components written without server rendering in mind, you should build your app first and worry about server rendering later. You won't need to rewrite all of your components to support it.
+Il server rendering richiede ancora molta configurazione per funzionare correttamente. Sicoome e' supportato in maniera trasparente dai componenti React scritti senza il server side rendieng in mente, dovresti prima fare la tua app e solo successivamente preoccuparti del server rendering. Non ti servira' riscrivere ogni tuo componente per supportarlo.
+
 
 ## Learning Immutable.js
 
