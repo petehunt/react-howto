@@ -12,7 +12,7 @@ In questo documento, assumero'che tu abbia gia' fatto una pagina web con HTML, C
 
 Ci sono migliaia di consigli su React in conflitto tra di loro in giro, perche' dovresti ascoltarmi?
 
-Sono stato uno dei membri originari del Facebook team che ha costruito e rilasciato open source React. Non lavoro piu' a Facebook, attualmente sono in una piccola start up, quindi ho anche una prospettiva estranea a Facebook.
+Sono stato uno dei membri originari del Facebook team che ha costruito e rilasciato open source React. Non lavoro piu' a Facebook, al momento lavoro in una piccola start up, quindi ho anche una prospettiva estranea a Facebook.
 
 ## Come affrontare l'ecosistema di React
 
