@@ -42,11 +42,10 @@ E' un errore comune che sia necessario configurare un sacco di strumenti per ini
 
 Penso ancora che il modo piu' facile di imparare React sia [Il Tutorial Ufficiale](https://facebook.github.io/react/docs/tutorial.html).
 
-## Learning `npm`
+## Imparare `npm`
+`npm` e' il  package manager di Node.js ed e' il modo piu' usato dai programmatori front-end e designer per condividire il codice Javascript. . Comprende un sistema di moduli chiamato `CommonJS` che ti consente di installare strumenti a linea di comando scritti in Javascript. Leggi [questo post](http://0fps.net/2013/01/22/commonjs-why-and-how/) per capire perche'  `CommonJS` e' necessario sul browser oppure la  [CommonJS Spec Wiki](http://wiki.commonjs.org/wiki/Introduction) per ulteriuri informazioni sulle  `CommonJS` API.
 
-`npm` is the Node.js package manager and is the most popular way front-end engineers and designers share JavaScript code. It includes a module system called `CommonJS` and lets you install command-line tools written in JavaScript. Read [this post](http://0fps.net/2013/01/22/commonjs-why-and-how/) for background on why `CommonJS` is necessary for browsers, or the [CommonJS Spec Wiki](http://wiki.commonjs.org/wiki/Introduction) for more on the `CommonJS` API.
-
-Most reusable components, libraries and tools in the React ecosystem are available as `CommonJS` modules and are installed with `npm`.
+La maggior parte dei componenti riusabili, le librerie ed i tools nell'ecosistema React sono disponibili sotto forma di moduli `CommonJS` e sono installabili con `npm`.
 
 ## Learning JavaScript bundlers
 
