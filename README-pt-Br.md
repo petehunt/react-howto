@@ -53,12 +53,14 @@ A Maioria dos componentes reutilizáveis, bibliotecas e ferramentas do ecossiste
 
 Para um número de boas razões técnicas, módulos `CommonJS` (ex: tudo no `npm`) não pode ser usado nativamente no browser. Você precisa de um "empacotador" JavaScript para "empacotar" esses módulos dentro de arquivos `.js` que você pode incluir na sua página web com a tag `<script>`
 
+Exemplos de empacotadores JavaScript são `webpack` e `browserify`. Ambos são boas escolhar, mas eu prefiro `webpack` pois possue funcionalidades que fazem o desenvolvimento muito mais fácil. Mesmo a documentação sendo confusa, eu tenho um [plug-and-play template para começar](https://github.com/petehunt/react-webpack-template) e eu escrevi um guia webpack [como-fazer](https://github.com/petehunt/webpack-howto) para casos mais complexos.
 
-Examples of JavaScript bundlers include `webpack` and `browserify`. Both are good choices, but I prefer `webpack` since it has a lot of features that make development of large apps easier. Since its documentation can be confusing, I have a [plug-and-play template for getting started](https://github.com/petehunt/react-webpack-template) and I wrote a [how-to guide for webpack](https://github.com/petehunt/webpack-howto) for more complex use cases.
+Uma coisa para manter em mente: `CommonJS`usa a função `require()` para importar módulos, então muitas pessoas ficam confusas e pensam que tem algo haver com o projeto chamado `require.js`. Para um número de razões tecnicas, eu gostaria de sugerir que você evitasse `require.js`. Ele também não é muito popular no ecossistema do React.
 
-One thing to keep in mind: `CommonJS` uses the `require()` function to import modules, so a lot of people get confused and think that it has something to do with a project called `require.js`. For a number of technical reasons, I would suggest that you avoid `require.js`. It’s also not very popular in the React ecosystem.
 
 ## Aprendendo ES6
+
+
 
 Outside of JSX (which you learned in the React tutorial), you may see some funny syntax in React examples. This is called ES6, and it’s the latest version of JavaScript so you may not have learned it yet. Since it’s so new, it’s not supported in browsers yet, but your bundler can translate it for you with the proper configuration.
 
