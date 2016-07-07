@@ -108,8 +108,8 @@ Server rendering still requires a lot of tooling to get right. Since it transpar
 
 ## Aprendendo Immutable.js
 
-[Immutable.js](https://facebook.github.io/immutable-js/) provides a set of data structures that can help to solve certain performance issues when building React apps. It's a great library, and you'll probably use it a lot in your apps moving forward, but it's completely unnecessary until you have an appreciation of the performance implications. 
+[Immutable.js](https://facebook.github.io/immutable-js/) disponibiliza uma série de estrutura de dados que podem ajudar a resolver certos problemas de performance na construção de apps em React. É uma excelente biblioteca, e você provavelmente irá usar muito no avanço dos seus apps, mas é completamente desnecessário até que você tenha uma apreciação em implementações performáticas.
 
 ## Aprendendo Relay, Falcor etc
 
-These are technologies that help you reduce the number of AJAX requests. They’re still very cutting-edge, so if you don’t have a problem with too many AJAX requests, you don’t need Relay or Falcor.
+São tecnologias que ajudam você a reduzir o número de requisições AJAX. Eles ainda são muito de ponta, então se você não tiver problemas com muitas requisições AJAx, não há necessidade de Relay ou Falcor.
