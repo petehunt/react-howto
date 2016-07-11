@@ -88,15 +88,18 @@ Se você decidiu usar Flux, a biblioteca mais popular e melhor documentada é [R
 
 ## Aprendendo inline styles 
 
-Pre-React, a lot of people reused CSS styles with complicated style sheets built by preprocessors like SASS. Since React makes writing reusable components easy, your stylesheets can be less complicated. Many in the community (including myself) are experimenting with getting rid of stylesheets altogether.
+Pre-React, muita gente reutiliza estilos de CSS com complicados processadores de style sheets (folhas de estilo) como SASS. Como React faz escritas de componentes reutilizáveis facilmente, sua folha de estilo pode ser menos complicada. A maioria da comunidade (me incluindo) estão esperimentando se livrar de folhas de estilos altogether (tudo em uma só).
 
-This is a fairly crazy idea for a number of reasons. It makes media queries more difficult, and it's possible that there are  performance limitations using this technique. **When starting out with React, just style things the way you normally would.**
+Essa é uma idéia bastante louca por bom número de razões. Faz com que media queries fiquem mais difíceis, e é possível que tenha uma limitação ao usar essa técnica. **Quando começando com React, apenas coloque estilho nas coisas como você geralmente faria.**
 
-Once you've got a feel for how React works, you can look at alternate techniques. One popular one is [BEM](https://en.bem.info/). I recommend phasing out your CSS preprocessor, since React gives you a more powerful way to reuse styles (by reusing components) and your JavaScript bundler can generate more efficient stylesheets for you (I gave [a talk about this at OSCON](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). With that said, React, like any other JavaScript library, will work just fine with a CSS preprocessor.
+Uma vez que você tenha idéia de como React funciona, você pode olhar por técnicas alternativas. Uma bem popular é  [BEM](https://en.bem.info/). Eu recomendo você descartar seu pré-processador de CSS, já que React disponibiliza uma forma mair poderosa de reusar styles (reutilizando componentes), e o seu empacotador JavaScript pode gerar folhas de estilo mais eficientes pra você (Eu te dou [um exemplo sobre isso no OSCON](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). Dito isso, React, como toda biblioteca JavaScript, funcionará bem com um pré-processador CSS.
 
-Alternatively, you can also use [CSS Modules](http://glenmaddern.com/articles/css-modules), more specifically [react-css-modules](https://github.com/gajus/react-css-modules). With CSS Modules you'll still write CSS (or SASS/LESS/Stylus), but you can manage and compose your CSS files like you'd do with inline styles in React. And you don't need to worry about managing your class names using methodologies like BEM, as this will be handled for you under the hood by the module system.
+Alternativamente, você tabmém pode usar [Módulos CSS](http://glenmaddern.com/articles/css-modules), mais especificamente [react-css-modules](https://github.com/gajus/react-css-modules). Com módulos CSS você ainda escreverá CSS (ou SASS/LESS/Stylus), mas você pode gereciar e cazer seus arquivos CSS como você faria inline styles no React. E você não precisará se preocupar em gerenciar o nomde de classes usando metodologias como BEM, pois isso será cuidado sob os panos quando utilizado o sistema de módulos.
+
 
 ## Aprendendo server rendering (renderização de servidor)
+
+
 
 Server rendering is often called "universal" or "isomorphic" JS. It means that you can take your React components and render them to static HTML on the server. This improves initial startup performance because the user does not need to wait for JS to download in order to see the initial UI, and React can re-use the server-rendered HTML so it doesn't need to generate it client-side.
 
