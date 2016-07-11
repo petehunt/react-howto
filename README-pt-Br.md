@@ -60,21 +60,19 @@ Uma coisa para manter em mente: `CommonJS`usa a função `require()` para import
 
 ## Aprendendo ES6
 
+Além do JSX (o qual você aprendeu no tutorial do React), você pode achar alguns exemplos engraçados no React. Isso é conhecido como ES6, que é a última versão do JavaScript que talvez você ainda não tenha aprendido. Já que é tão novo, não é suportado nos browsers ainda, mas o seu empacotador (bundler) pode traduzir pra você com a configuração adequada.
 
+Se você quer apenas fazer as coisas acontecerem no React, **você pode pular o aprendizado de ES6**, ou tentar entender no caminho.
 
-Outside of JSX (which you learned in the React tutorial), you may see some funny syntax in React examples. This is called ES6, and it’s the latest version of JavaScript so you may not have learned it yet. Since it’s so new, it’s not supported in browsers yet, but your bundler can translate it for you with the proper configuration.
-
-If you just want to get things done with React, **you can skip learning ES6**, or try to pick it up along the way.
-
-You may see some talk about ES6 classes being the preferred way to create React components. This is untrue. Most people (including Facebook) are using `React.createClass()`.
+Talvez você tenha ouvido que classes ES6 são preferidas para criar componentes React. Isso não é verdade. A maioria das pessoas (incluindo o Facebook) estão usando `React.createClass()`.
 
 ## Aprendendo routing (fazer rotas)
 
-“Single-page applications” are all the rage these days. These are web pages that load once, and when the user clicks on a link or a button, JavaScript running on the page updates the address bar, but the web page is not refreshed. Management of the address bar is done by something called a **router**.
+“Single-page applications” (Aplicações de uma única página) são os objetivos nos dias de hoje. São páginas web que carregam apenas uma vez, e quando o usuário clica em um link ou em um botão, O JavaScript compilando na página atualiza a barra de endereço, mas a página web não é atualizada. O gerenciamento da barra de endereço é feito por algo chamado **router** (roteador).
 
-The most popular router in the React ecosystem is [react-router](https://github.com/rackt/react-router). If you’re building a single-page application, use it unless you have a good reason not to.
+O roteador mais popular no ecosistema do React é [react-router](https://github.com/rackt/react-router). Se você está construindo uma single-page application, utilize isso a não ser que você tenha uma boa razão para não fazer.
 
-**Don’t use a router if you aren’t building a single-page application**. Most projects start out as smaller components inside of a larger application anyway.
+**Não utilize o roteador se você não estiver construindo uma single-page application**. A maioria dos projetos começam com componentes pequenos dentro de uma grande aplicação de qualquer forma.
 
 ## Aprendendo Flux
 
@@ -112,4 +110,4 @@ Server rendering still requires a lot of tooling to get right. Since it transpar
 
 ## Aprendendo Relay, Falcor etc
 
-São tecnologias que ajudam você a reduzir o número de requisições AJAX. Eles ainda são muito de ponta, então se você não tiver problemas com muitas requisições AJAx, não há necessidade de Relay ou Falcor.
+São tecnologias que ajudam você a reduzir o número de requisições AJAX. São tecnologias de ponta, então se você não tiver problemas com muitas requisições AJAX, não há necessidade de Relay ou Falcor.
