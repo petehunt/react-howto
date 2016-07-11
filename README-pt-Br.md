@@ -76,17 +76,17 @@ O roteador mais popular no ecosistema do React é [react-router](https://github.
 
 ## Aprendendo Flux
 
-You’ve probably heard of Flux. There’s a *ton* of misinformation about Flux out there.
+Você provavelmente já ouviu falar sobre "head" do Flux. Tem uma *tonelada* de mal entendidos sobre Flux por aí.
 
-A lot of people sit down to build an app and want to define their data model, and they think they need to use Flux to do it. **This is the wrong way to adopt Flux. Flux should only be added once many components have already been built.**
+Muita gente começa a cosntruir um app e gostaria de definir seu próprio modelo de dados, e pensam que precisam usar Flux para fazer isso. **Assim é uma forma errada de adotar o Flux. O Flux só deveria ser adicionado quando muitos componentes já foram cosntruídos.**
 
-React components are arranged in a hierarchy. Most of the time, your data model also follows a hierarchy. In these situations Flux doesn’t buy you much. Sometimes, however, your data model is not hierarchical. When your React components start to receive `props` that feel extraneous, or you have a small number of components starting to get very complex, then you might want to look into Flux.
+Os componentes React são arranjados em hierarquia. A maioria das vezes, seu modelo de dados também segue uma hierarquia. Nessa situação o Flux te adiciona muita coisa. As vezes não há hierarquia no seu modelo de dados. Quando seus componentes React começam a receber `props` (propriedades) que parecem estranhos, ou você possue um pequeno número de componentes começando a ficar muito complexo, talvez você queira dar uma olhada no Flux.
 
-**You’ll know when you need Flux. If you aren’t sure if you need it, you don’t need it.**
+**Você saberá quando precisará do Flux. Se você não está certo se precis disso, você realmente não precisa disso.**
 
-If you have decided to use Flux, the most popular and well-documented Flux library is [Redux](http://redux.js.org/). There are *a lot* of alternatives out there, and you’ll be tempted to evaluate lots of them, but my advice is to just stick with the most popular one.
+Se você decidiu usar Flux, a biblioteca mais popular e melhor documentada é [Redux](http://redux.js.org/). Há *muitas* outras alternativas por aí, e você ficará tentado para avalizar a maioria deles, mas meu conselho é para você ficar apenas no mais popular.
 
-## Aprendendo inline styles
+## Aprendendo inline styles 
 
 Pre-React, a lot of people reused CSS styles with complicated style sheets built by preprocessors like SASS. Since React makes writing reusable components easy, your stylesheets can be less complicated. Many in the community (including myself) are experimenting with getting rid of stylesheets altogether.
 
