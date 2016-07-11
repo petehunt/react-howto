@@ -99,13 +99,11 @@ Alternativamente, você tabmém pode usar [Módulos CSS](http://glenmaddern.com/
 
 ## Aprendendo server rendering (renderização de servidor)
 
+Renderização de servidor é geralmente chamado de "universal" ou "isomorphic" JS. Isso quer dizer que você pode pegar seus componentes React e renderizá-los em um HTML estático no servidor. Isso melhora a performance inicial porque o usuário não precisa esperar pelo JS para fazer o download para visualizar a interface inicial, e o React pode reutilizar o HTML renderizado no servidor, logo não é necessário gerar isso no lado do cliente. 
 
+Você apenas precisa renderizar no servidor se você perceber que a renderização inicial está muito lenta ou se você voque quer melhorar o sistema de ranking de busca. Enquando for verdade que o Google agora indexa conteúdo renderizado no cliente, a partir de janeiro de 2016 todo tempo é mensurado e o ranking sofre um efeito negativamente, potencialemnte por causa da penalidade na renderização do lado do cliente.
 
-Server rendering is often called "universal" or "isomorphic" JS. It means that you can take your React components and render them to static HTML on the server. This improves initial startup performance because the user does not need to wait for JS to download in order to see the initial UI, and React can re-use the server-rendered HTML so it doesn't need to generate it client-side.
-
-You need server rendering if you notice that your initial render is too slow or if you want to improve your search engine ranking. While it's true that Google now indexes client-rendered content, as of January 2016 every time it's been measured it's been shown to negatively affect ranking, potentially because of the performance penalty of client-side rendering.
-
-Server rendering still requires a lot of tooling to get right. Since it transparently supports React components written without server rendering in mind, you should build your app first and worry about server rendering later. You won't need to rewrite all of your components to support it.
+Renderização no lado do servidor ainda requer uma grande quantidade de ferramentas para fazer corretamente. Já que transparentemente suporta componentes React escritos sem foco na renderização no lado do servidor, você deveria primeiramente construir seu app e se preocupar com a renderização do lado do servidor mais tarde. Você não precisa reescrever todos os seus componentes para suportar isso.
 
 ## Aprendendo Immutable.js
 
