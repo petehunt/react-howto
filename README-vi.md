@@ -54,7 +54,7 @@ Vì một vài lí do kĩ thuật mà module `CommonJS` (ví dụ, các thư vi�
 
 Một số ví dụ về công cụ đóng gói Javascript bao gồm `webpack` và `browserify`. Cả hai đều là sự lựa chọn tốt, nhưng tôi thích `webpack` hơn vì nó có nhiều tính năng hỗ trợ tốt cho việc xây dựng lớn một cách dễ dàng hơn. Vì tài liệu của nó khá khó hiểu, tôi có tạo ra [template để bắt đầu ngay](https://github.com/petehunt/react-webpack-template) và tôi có viết [hướng dẫn về webpack](https://github.com/petehunt/webpack-howto) với các use cases phức tạp hơn.
 
-Một điều nên nhớ là `CommonJS` sử dụng hàm `require()` để nhập liên kết các modules, vì thế nhiều người trỏ nên thắc mắc và nghĩ nó có liên quan gì đó tới một project khác có tên là `require.js`. Vì nhiều lý do kĩ thuật, tôi khuyên bạn nên tránh sử dụng `require.js`. Nó cũng không được sử dụng phổ biến trong môi trường của React.
+Một điều nên nhớ là `CommonJS` sử dụng hàm `require()` để nhập liên kết các modules, vì thế nhiều người trở nên thắc mắc và nghĩ nó có liên quan gì đó tới một project khác có tên là `require.js`. Vì nhiều lý do kĩ thuật, tôi khuyên bạn nên tránh sử dụng `require.js`. Nó cũng không được sử dụng phổ biến trong môi trường của React.
 
 ## Tìm hiểu về ES6
 
@@ -86,7 +86,7 @@ Một khi bạn đã quyết định sử dụng Flux, sử dụng thư viện p
 
 ## Tìm hiểu về inline styles
 
-Trước React, nhiều người tái sử dụng CSS với các định dạng văn bản phức tạp xây dựng qua các tiền xử lý CSS như SASS. Nhưng sau đó React hỗ trợ để tạo các compoents có thể tái sử dụng một cách đơn giản, các định dạng CSS cũng trỏ nên đỡ phức tạp. Đa phần trong cộng đồng (bao gồm cả tôi) cũng đang thí nghiệm với việc loại bỏ các định dạng đó.
+Trước React, nhiều người tái sử dụng CSS với các định dạng văn bản phức tạp xây dựng qua các tiền xử lý CSS như SASS. Nhưng sau đó React hỗ trợ để tạo các components có thể tái sử dụng một cách đơn giản, các định dạng CSS cũng trở nên đỡ phức tạp. Đa phần trong cộng đồng (bao gồm cả tôi) cũng đang thí nghiệm với việc loại bỏ các định dạng đó.
 
 Đây có thể là một ý tưởng điên rồ vì mấy lí do. Nó làm cho media queries trở nên khó hơn, và có thể sinh ra hạn chế về hiệu năng khi sử dụng kĩ thuật này. **Khi bắt đầu với React, chỉ cần style như bình thường**.
 
