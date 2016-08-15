@@ -66,7 +66,7 @@ Bạn có thể thấy nhiều hội thảo về lớp trong ES6 là cách tốt
 
 ## Tìm hiểu về routing
 
-"Các ứng dụng single-page" trở nên khá rầm rộ ngày nay. Đây là những trang web mà chỉ thực hiện khởi tạo một lần, và khi người dùng ấn vào một đường dẫn hay nút ấn thì Javascript trên trang web sẽ thực thi mà trang web không cần phải reload lại. Việc quản lý địa chỉ trên thanh địa chỉ được thực hiện bở **router**.
+"Các ứng dụng single-page" trở nên khá rầm rộ ngày nay. Đây là những trang web mà chỉ thực hiện khởi tạo một lần, và khi người dùng ấn vào một đường dẫn hay nút ấn thì Javascript trên trang web sẽ thực thi mà trang web không cần phải reload lại. Việc quản lý địa chỉ trên thanh địa chỉ được thực hiện bởi **router**.
 
 Router được sử dụng phổ biến nhất trong hệ sinh thái React là [react-router](https://github.com/rackt/react-router). Nếu như bạn đang xây dựng một ứng dụng single-page, hãy sử dụng nó trừ khi bạn có lý do mà không thể sử dụng.
 
