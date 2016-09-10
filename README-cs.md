@@ -14,7 +14,6 @@ Existuje spousta protichůdných rad ohledně Reactu. Proč byste měli dát zro
 
 Jsem jeden z původních členů Facebook týmu, který React vytvořil a opensourcoval. Před časem jsem však Facebook opustil a začal pracovat v menším startupu. Mám tak k dispozici i pohled z druhé strany barikády.
 
-
 ## Jak se neztratit v React ekosystému
 
 Každý software je postaven na několika vrstvách různých technologií. Abyste mohli vytvořit vaši aplikaci, musíte každé této vrstvě alespoň částečně rozumět. React ekosystém vypadá komplikovaně, protože je vždy představován ve špatném pořadí.
@@ -57,7 +56,6 @@ Příkladem JS bundlerů je `webpack` a `browserify`. Oba jsou dobrou volbou, al
 
 Důležitá poznámka: `CommonJS` používá `require()` funkci k importování modulů a tak si ho hodně lidí plete s projektem nazvaným `require.js`. Z mnoha vážných důvodů vám doporučuji se `require.js` vyhnout. V React ekosystému navíc není moc populární.
 
-
 ## Naučte se ES6
 
 Kromě JSX (který jste se naučili v React tutoriálu), můžete narazit v React příkladech ještě na další prapodivnou syntax. Jedná se o ES6, což je nejnovější verze JavaScriptu a může se tak stát, že jí vidíte poprvé. Protože je natolik nová, nemá ještě moc velkou podporu v prohlížečích. Avšak správně nastavený bundler ji může přeložit do starší verze, tak aby ve všech prohlížečích fungovala.
@@ -65,7 +63,6 @@ Kromě JSX (který jste se naučili v React tutoriálu), můžete narazit v Reac
 Pokud chcete jednoduše začít vyvíjet v Reactu, **můžete učení se ES6 syntaxe přeskočit** nebo jí prostě přibrat po cestě.
 
 Můžete narazit na názory, že ES6 třídy jsou preferovaná cesta pro vytváření React komponent. Toto není pravda. Většina lidí (včetně Facebooku) používá `React.createClass()`.
-
 
 ## Naučte se routing
 
@@ -94,6 +91,8 @@ Před érou Reactu hodně lidí používalo pro lepší správu CSS stylů kompl
 Jde o trochu šílenou myšlenku z mnoha důvodů. Komplikuje to media queries a může to představovat i výkonnostní problém. **Pokud začínáte s Reactem, použijte styly tak jak je normálně znáte**.
 
 Jakmile se s Reactem více seznámíte, můžete vyzkoušet některé alternativní techniky. Jednou z populárních je [BEM](https://en.bem.info/). Doporučuji, abyste se postupně zbavovali CSS preprocesoru, protože React vám dává daleko mocnější cestu, jak styly znovu používat (znovu používáním komponent) a váš JavaScript bundler může vygenerovat více efektivní styly za vás. (Měl jsem o tomto [přednášku na OSCONu](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). Na druhou stranu, pokud trváte na svém, React bude fungovat s preprocesorem stejně dobře jako jakákoliv jiná JS knihovna.
+
+Další možností je použít [CSS Modules](http://glenmaddern.com/articles/css-modules), konkrétně knihovnu [react-css-modules](https://github.com/gajus/react-css-modules). Díky CSS Modules můžete pořád psát CSS (nebo SASS/LESS/Stylus), ale zároveň i spravovat a komponovat vaše CSS soubory tak, jak byste to dělali s inline styly v Reactu. Také se nemusíte starat o názvy CSS tříd (narozdíl od BEM), jelikož i to za vás tato knihovna vyřeší.
 
 ## Naučte se server rendering
 
