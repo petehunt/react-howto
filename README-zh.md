@@ -3,7 +3,7 @@
 如果你是一个 React (或者前端) 新手, 出于以下的原因, 你可能会对这个生态圈感到困惑:
 
 * React 的目标群体历来是喜欢尝试新事物的开发者和前端专家.
-* Facebook 只开源了他们在实际使用的, 因此他们没有关注那些比 Facebook 小的工程需求.
+* Facebook 开源的内容是应用在他们的实际应用中, 因此他们没有关注那些比 Facebook 小的工程需求.
 * 现有的 React 指引水平参差不齐.
 
 在本文中, 我会假设你已有使用 HTML, CSS 和 JavaScript 开发网页的基础.
@@ -53,7 +53,7 @@
 
 出于若干技术原因, `CommonJS` 模块 (也就是 `npm` 里的所有内容) 不能直接用到浏览器. 你需要一个 JavaScript “打包工具(bundler)” 来把这些模块打包成 `.js` 文件, 使你可以在网页中通过 `<script>` 标签引入它们.
 
-JavaScript 打包工具包括有 `webpack` 和 `browserify`. 它们都是好的选择, 但我个人更喜欢 `webpack` , 因为它有许多功能简化大型应用开发. 鉴于 webpack 文档可能令人感到困惑, 我也写了两篇文章: [plug-and-play template for getting started](https://github.com/petehunt/react-webpack-template) 和针对更复杂用例的 [how-to guide for webpack](https://github.com/petehunt/webpack-howto).
+JavaScript 打包工具包括 `webpack` 和 `browserify`. 它们都是好的选择, 但我个人更喜欢 `webpack` , 因为它有许多功能简化大型应用开发. 鉴于 webpack 文档可能令人感到困惑, 我也写了两篇文章: [plug-and-play template for getting started](https://github.com/petehunt/react-webpack-template) 和针对更复杂用例的 [how-to guide for webpack](https://github.com/petehunt/webpack-howto).
 
 要记住的一点: `CommonJS` 使用了 `require()` 函数来引入模块, 因此许多人对此感到疑惑, 并认为需要导入 `require.js` 到工程里. 出于若干技术原因, 我建议你避免使用 `require.js`. 它在 React 生态圈并不流行.
 
@@ -81,13 +81,15 @@ JavaScript 打包工具包括有 `webpack` 和 `browserify`. 它们都是好的�
 
 一旦你找到了用 React 开发的感觉, 你就可以关注那些可作为替代的技术了. 其中一种流行技术是 [BEM](https://en.bem.info/). 我建议你逐渐停用 CSS 预处理器, 因为 React 给了你一种更强大的方式去重用样式 (通过重用组件), 并且 JavaScript 打包工具可以为你生成更高效的样式表 (我曾经[在 OSCON 上发表过关于这个的演讲](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). 说了这么多, 总之 React 就像其他 JavaScript 库一样, 可以和 CSS 预处理器很好地配合工作.
 
+另一种可选项是 [CSS 模块](http://glenmaddern.com/articles/css-modules), 更具体地说, 是 [react-css-modules](https://github.com/gajus/react-css-modules). 虽然有了这些 CSS 模块, 你还是写 CSS (或者是 SASS/LESS/Stylus), 但你可以像处理 React 中的内联样式那样管理和组织 CSS 文件. 你也不需要担心用到 BEM 那样的方法学去管理类名, 因为模块系统在底层已经帮你处理好了.
+
 ## 学习服务器端渲染
 
-服务器端渲染经常被称为 "universal" 或 "isomorphic" JS. 这意味着你可以用 React 组件在服务器端渲染出静态 HTML. 这样做可以提高初始化加载的性能, 因为用户不用等到 JS 下载完才看得见初始界面, 并且 React 可以重用服务器端渲染出的 HTML, 无需客户端重新生成.
+服务器端渲染经常被称为 "通用应用" 或 "同构应用". 这意味着你可以用 React 组件在服务器端渲染出静态 HTML. 这样做可以提高初始化加载的性能, 因为用户不用等到 JS 下载完才看到初始界面, 并且 React 可以重用服务器端渲染出的 HTML, 无需客户端重新生成.
 
-如果你发现首屏渲染速度过慢, 或者想提高网站在搜索引擎的排行, 你就需要服务器端渲染了. 尽管 Google 现在也会索引客户端渲染的内容, 但截至 2016 年 1 月, 这样做被证实会对排行有负面影响, 这可能是由于客户端渲染的性能问题所造成的.
+如果你发现首屏渲染速度过慢, 或者想提高网站在搜索引擎的排行, 你就需要服务器端渲染了. 尽管 Google 现在也会索引客户端渲染的内容, 但截至 2016 年 1 月, 这样做仍被证实会对排行有负面影响, 这可能是由于客户端渲染的性能问题所造成的.
 
-服务器端渲染还需要许多工具的辅助, 因为显然 React 组件不是在考虑服务器端渲染的情况下写出来的, 你应该先构建你的应用, 之后再关心服务器端渲染的问题. 你不用担心重写所有组件才能支持它.
+服务器端渲染还需要许多工具的辅助, 因为显然 React 组件不是在考虑服务器端渲染的情况下写出来的, 你应该先构建你的应用, 之后再关心服务器端渲染的问题. 不用担心, 你不需要重写所有组件去支持它.
 
 ## 学习 Flux
 
@@ -99,7 +101,7 @@ React 组件之间存在层级关系. 在很多时候, 你的数据模型也跟�
 
 **你会知道什么时候需要用 Flux. 如果你不确定是否需要用它, 你就不需要它.**
 
-如果你决定使用 Flux, 现在最流行的、文档最全的 Flux 库是 [Redux](http://redux.js.org/). 当然也有许多其他选择, 你或者会有兴趣尝试使用它们, 但我的建议是只需要用最流行的那一个就足够了.
+如果你决定使用 Flux, 现在最流行的、文档最全的 Flux 库是 [Redux](http://redux.js.org/). 当然也有许多其他选择, 你或者会有兴趣尝试使用它们, 但我的建议是只需要用最流行的 Redux 就足够了.
 
 ## 学习 Immutable.js
 
