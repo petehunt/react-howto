@@ -95,18 +95,18 @@ Once you've got a feel for how React works, you can look at alternate techniques
 
 Alternatively, you can also use [CSS Modules](http://glenmaddern.com/articles/css-modules), more specifically [react-css-modules](https://github.com/gajus/react-css-modules). With CSS Modules you'll still write CSS (or SASS/LESS/Stylus), but you can manage and compose your CSS files like you'd do with inline styles in React. And you don't need to worry about managing your class names using methodologies like BEM, as this will be handled for you under the hood by the module system.
 
-## Learning server rendering
+## Nauka renderowania po stronie serwera
 
-Server rendering is often called "universal" or "isomorphic" JS. It means that you can take your React components and render them to static HTML on the server. This improves initial startup performance because the user does not need to wait for JS to download in order to see the initial UI, and React can re-use the server-rendered HTML so it doesn't need to generate it client-side.
+Renderowanie po stronie serwera jest często nazywane "uniwesalnym" lub "izomorficznym" JS. Oznacza to, że możesz wyświetlać swoje komponenty React jako statyczny HTML na serwerze. To poprawia wydajność na samym początku ładowania strony, bo użytkownik nie musi czekać na załadowanie JS, aby wyświetlić interfejs strony. React potrafi wykorzystać HTML wygenerowany na serwerze, tak, aby nie było potrzeby tworzyć go ponownie po stronie klienta.
 
-You need server rendering if you notice that your initial render is too slow or if you want to improve your search engine ranking. While it's true that Google now indexes client-rendered content, as of January 2016 every time it's been measured it's been shown to negatively affect ranking, potentially because of the performance penalty of client-side rendering.
+Potrzebujesz renderowania na serwerze, jeśli zauważysz, że czas na wyświetlenie Twojej strony na początku jest zbyt długi oraz jeśli chcesz poprawić swoją pozycję w wyszukiwarkach. Pomimo tego, że Google potrafi już indeksować HTML wygenerowany przez klienta – w styczniu 2016 zbadano, że to nadal negatywnie wpływa na pozycję strony (prawdopodobnie w związku z gorszą wydajnością stron generowanych po stronie klienta).
 
-Server rendering still requires a lot of tooling to get right. Since it transparently supports React components written without server rendering in mind, you should build your app first and worry about server rendering later. You won't need to rewrite all of your components to support it.
+Renderowanie na serwerze ciągle wymaga wiele narzędzi do poprawnego działania. W związku z tym, że zapewnia ono wsparcie komponentów React napisanych w tradycyjnym stylu, nadal lepiej napisać aplikację w pierwszej kolejności, a dopiero później martwić się o renderowanie na serwerze. Nie będzie potrzeby przepisywać wszystkich komponentów, aby renderować aplikację na serwerze.
 
-## Learning Immutable.js
+## Nauka Immutable.js
 
-[Immutable.js](https://facebook.github.io/immutable-js/) provides a set of data structures that can help to solve certain performance issues when building React apps. It's a great library, and you'll probably use it a lot in your apps moving forward, but it's completely unnecessary until you have an appreciation of the performance implications. 
+[Immutable.js](https://facebook.github.io/immutable-js/) zapewnia zbiór struktur danych, które pomagają w rozwiązaniu pewnych problemów z wydajnością podczas budowania aplikacji w React'cie. To świetna biblioteka i prawdopodobnie będziesz dużo z niej korzystać w swoich aplikacjach w przyszłości – jednak jest kompletnie niepotrzebna dopóki nie zrozumiesz kwestii związanych z wydajnością Twojej aplikacji.
 
-## Learning Relay, Falcor etc
+## Nauka Relay, Falcor itp.
 
-These are technologies that help you reduce the number of AJAX requests. They’re still very cutting-edge, so if you don’t have a problem with too many AJAX requests, you don’t need Relay or Falcor.
+Te narzędzia pomogą ograniczyć ilość zapytań AJAX. Są nadal bardzo świeże, więc jeśli nie masz problemu ze zbyt dużą ilością zapytań, nie potrzebujesz Relay ani Falcor.
