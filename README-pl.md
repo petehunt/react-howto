@@ -1,61 +1,61 @@
 # react-howto
 
-Stawiając pierwsze kroki w React'cie (lub po prostu będąc nowym w temacie front-end'u), bardzo łatwo pogubić się w tym całym ekosystemie. Jest to spowodowane kilkoma rzeczami:
+Stawiając pierwsze kroki w React (lub po prostu będąc nowym w temacie front-end'u), bardzo łatwo pogubić się w tym całym ekosystemie. Jest to spowodowane kilkoma rzeczami:
 
-* Grupą docelową React'a byli entuzjaści technologii i eksperci,
+* Grupą docelową React byli entuzjaści technologii i eksperci,
 * Facebook udostępnia to z czego sam korzysta, nie skupiają się nad stworzeniem uniwersalnego narzędzia dla wszystkich (w tym mniejszych) projektów,
-* W sieci możecie znaleźć pełno mylących artykułów, które tylko z nazwy mają coś wspólnego z przewodnikiem po React'cie.
+* W sieci możecie znaleźć pełno mylących artykułów, które tylko z nazwy mają coś wspólnego z przewodnikiem po React.
 
 Pisząc ten dokument, zakładam że miałeś okazję zbudować stronę opartą o HTML, CSS i JavaScript.
 
 ## Dlaczego powinnieneś posłuchać akurat mnie?
 
-Możecie znaleźć całą masę porad dotyczących React'a, które często się wykluczają; dlaczego więc powinieneś posłuchać akurat mnie?
+Możecie znaleźć całą masę porad dotyczących React, które często się wykluczają; dlaczego więc powinieneś posłuchać akurat mnie?
 
-Byłem jednym z członków zespołu w Facebook'u, który stworzył i opublicznił React'a. Nie pracuję już w Facebook'u, ale zajmuję się teraz małym startup'em, dzięki któremu zdobyłem inną perspektywę.
+Byłem jednym z członków zespołu w Facebook'u, który stworzył i opublicznił React. Nie pracuję już w Facebook'u, ale zajmuję się teraz małym startup'em, dzięki któremu zdobyłem inną perspektywę.
 
 ## Jak zacząć w ekosystemie React?
 
-Każde oprogramowanie jest zbudowane z przeróżnych technologii, więc najpierw pownienieś dobrze zrozumieć z czego właściwie jest zbudowana Twoja aplikacja. Z początku cały React'owy ekosystem przytłacza, ponieważ zawsze jest on tłumaczony w złej kolejności.
+Każde oprogramowanie jest zbudowane z przeróżnych technologii, więc najpierw pownienieś dobrze zrozumieć z czego właściwie jest zbudowana Twoja aplikacja. Z początku cały ekosystem React przytłacza, ponieważ zawsze jest on tłumaczony w złej kolejności.
 
 Poniżej znajdziesz prawidłową kolejność, której powinieneś przestrzegać **bez omijania żadnego punktu czy uczenia się jednocześnie kilku rzeczy na raz**:
 
-* [React](#learning-react-itself)
-* [`npm`](#learning-npm)
-* [JavaScript “bundlers”](#learning-javascript-bundlers)
+* [React](#nauka-samego-react)
+* [`npm`](#nauka-npm)
+* [JavaScript “bundlers”](#nauka-bundlerow-javascript)
 * [ES6](#learning-es6)
 * [Routing](#learning-routing)
 * [Flux](#learning-flux)
 
-**Nie musisz zapoznawać się ze wszystkimi materiałami, żeby zbudować swoje pierwsze aplikacje w React'cie.** Przejdź do kolejnego kroku tylko jeśli napotkasz na problem, który może być rozwiązany jedynie przez inną technologię.
+**Nie musisz zapoznawać się ze wszystkimi materiałami, żeby zbudować swoje pierwsze aplikacje w React.** Przejdź do kolejnego kroku tylko jeśli napotkasz na problem, który może być rozwiązany jedynie przez inną technologię.
 
-Dodatkow często spotkasz się z innymi tematami w społeczności React'owej, które są w trakcie rozwoju i są określane terminem "bleeding edge". Tematy te są oczywiście bardzo interesujące, ale zazwyczaj trudne do zrozumienia, są znacznie mniej popularne niż te wymienione powyżej i **nie są wymagane w większości przypadków**.
+Dodatkow często spotkasz się z innymi tematami w społeczności React, które są w trakcie rozwoju i są określane terminem "bleeding edge". Tematy te są oczywiście bardzo interesujące, ale zazwyczaj trudne do zrozumienia, są znacznie mniej popularne niż te wymienione powyżej i **nie są wymagane w większości przypadków**.
 * [Inline styles](#learning-inline-styles)
 * [Server rendering](#learning-server-rendering)
 * [Immutable.js](#learning-immutablejs)
 * [Relay, Falcor, itd.](#learning-relay-falcor-etc)
 
-## Nauka samego React'a
+## Nauka samego React
 
-Bardzo często spotkasz przekonanie że aby zacząć naukę React'a musisz spędzić sporo czasu, żeby skonfigurować całe środowisko i zainstalować masę narzędzi. W oficjalnej dokumentacji znajdziesz [kod HTML "kopiuj-wklej"](https://facebook.github.io/react/docs/getting-started.html#quick-start-without-npm), który wystarczy zachować jako plik `.html`. **Nie potrzebujesz do tego żadnych narzędzi, więc nie instaluj żadnych dodatkowych rzeczy dopóki nie poczujesz się komfortowo z podstawami React'a.**
+Bardzo często spotkasz przekonanie że aby zacząć naukę React musisz spędzić sporo czasu, żeby skonfigurować całe środowisko i zainstalować masę narzędzi. W oficjalnej dokumentacji znajdziesz [kod HTML "kopiuj-wklej"](https://facebook.github.io/react/docs/getting-started.html#quick-start-without-npm), który wystarczy zachować jako plik `.html`. **Nie potrzebujesz do tego żadnych narzędzi, więc nie instaluj żadnych dodatkowych rzeczy dopóki nie poczujesz się komfortowo z podstawami React.**
 
-Nadal uważam, że najłatwiej nauczyć się React'a z [oficjalnego samouczka](https://facebook.github.io/react/docs/tutorial.html).
+Nadal uważam, że najłatwiej nauczyć się React z [oficjalnego samouczka](https://facebook.github.io/react/docs/tutorial.html).
 
-## Learning `npm`
+## Nauka `npm`
 
-`npm` is the Node.js package manager and is the most popular way front-end engineers and designers share JavaScript code. It includes a module system called `CommonJS` and lets you install command-line tools written in JavaScript. Read [this post](http://0fps.net/2013/01/22/commonjs-why-and-how/) for background on why `CommonJS` is necessary for browsers, or the [CommonJS Spec Wiki](http://wiki.commonjs.org/wiki/Introduction) for more on the `CommonJS` API.
+`npm` jest systemem paczek dla środowiska Node.js za pomocą którego front-end developerzy dzielą się JavaScript'owym kodem. Zawiera on system zwany `CommonJS` i pozwala Ci zainstalować narzędzia napisane w JavaScript za pomocą linii poleceń. Przeczytaj [ten artykuł](http://0fps.net/2013/01/22/commonjs-why-and-how/) aby dowiedzieć się dlaczego `CommonJS` jest potrzebny, lub [CommonJS Wiki](http://wiki.commonjs.org/wiki/Introduction) aby dowiedzieć się więcej o API `CommonJS`.
 
-Most reusable components, libraries and tools in the React ecosystem are available as `CommonJS` modules and are installed with `npm`.
+Komponenty, biblioteki i narzędzia których używa się często w ekosystemie React są zazwyczaj dostępne jako moduły `CommonJS` i instaluje się je za pomocą `npm`.
 
-## Learning JavaScript bundlers
+## Nauka bundler'ów JavaScript
 
-For a number of good technical reasons `CommonJS` modules (i.e. everything in `npm`) cannot be used natively in the browser. You need a JavaScript “bundler” to “bundle” these modules into `.js` files that you can include in your web page with a `<script>` tag.
+Ze względu na techniczne przeszkody, moduły `CommonJS` (czyli wszystko co znajdziesz w `npm`) nie mogą być użyte natywnie w przeglądarce. Potrzebujesz tzw. "bundler'a", aby "związać" ("połączyć") te moduły w pliki `.js`, które możesz dołączyć do swojej strony za pomocą tagu `<script>`.
 
-Examples of JavaScript bundlers include `webpack` and `browserify`. Both are good choices, but I prefer `webpack` since it has a lot of features that make development of large apps easier. Since its documentation can be confusing, I have a [plug-and-play template for getting started](https://github.com/petehunt/react-webpack-template) and I wrote a [how-to guide for webpack](https://github.com/petehunt/webpack-howto) for more complex use cases.
+Przykłady takich bundler'ów dla JavaScript to `webpack` i `browserify`. Każdy z nich to dobry wybór, ale osobiścię wolę `webpack`, ponieważ oferuje znacznie więcej możliwości, które sprawiają że budowa dużych aplikacji jest znacznie łatwiejsza. Ponieważ jego dokumentacja może być myląca, używam [gotowy template](https://github.com/petehunt/react-webpack-template) i napisałem [poradnik dla webpack'a](https://github.com/petehunt/webpack-howto) dla bardziej zaawansowanych przypadków.
 
-React also now offers [an officially supported CLI tool called Create React App](https://github.com/facebookincubator/create-react-app). It lets you create React projects powered by `webpack` without any configuration. It has its limitations, but it can serve as a great starting point, and its updates will add more features over time. It also offers an "ejection" feature that copies all configs and dependencies into your project so you have full control over them.
+React oferuje też [oficjalne narzędzie odpalane w wierszu poleceń, nazwane "Stwórz aplikację React" ("Create React App")](https://github.com/facebookincubator/create-react-app). Pozwala ono na utworzenie projektu w React, przy wsparciu `webpack`'a, bez koniecznej dodatkowej konfiguracji. Narzędzie może Cię trochę ograniczać, ale na pewno warto od niego zacząć, zwłaszcza że przyszłe aktualizacje na pewno rozszerzą zakres jego funkcji. Oferuje również możliwość skopiowania wszystkich plików konfiguracyjnych i zależności w projekcie, więc tak naprawdę nie tracisz nad nimi kontroli.
 
-One thing to keep in mind: `CommonJS` uses the `require()` function to import modules, so a lot of people get confused and think that it has something to do with a project called `require.js`. For a number of technical reasons, I would suggest that you avoid `require.js`. It’s also not very popular in the React ecosystem.
+Jedna rzecz, o której warto pamiętać: `CommonJS` używa funkcji `require()` do importowania modułów, dlatego dużo osób myli go z projektem nazwanym `require.js`. Z kilku technicznych powodów, zalecam unikanie `require.js`. Nie jest on zbyt popularny w ekosystemie React.
 
 ## Learning ES6
 
