@@ -59,7 +59,7 @@ One thing to keep in mind: `CommonJS` uses the `require()` function to import mo
 
 ## Learning ES6
 
-Outside of JSX (which you learned in the React tutorial), you may see some funny syntax in React examples. This is called ES6, and it’s the latest version of JavaScript so you may not have learned it yet. Since it’s so new, it’s not supported in browsers yet, but your bundler can translate it for you with the proper configuration.
+Outside of JSX (which you learned in the React tutorial), you may see some funny syntax in React examples. This is called ES6, and it’s the latest version of JavaScript so you may not have learned it yet. Since it’s so new, [it’s still not 100% supported in all browsers yet](https://kangax.github.io/compat-table/es6/), but your bundler can translate it for you with the proper configuration.
 
 If you just want to get things done with React, **you can skip learning ES6**, or try to pick it up along the way.
 
