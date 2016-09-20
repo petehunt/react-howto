@@ -8,9 +8,9 @@ React (veya genel olarak önyüz tasarımı) ile yeni tanıştıysanız, bu ekos
 
 Bu döküman boyunca,kendimizi sadece HTML,CSS ve Javascript ile web sayfası yapıyormuş gibi kabul edeceğiz. 
 
-## Dediklerimi neden dikkate almalısınız ?
+## Dediklerimi neden dinleyesin ?
 
-Dışarda React ile ilgili birbiriyle çelişen pek çok tavsiye var; işte bu yüzden beni dikkate almalısınız.
+Dışarda React ile ilgili birbiriyle çelişen pek çok tavsiye var; işte bu yüzden beni dinlemelisin.
 
 React'ı yazan ve onu açık kaynak kodlu hale getiren Facebook ekibinin orjinal üyelerinden biriydim.Artık Facebook'ta çalışmıyorum, küçük bir startup'dayım. Bu sayede Facebook dışından da olaya bakan bir bakış açısına sahibim. 
 
@@ -20,12 +20,12 @@ Her yazılım, bir sürü teknolojinin birleşmesiyle oluşmuştur ve sen bu tek
 
 Takip etmen gereken liste şu şekilde olmalı **sırasını atlamadan ve aynı zamanda ikisini birden değil, hepsini teker teker öğrenmelisin.   
 
-* [React](#react-öğrenmek)
-* [`npm`](#learning-npm)
-* [JavaScript “bundlers”](#learning-javascript-bundlers)
-* [ES6](#learning-es6)
-* [Routing](#learning-routing)
-* [Flux](#learning-flux)
+* [React](#react)
+* [`npm`](#npm)
+* [JavaScript “bundlers”](#javascript-bundlers)
+* [ES6](#es6)
+* [Routing](#routing)
+* [Flux](#flux)
 
 **You don't need to learn all of these to be productive with React.** Only move to the next step if you have a problem that needs to be solved.
 
@@ -35,19 +35,19 @@ Additionally, there are a few topics that are often mentioned in the React commu
 * [Immutable.js](#learning-immutablejs)
 * [Relay, Falcor, etc](#learning-relay-falcor-etc)
 
-## React Öğrenmek
+## React
 
 It’s a common misconception that you need to waste a lot of time setting up tooling to start to learn React. In the official documentation you’ll find a [copy-paste HTML template](https://facebook.github.io/react/docs/getting-started.html#quick-start-without-npm) that you can save in an `.html` file and get started right away. **No tooling is required for this step, and don’t start learning extra tooling until you’re comfortable with React basics.**
 
 I still think the easiest way to learn React is [the official tutorial](https://facebook.github.io/react/docs/tutorial.html).
 
-## Learning `npm`
+## `npm`
 
 `npm` is the Node.js package manager and is the most popular way front-end engineers and designers share JavaScript code. It includes a module system called `CommonJS` and lets you install command-line tools written in JavaScript. Read [this post](http://0fps.net/2013/01/22/commonjs-why-and-how/) for background on why `CommonJS` is necessary for browsers, or the [CommonJS Spec Wiki](http://wiki.commonjs.org/wiki/Introduction) for more on the `CommonJS` API.
 
 Most reusable components, libraries and tools in the React ecosystem are available as `CommonJS` modules and are installed with `npm`.
 
-## Learning JavaScript bundlers
+## JavaScript bundlers
 
 For a number of good technical reasons `CommonJS` modules (i.e. everything in `npm`) cannot be used natively in the browser. You need a JavaScript “bundler” to “bundle” these modules into `.js` files that you can include in your web page with a `<script>` tag.
 
@@ -57,7 +57,7 @@ React also now offers [an officially supported CLI tool called Create React App]
 
 One thing to keep in mind: `CommonJS` uses the `require()` function to import modules, so a lot of people get confused and think that it has something to do with a project called `require.js`. For a number of technical reasons, I would suggest that you avoid `require.js`. It’s also not very popular in the React ecosystem.
 
-## Learning ES6
+## ES6
 
 Outside of JSX (which you learned in the React tutorial), you may see some funny syntax in React examples. This is called ES6, and it’s the latest version of JavaScript so you may not have learned it yet. Since it’s so new, it’s not supported in browsers yet, but your bundler can translate it for you with the proper configuration.
 
@@ -65,7 +65,7 @@ If you just want to get things done with React, **you can skip learning ES6**, o
 
 You may see some talk about ES6 classes being the preferred way to create React components. This is untrue. Most people (including Facebook) are using `React.createClass()`.
 
-## Learning routing
+## routing
 
 “Single-page applications” are all the rage these days. These are web pages that load once, and when the user clicks on a link or a button, JavaScript running on the page updates the address bar, but the web page is not refreshed. Management of the address bar is done by something called a **router**.
 
@@ -73,7 +73,7 @@ The most popular router in the React ecosystem is [react-router](https://github.
 
 **Don’t use a router if you aren’t building a single-page application**. Most projects start out as smaller components inside of a larger application anyway.
 
-## Learning Flux
+## Flux
 
 You’ve probably heard of Flux. There’s a *ton* of misinformation about Flux out there.
 
