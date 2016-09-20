@@ -2,25 +2,25 @@
 
 React (veya genel olarak önyüz tasarımı) ile yeni tanıştıysanız, bu ekosistemi kafa karıştırıcı bulabilirsiniz. Bunun bir kaç sebebi var.
 
-* React has historically been targeted at early-adopters and experts
-* Facebook only open-sources what it actually uses, so it doesn’t focus on tooling for smaller-than-Facebook projects
-* There’s a lot of bad marketing masquerading as React guides
+* React ın hedeflediği kitle; uzmanlar ve onunla başından beri ilgilenenler
+* Facebook'un gerçek anlamda kullandığı tek açık kaynaklı proje, bundan dolayı Facebook kendisinden daha küçük projeler için React'ı şekillendirmeye çalışmıyor
+* React uzmanıymış gibi davranan, kötü reklam yapan pek çok insan var.
 
-Throughout this document, I’ll assume you’ve built a web page with HTML, CSS and JavaScript.
+Bu döküman boyunca,kendimizi sadece HTML,CSS ve Javascript ile web sayfası yapıyormuş gibi kabul edeceğiz. 
 
-## Why should you listen to me?
+## Dediklerimi neden dikkate almalısınız ?
 
-There’s a ton of conflicting advice about React out there; why listen to me?
+Dışarda React ile ilgili birbiriyle çelişen pek çok tavsiye var; işte bu yüzden beni dikkate almalısınız.
 
-I was one of the original members of the Facebook team that built and open-sourced React. I’m no longer at Facebook and I’m now at a small startup, so I have a non-Facebook perspective as well.
+React'ı yazan ve onu açık kaynak kodlu hale getiren Facebook ekibinin orjinal üyelerinden biriydim.Artık Facebook'ta çalışmıyorum, küçük bir startup'dayım. Bu sayede Facebook dışından da olaya bakan bir bakış açısına sahibim. 
 
-## How to tackle the React ecosystem
+## React ekosistemiyle nasıl baş ederim ?
 
-All software is built on a stack of technologies, and you need to understand enough of that stack to build your app. The reason why the React ecosystem of tooling seems overwhelming is because it’s always explained in the wrong order.
+Her yazılım, bir sürü teknolojinin birleşmesiyle oluşmuştur ve sen bu teknolojileri uygulamanda kullanmaya yetecek kadar iyi anlamalısın. React sana çok bunaltıcı, aşırı karışık gelmesinin sebebi, bazı şeyleri yanlış sırayla öğrenmiş olman.  
 
-You should learn, in this order, **without skipping ahead or learning concurrently**:
+Takip etmen gereken liste şu şekilde olmalı **sırasını atlamadan ve aynı zamanda ikisini birden değil, hepsini teker teker öğrenmelisin.   
 
-* [React itself](#learning-react-itself)
+* [React](#react-öğrenmek)
 * [`npm`](#learning-npm)
 * [JavaScript “bundlers”](#learning-javascript-bundlers)
 * [ES6](#learning-es6)
@@ -35,7 +35,7 @@ Additionally, there are a few topics that are often mentioned in the React commu
 * [Immutable.js](#learning-immutablejs)
 * [Relay, Falcor, etc](#learning-relay-falcor-etc)
 
-## Learning React itself
+## React Öğrenmek
 
 It’s a common misconception that you need to waste a lot of time setting up tooling to start to learn React. In the official documentation you’ll find a [copy-paste HTML template](https://facebook.github.io/react/docs/getting-started.html#quick-start-without-npm) that you can save in an `.html` file and get started right away. **No tooling is required for this step, and don’t start learning extra tooling until you’re comfortable with React basics.**
 
