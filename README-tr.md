@@ -18,7 +18,7 @@ React'ı yazan ve onu açık kaynak kodlu hale getiren Facebook ekibinin orjinal
 
 Her yazılım, bir sürü teknolojinin birleşmesiyle oluşmuştur ve sen bu teknolojileri uygulamanda kullanmaya yetecek kadar iyi anlamalısın. React sana çok bunaltıcı, aşırı karışık gelmesinin sebebi, bazı şeyleri yanlış sırayla öğrenmiş olman.  
 
-Takip etmen gereken liste şu şekilde olmalı **sırasını atlamadan ve aynı zamanda ikisini birden değil, hepsini teker teker öğrenmelisin.   
+Takip etmen gereken liste şu şekilde olmalı **sırasını atlamadan ve aynı zamanda ikisini birden değil, hepsini teker teker öğrenmelisin.**   
 
 * [React](#react)
 * [`npm`](#npm)
@@ -27,13 +27,15 @@ Takip etmen gereken liste şu şekilde olmalı **sırasını atlamadan ve aynı 
 * [Routing](#routing)
 * [Flux](#flux)
 
-**You don't need to learn all of these to be productive with React.** Only move to the next step if you have a problem that needs to be solved.
 
-Additionally, there are a few topics that are often mentioned in the React community that are "bleeding edge". The topics below are interesting, but they're difficult to understand, are far less popular than the above topics and **aren't required for most apps**.
-* [Inline styles](#learning-inline-styles)
-* [Server rendering](#learning-server-rendering)
-* [Immutable.js](#learning-immutablejs)
-* [Relay, Falcor, etc](#learning-relay-falcor-etc)
+**React ile bir şeyler yapmak için bunların hepsini harfi harfine öğrenmene gerek yok.** Bunların herhangi birinde ayağın taşa takılırsa, durma bir sonrakine geç.
+
+Ek olarak, React camiasının sıklıkla bahsettiği "yeni teknolojiler" var. Anlaması zor olmayan, hayli ilgi çekici bu konular yukarıda ki konulardan daha az popüler ve **çoğu uygulama için gerekli değiller**  
+
+* [Inline styles](#inline-styles)
+* [Server rendering](#server-rendering)
+* [Immutable.js](#immutablejs)
+* [Relay, Falcor, etc](#relay-falcor-etc)
 
 ## React
 
@@ -85,7 +87,7 @@ React components are arranged in a hierarchy. Most of the time, your data model 
 
 If you have decided to use Flux, the most popular and well-documented Flux library is [Redux](http://redux.js.org/). There are *a lot* of alternatives out there, and you’ll be tempted to evaluate lots of them, but my advice is to just stick with the most popular one.
 
-## Learning inline styles
+## Inline styles
 
 Pre-React, a lot of people reused CSS styles with complicated style sheets built by preprocessors like SASS. Since React makes writing reusable components easy, your stylesheets can be less complicated. Many in the community (including myself) are experimenting with getting rid of stylesheets altogether.
 
@@ -95,7 +97,7 @@ Once you've got a feel for how React works, you can look at alternate techniques
 
 Alternatively, you can also use [CSS Modules](http://glenmaddern.com/articles/css-modules), more specifically [react-css-modules](https://github.com/gajus/react-css-modules). With CSS Modules you'll still write CSS (or SASS/LESS/Stylus), but you can manage and compose your CSS files like you'd do with inline styles in React. And you don't need to worry about managing your class names using methodologies like BEM, as this will be handled for you under the hood by the module system.
 
-## Learning server rendering
+## server rendering
 
 Server rendering is often called "universal" or "isomorphic" JS. It means that you can take your React components and render them to static HTML on the server. This improves initial startup performance because the user does not need to wait for JS to download in order to see the initial UI, and React can re-use the server-rendered HTML so it doesn't need to generate it client-side.
 
@@ -103,10 +105,10 @@ You need server rendering if you notice that your initial render is too slow or 
 
 Server rendering still requires a lot of tooling to get right. Since it transparently supports React components written without server rendering in mind, you should build your app first and worry about server rendering later. You won't need to rewrite all of your components to support it.
 
-## Learning Immutable.js
+## Immutable.js
 
 [Immutable.js](https://facebook.github.io/immutable-js/) provides a set of data structures that can help to solve certain performance issues when building React apps. It's a great library, and you'll probably use it a lot in your apps moving forward, but it's completely unnecessary until you have an appreciation of the performance implications. 
 
-## Learning Relay, Falcor etc
+## Relay, Falcor etc
 
 These are technologies that help you reduce the number of AJAX requests. They’re still very cutting-edge, so if you don’t have a problem with too many AJAX requests, you don’t need Relay or Falcor.
