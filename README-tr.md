@@ -51,17 +51,17 @@ React ekosisteminde en çok kullanılan yeniden kullanılabilir(reusable) kompon
 
 ## JavaScript bundlers
 
-Geçerli bir kaç teknik sebepten dolayı, `CommonJS` modüller (yani `npm` deki her şey) web tarayıcısında olduğu gibi kullanılamazlar.Bundan dolayı `<script>` tagi ile web sayfana koyduğun `.js` dosyalarını "bundle" a dönüştürecek bir "bundler" a ihtiyacın var.
+Geçerli bir kaç teknik sebepten dolayı, `CommonJS` modüller (yani `npm` deki her şey) web tarayıcısında olduğu gibi kullanılamazlar. Bundan dolayı `<script>` tagi ile web sayfana koyduğun `.js` dosyalarını "bundle" a dönüştürecek bir "bundler" a ihtiyacın var.
 
-Javascript bundler'lara örnek olarak `webpack` ve `browserify` gösterilebilir. İkisi de gayet iyi bir seçim fakat büyük uygulamaları geliştirmeyi kolaylaştıran pek çok özelliğe sahip olmasından dolayı ben `webpack`'i tercih ediyorum. `Webpack`' in dökümantasyonu kafa karıştırıcı olabiliyor, bunun için taslak olarak kullanabileceğiniz bir paketim var [plug-and-play template for getting started](https://github.com/petehunt/react-webpack-template) ve daha kompleks kullanımlar için de yazmış olduğum [how-to guide for webpack](https://github.com/petehunt/webpack-howto) linkine göz atabilirsiniz.
+Javascript bundler'lara örnek olarak `webpack` ve `browserify` gösterilebilir. İkisi de gayet iyi bir seçim fakat büyük uygulamaları geliştirmeyi kolaylaştıran pek çok özelliğe sahip olmasından dolayı ben `webpack`'i tercih ediyorum. `Webpack`' in dökümantasyonu kafa karıştırıcı olabiliyor, bunun için taslak olarak kullanabileceğiniz bir paketim var [plug-and-play template for getting started](https://github.com/petehunt/react-webpack-template) ve daha kompleks kullanımlar için de yazmış olduğum [how-to guide for webpack](https://github.com/petehunt/webpack-howto/blob/master/README-tr.md) linkine göz atabilirsiniz.
 
 React'ın artık [resmi olarak desteklediği Create React App isminde](https://github.com/facebookincubator/create-react-app) yeni bir önerisi var. Bu size herhangi bir konfigürasyon yapmanıza gerek kalmadan `webpack` ile çalışan React projeler yapmanıza imkân sağlıyor. Evet biraz kısıtlamaları var ama çok iyi bir başlangıç noktasıymış gibi görünüyor ve zaman içinde gelecek olan güncellemelerle daha fazla özelliği olacaktır. Ayrıca `ejection` özelliği sayesinde tüm konfigürasyonu ve dependency'leri projenizin içine alabilir böylece onları istediğiniz gibi değiştirebilirsiniz.
 
-Aklınızdan çıkarmayacağınız bir şey; `CommonJS`, modülleri import etmek için `require()` fonksiyonunu kullanır ve bir çok kafası karımış insan, `require.js` ile ilgili bir şeymiş gibi düşünür. Teknik bir kaç sebepten ötürü `require.js` i kullanmaktan kaçınmanızı öneriyorum. Ayrıca zaten React ekosisteminde çok kullanılan bir şey de değil.
+Aklınızdan çıkarmayacağınız bir şey; `CommonJS`, modülleri import etmek için `require()` fonksiyonunu kullanır ve bir çok kafası karışmış insan, `require.js` ile ilgili bir şeymiş gibi düşünür. Teknik bir kaç sebepten ötürü `require.js` i kullanmaktan kaçınmanızı öneriyorum. Ayrıca zaten React ekosisteminde çok kullanılan bir şey de değil.
 
 ## ES6
 
-React tutoriallarında öğrendiğiniz JSX dışında, React örneklerinde bazı ilginç sentakslara rastlayabilirsiniz. ES6 diye adlandırılan ve belki henüz öğrenmediğiniz Javascriptin en son versiyonu. Çok yeni olmasında dolayı, henüz web tarayıcıları tarafından desteklenmemektedir fakat `bundler` ınız özel konfigürasyonlarla onu sizin için çalışır hale getirebilir.
+React tutoriallarında öğrendiğiniz JSX dışında, React örneklerinde bazı ilginç sentakslara rastlayabilirsiniz. ES6 diye adlandırılan ve belki henüz öğrenmediğiniz Javascriptin en son versiyonu. Çok yeni olmasında dolayı, henüz web tarayıcıları tarafından desteklenmemektedir fakat `bundler`ınız özel konfigürasyonlarla onu sizin için çalışır hale getirebilir.
 
 Eğer siz önce bir React'ı halletmek istiyorsanız, **ES6 öğrenme işini es geçebilirsiniz**, veya ilerleyen zamanlarda halletmeyi deneyebilirsiniz.
 
@@ -73,20 +73,19 @@ Günümüzün trendi “Single-page uygulamalar”. Bu web sayfaları bir kere y
 
 React ekosistemindeki en popüler router, [react-router](https://github.com/rackt/react-router). Single-page uygulama yapıyorsanız, kullanmamak için iyi bir sebebiniz yoksa bunu kullanın.
 
-
-**Don’t use a router if you aren’t building a single-page application**. Most projects start out as smaller components inside of a larger application anyway.
+**Bir single-page uygulama yapmıyorsanız, router kullanmayın**. Zaten projelerin çoğu büyük uygulamaların parçaları olan küçük komponentleri oluşturarak başlar.
 
 ## Flux
 
-You’ve probably heard of Flux. There’s a *ton* of misinformation about Flux out there.
+Muhtemelen Flux'ı duymuşsunuzdur. Flux hakkında *tonlarca* yanlış bilgilendirmeler var.
 
-A lot of people sit down to build an app and want to define their data model, and they think they need to use Flux to do it. **This is the wrong way to adopt Flux. Flux should only be added once many components have already been built.**
+Uygulama yapmak için yola koyulan çoğu insan, veri modellerini tanımlamak isterken, bunun için Flux'a mecbur olduklarını düşünüyorlar. Flux kullanmak için yanlış bir yol. Flux, hali hazırda zaten bir çok komponent yazılmış ise ancak eklenebilir. 
 
-React components are arranged in a hierarchy. Most of the time, your data model also follows a hierarchy. In these situations Flux doesn’t buy you much. Sometimes, however, your data model is not hierarchical. When your React components start to receive `props` that feel extraneous, or you have a small number of components starting to get very complex, then you might want to look into Flux.
+React komponentler bir hiyerarşiye göre düzenlenir. Çoğu zaman, veri modeliniz bu hiyerarşiye göre çalışır. Bu durumlarda Flux'ın size çok fazla faydası olmaz. Bununla birlikte, bazen, veri modeliniz hiyerarşik olmayabilir. React komponentler alakalı alakasız `props`'lar almaya başladıklarında veya senin az sayıda komponentin git gide daha karmaşık hale geiyorsa, evet o zaman Flux'ı projene eklemek isteyebilirsin.  
 
-**You’ll know when you need Flux. If you aren’t sure if you need it, you don’t need it.**
+**Flux'a ihtiyaç duyacağın zamanı anlayacaksın. İhtiyacın olup olmadığını tam kestiremiyorsan, ihtiyacın yoktur.**
 
-If you have decided to use Flux, the most popular and well-documented Flux library is [Redux](http://redux.js.org/). There are *a lot* of alternatives out there, and you’ll be tempted to evaluate lots of them, but my advice is to just stick with the most popular one.
+Flux kullanmaya karar verdiysen, bilmen gereken en popüler ve en iyi dökümantasyona sahip Flux kütüphanesi, [Redux](http://redux.js.org/). Dışarıda *pek çok* alternatif var ve sen bunların çoğunu denemek için can atıyor olacaksın ama benim tavsiyem sadece en çok popüler olanlardan birini seçmen.
 
 ## Inline styles
 
