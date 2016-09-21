@@ -10,7 +10,7 @@ Bu döküman boyunca,kendimizi sadece HTML,CSS ve Javascript ile web sayfası ya
 
 ## Neden beni dinlemelisiniz ?
 
-Dışarıda React ile ilgili birbiriyle çelişen pek çok tavsiye var; işte bu yüzden beni dinlemelisin.
+Dışarıda React ile ilgili birbiriyle çelişen pek çok tavsiye var; işte bu yüzden beni dinlemelisiniz.
 
 React'ı yazan ve onu açık kaynak kodlu hale getiren Facebook ekibinin orjinal üyelerinden biriydim.Artık Facebook'ta çalışmıyorum, küçük bir startup'dayım. Bu sayede Facebook dışından da olaya bakan bir bakış açısına sahibim. 
 
@@ -93,7 +93,7 @@ React öncesi, bir çok insan SASS gibi önişlemcilerle yapılmış tekrar kull
 
 Bir kaç nedenden ötürü bu oldukça çılgın bir fikir. Media query'leri yapmayı zorlaştırıyor ve bu teknikle, muhtemel performans kayıpları da olacak. **React ile çalışmaya başladığımız zaman,sadece style işleri olması gerektiği gibiydi**
 
-React'ın nasıl çalıştığını bir kere kavradığınızda, alternatif tekniklere göz atabilirsiniz. Bu tekniklerden popüler olanlardan biri [BEM](https://en.bem.info/). Benim tavsiyem, CSS önişlemcilerini adım adım kullanımdan kaldırmanız, çünkü React size style'larınızı tekrar kullanılabilir yapmak için daha etkin bir yol vadediyor. (Bunun hakkında [OSCON'da ki konuşmamı](https://www.youtube.com/watch?v=VkTCL6Nqm6Y) izleyebilirsiniz) Bununla beraber, React, diğer Javascript kütüphaneleri gibi, herhangi bir CSS önişlemcisiyle de ile de gayet iyi çalışabiliyor.
+React'ın nasıl çalıştığını bir kere kavradığınızda, alternatif tekniklere göz atabilirsiniz. Bu tekniklerden popüler olanlardan biri [BEM](https://en.bem.info/). Benim tavsiyem, CSS önişlemcilerini adım adım kullanımdan kaldırmanız, çünkü React size style'larınızı tekrar kullanılabilir yapmak için daha etkin bir yol vadediyor. (Bunun hakkında [OSCON'da ki konuşmamı](https://www.youtube.com/watch?v=VkTCL6Nqm6Y) izleyebilirsiniz) Bununla beraber, React, diğer Javascript kütüphaneleri gibi, herhangi bir CSS önişlemcisiyle de gayet iyi çalışabiliyor.
 
 Alternatif olarak, [CSS Modules](http://glenmaddern.com/articles/css-modules) de kullanılabilir, daha özelleştirilmiş hali olarak da [react-css-modules](https://github.com/gajus/react-css-modules) var. CSS Modules ile yine CSS (veya SASS/LESS/Stylus) yazıyor olacaksınız ama React içinde inline style kullanır gibi CSS dosyalarını yönetebilir ve birleştirebilirsiniz. Ve BEM'de ki methodları kullanır gibi class isimlerini nasıl yönetirim endişesini duymanıza gerek yok, moduler sistem tarafından arkaplan da bu giderilecektir.   
 
