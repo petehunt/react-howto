@@ -53,6 +53,8 @@ Per diverse ragioni tecniche i moduli `CommonJS` (i.e. qualunque cosa su `npm`) 
 
 Esempi di JavaScript bundlers sono `webpack` e `browserify`. Entrambi sono buone scelte, ma io preferisco `webpack` in quanto ha molte piu' funzionalita' che rendono lo sviluppo di grandi applicazioni piu' semplice. Visto che la documentazione puo' risultare di complicata, Ho un  [plug-and-play template per iniziare](https://github.com/petehunt/react-webpack-template) ed ho scrito una  [guida how-to per webpack](https://github.com/petehunt/webpack-howto) per casi piu' complessi.
 
+React offre anche  [un CLI tool ufficiale, chiamato  Create React App](https://github.com/facebookincubator/create-react-app). Ti permette di creare un progetto react basato su  `webpack` senza scrivere nessuna configurazione. Ha delle limitaziona, ma e' un ottimo punto di inizio, ed i suoi aggiornamenti aggiungeranno, nel tempo, sempre piu' funzionalita'. E' presente anche la funzionalita' "ejection" con cui tutte le dipendenze e le configurazioni vengono copiate all'interno del tuo progetto, dandoti il pieno controllo su di esse.
+
 Una cosa da tenere a mente: `CommonJS` usa la funzione `require()` per importare moduli, per questo molta gente si confonde e pensa che abbia qualcosa a che fare con un progetto chiamato  `require.js`. Per diverse ragioni tecniche, ti suggerirei di evitare `require.js`. Inoltre non e' molto popolare all'interno dell'ecosistema React.
 
 
