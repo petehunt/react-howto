@@ -39,39 +39,40 @@ Ek olarak, React camiasının sıklıkla bahsettiği "yeni teknolojiler" var. An
 
 ## React
 
-It’s a common misconception that you need to waste a lot of time setting up tooling to start to learn React. In the official documentation you’ll find a [copy-paste HTML template](https://facebook.github.io/react/docs/getting-started.html#quick-start-without-npm) that you can save in an `.html` file and get started right away. **No tooling is required for this step, and don’t start learning extra tooling until you’re comfortable with React basics.**
+React'ı öğrenmeye başlarken zamanının çoğunu "tool" ları kurmaya harcaman lazımmış gibi genel bir yanlış kanı var. Resmi dökümanda `.html` uzantılı kaydedebileceğin ve hemen öğrenmeye başlayabileceğin, bir [kopyala-yapıştır HTML taslak](https://facebook.github.io/react/docs/getting-started.html#quick-start-without-npm) göreceksin. **Bu adımda herhangi bir "tool" a gerek yok ve React'ın temellerini tam anlamıyla kavrayana kadar ekstra bir "tool" u öğrenmeye başlamamalısın.**
 
-I still think the easiest way to learn React is [the official tutorial](https://facebook.github.io/react/docs/tutorial.html).
+React'ı öğrenmek için halâ en kolay yolun [resmi dökümanındaki bu örnek](https://facebook.github.io/react/docs/tutorial.html) olduğunu düşünüyorum.
 
 ## `npm`
 
-`npm` is the Node.js package manager and is the most popular way front-end engineers and designers share JavaScript code. It includes a module system called `CommonJS` and lets you install command-line tools written in JavaScript. Read [this post](http://0fps.net/2013/01/22/commonjs-why-and-how/) for background on why `CommonJS` is necessary for browsers, or the [CommonJS Spec Wiki](http://wiki.commonjs.org/wiki/Introduction) for more on the `CommonJS` API.
+`npm`, ön-yüz geliştiricilerin ve tasarımcıların Javascript kodlarını paylaşmak için en çok kullandıkları, Node.js paket yöneticisidir. npm `CommonJS` denilen bir modüler sisteme sahip olmasından ötürü, Javascript ile yazılmış "tool" ları komut satırıyla indirebilirsin. `CommonJS` in web tarayıcılar için neden gerekli olduğunu öğrenmek için [bu linki](http://0fps.net/2013/01/22/commonjs-why-and-how/) okumalısın veya `CommonJS` API hakkında daha fazla bilgi için [CommonJS Spec Wiki](http://wiki.commonjs.org/wiki/Introduction) ye bakabilirsin.
 
-Most reusable components, libraries and tools in the React ecosystem are available as `CommonJS` modules and are installed with `npm`.
+React ekosisteminde en çok kullanılan yeniden kullanılabilir(reusable) komponentleri, kütüphaneleri, ve "tool" ları `CommonJS` modülü olarak erişip, `npm` ile indirebilirsin.
 
 ## JavaScript bundlers
 
-For a number of good technical reasons `CommonJS` modules (i.e. everything in `npm`) cannot be used natively in the browser. You need a JavaScript “bundler” to “bundle” these modules into `.js` files that you can include in your web page with a `<script>` tag.
+Geçerli bir kaç teknik sebepten dolayı, `CommonJS` modüller (yani `npm` deki her şey) web tarayıcısında olduğu gibi kullanılamazlar.Bundan dolayı `<script>` tagi ile web sayfana koyduğun `.js` dosyalarını "bundle" a dönüştürecek bir "bundler" a ihtiyacın var.
 
-Examples of JavaScript bundlers include `webpack` and `browserify`. Both are good choices, but I prefer `webpack` since it has a lot of features that make development of large apps easier. Since its documentation can be confusing, I have a [plug-and-play template for getting started](https://github.com/petehunt/react-webpack-template) and I wrote a [how-to guide for webpack](https://github.com/petehunt/webpack-howto) for more complex use cases.
+Javascript bundler'lara örnek olarak `webpack` ve `browserify` gösterilebilir. İkisi de gayet iyi bir seçim fakat büyük uygulamaları geliştirmeyi kolaylaştıran pek çok özelliğe sahip olmasından dolayı ben `webpack`'i tercih ediyorum. `Webpack`' in dökümantasyonu kafa karıştırıcı olabiliyor, bunun için taslak olarak kullanabileceğiniz bir paketim var [plug-and-play template for getting started](https://github.com/petehunt/react-webpack-template) ve daha kompleks kullanımlar için de yazmış olduğum [how-to guide for webpack](https://github.com/petehunt/webpack-howto) linkine göz atabilirsiniz.
 
-React also now offers [an officially supported CLI tool called Create React App](https://github.com/facebookincubator/create-react-app). It lets you create React projects powered by `webpack` without any configuration. It has its limitations, but it can serve as a great starting point, and its updates will add more features over time. It also offers an "ejection" feature that copies all configs and dependencies into your project so you have full control over them.
+React'ın artık [resmi olarak desteklediği Create React App isminde](https://github.com/facebookincubator/create-react-app) yeni bir önerisi var. Bu size herhangi bir konfigürasyon yapmanıza gerek kalmadan `webpack` ile çalışan React projeler yapmanıza imkân sağlıyor. Evet biraz kısıtlamaları var ama çok iyi bir başlangıç noktasıymış gibi görünüyor ve zaman içinde gelecek olan güncellemelerle daha fazla özelliği olacaktır. Ayrıca `ejection` özelliği sayesinde tüm konfigürasyonu ve dependency'leri projenizin içine alabilir böylece onları istediğiniz gibi değiştirebilirsiniz.
 
-One thing to keep in mind: `CommonJS` uses the `require()` function to import modules, so a lot of people get confused and think that it has something to do with a project called `require.js`. For a number of technical reasons, I would suggest that you avoid `require.js`. It’s also not very popular in the React ecosystem.
+Aklınızdan çıkarmayacağınız bir şey; `CommonJS`, modülleri import etmek için `require()` fonksiyonunu kullanır ve bir çok kafası karımış insan, `require.js` ile ilgili bir şeymiş gibi düşünür. Teknik bir kaç sebepten ötürü `require.js` i kullanmaktan kaçınmanızı öneriyorum. Ayrıca zaten React ekosisteminde çok kullanılan bir şey de değil.
 
 ## ES6
 
-Outside of JSX (which you learned in the React tutorial), you may see some funny syntax in React examples. This is called ES6, and it’s the latest version of JavaScript so you may not have learned it yet. Since it’s so new, it’s not supported in browsers yet, but your bundler can translate it for you with the proper configuration.
+React tutoriallarında öğrendiğiniz JSX dışında, React örneklerinde bazı ilginç sentakslara rastlayabilirsiniz. ES6 diye adlandırılan ve belki henüz öğrenmediğiniz Javascriptin en son versiyonu. Çok yeni olmasında dolayı, henüz web tarayıcıları tarafından desteklenmemektedir fakat `bundler` ınız özel konfigürasyonlarla onu sizin için çalışır hale getirebilir.
 
-If you just want to get things done with React, **you can skip learning ES6**, or try to pick it up along the way.
+Eğer siz önce bir React'ı halletmek istiyorsanız, **ES6 öğrenme işini es geçebilirsiniz**, veya ilerleyen zamanlarda halletmeyi deneyebilirsiniz.
 
-You may see some talk about ES6 classes being the preferred way to create React components. This is untrue. Most people (including Facebook) are using `React.createClass()`.
+React komponentler geliştirmek için önerilen yolun ES6 sınıfları yaratmak olduğuyla ilgili bazı konuşmalara rastlayabilirsiniz ki bu doğru değil. Çoğu insan (Facebook'dakiler dahil) `React.createClass()` kullanıyorlar.
 
 ## routing
 
-“Single-page applications” are all the rage these days. These are web pages that load once, and when the user clicks on a link or a button, JavaScript running on the page updates the address bar, but the web page is not refreshed. Management of the address bar is done by something called a **router**.
+Günümüzün trendi “Single-page uygulamalar”. Bu web sayfaları bir kere yükleniyorlar ve kullanıcı bir linke ve butona tıkladığı anda, sayfadaki Javascript çalışıyor ve adres çubuğunu güncelliyor ama web sayfası yenilenmiyor. Adres çubuğunun yönetimi **router** dediğimiz bir şeyle yapılıyor.
 
-The most popular router in the React ecosystem is [react-router](https://github.com/rackt/react-router). If you’re building a single-page application, use it unless you have a good reason not to.
+React ekosistemindeki en popüler router, [react-router](https://github.com/rackt/react-router). Single-page uygulama yapıyorsanız, kullanmamak için iyi bir sebebiniz yoksa bunu kullanın.
+
 
 **Don’t use a router if you aren’t building a single-page application**. Most projects start out as smaller components inside of a larger application anyway.
 
