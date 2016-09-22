@@ -23,17 +23,17 @@ Poniżej znajdziesz prawidłową kolejność, której powinieneś przestrzegać 
 * [React](#nauka-samego-react)
 * [`npm`](#nauka-npm)
 * [JavaScript “bundlers”](#nauka-bundlerow-javascript)
-* [ES6](#learning-es6)
-* [Routing](#learning-routing)
-* [Flux](#learning-flux)
+* [ES6](#nauka-es6)
+* [Routing](#nauka-routing)
+* [Flux](#nauka-flux)
 
 **Nie musisz zapoznawać się ze wszystkimi materiałami, żeby zbudować swoje pierwsze aplikacje w React.** Przejdź do kolejnego kroku tylko jeśli napotkasz na problem, który może być rozwiązany jedynie przez inną technologię.
 
 Dodatkow często spotkasz się z innymi tematami w społeczności React, które są w trakcie rozwoju i są określane terminem "bleeding edge". Tematy te są oczywiście bardzo interesujące, ale zazwyczaj trudne do zrozumienia, są znacznie mniej popularne niż te wymienione powyżej i **nie są wymagane w większości przypadków**.
-* [Inline styles](#learning-inline-styles)
-* [Server rendering](#learning-server-rendering)
+* [Style Inline](#nauka-stylow-inline)
+* [Renderowanie po stronie serwera](#nauka-renderowania-po-stronie-serwera)
 * [Immutable.js](#learning-immutablejs)
-* [Relay, Falcor, itd.](#learning-relay-falcor-etc)
+* [Relay, Falcor, itd.](#nauka-relay-falcor-itp)
 
 ## Nauka samego React
 
@@ -57,43 +57,43 @@ React oferuje też [oficjalne narzędzie odpalane w wierszu poleceń, nazwane "S
 
 Jedna rzecz, o której warto pamiętać: `CommonJS` używa funkcji `require()` do importowania modułów, dlatego dużo osób myli go z projektem nazwanym `require.js`. Z kilku technicznych powodów, zalecam unikanie `require.js`. Nie jest on zbyt popularny w ekosystemie React.
 
-## Learning ES6
+## Nauka ES6
 
-Outside of JSX (which you learned in the React tutorial), you may see some funny syntax in React examples. This is called ES6, and it’s the latest version of JavaScript so you may not have learned it yet. Since it’s so new, it’s not supported in browsers yet, but your bundler can translate it for you with the proper configuration.
+W przykładach kodu napisanego w React, oprócz na JSX, zwróciłeś pewnie uwagę na niektóre nietypowe składnie. Jest to najnowsza wersja JavaScript, o której mogłeś jeszcze nie usłyszeć, zwana ES6. Ponieważ jest to relatywnie nowa technologia, nie jest wspierana przez przeglądarki, ale wspomniane wcześniej bundlery pomogą nam w przetłumaczeniu tego kodu na wcześniejsze standardy JavaScript, dobrze wspierane przez przeglądarki.
 
-If you just want to get things done with React, **you can skip learning ES6**, or try to pick it up along the way.
+Jeśli chcesz się skupić na razie wyłącznie na React, **możesz pominąć naukę ES6**, lub spróbować jej w trakcie, w każdym momencie nauki.
 
-You may see some talk about ES6 classes being the preferred way to create React components. This is untrue. Most people (including Facebook) are using `React.createClass()`.
+Prawdopodobnie spotkałeś się już z kilkoma wpisami w Internecie, które przekonują do używania klas ES6, jako zalecanej metody tworzenia komponentów w React. To nieprawda. Większość (wliczając również Facebook) używa `React.createClass()`.
 
-## Learning routing
+## Nauka routingu
 
-“Single-page applications” are all the rage these days. These are web pages that load once, and when the user clicks on a link or a button, JavaScript running on the page updates the address bar, but the web page is not refreshed. Management of the address bar is done by something called a **router**.
+Aplikacje webowe zwane "Single-page applications" są obecnie bardzo modne. To takie aplikacje, które ładują się tylko raz, a gdy użytkownik kliknie link lub przycisk, JavaScript aktualizuje pasek adresu, ale strona nie jest odświeżana. Zarządzanie paskiem adresu realizowane jest właśnie przez **router**.
 
-The most popular router in the React ecosystem is [react-router](https://github.com/rackt/react-router). If you’re building a single-page application, use it unless you have a good reason not to.
+Najpopularniejszym routerem używanym w ekosystemie React jest [react-router](https://github.com/rackt/react-router). Jeśli zamierzasz zbudować "single-page application", użyj go, chyba że masz naprawdę dobry powód żeby wybrać inne rozwiązanie.
 
-**Don’t use a router if you aren’t building a single-page application**. Most projects start out as smaller components inside of a larger application anyway.
+**Nie używaj routera, jeśli nie zamierzasz zbudować single-page application**. Większość projektów zaczyna jako mniejsze komponenty, które użyte są w większych aplikacjach.
 
-## Learning Flux
+## Nauka Flux
 
-You’ve probably heard of Flux. There’s a *ton* of misinformation about Flux out there.
+Na pewno słyszałeś już o Flux. Niestety *cała masa* informacji o Flux, którą możesz przeczytać w Internecie, jest mylna.
 
-A lot of people sit down to build an app and want to define their data model, and they think they need to use Flux to do it. **This is the wrong way to adopt Flux. Flux should only be added once many components have already been built.**
+Większość ludzi, gdy tylko zaczyna tworzyć aplikację i chcą zdefiniować model danych, są przekonani że muszą użyć do tego Flux. **To nieprawidłowy sposób użycia Flux. Flux powinien być dodany dopiero gdy w projekcie stworzysz już wiele komponentów.**
 
-React components are arranged in a hierarchy. Most of the time, your data model also follows a hierarchy. In these situations Flux doesn’t buy you much. Sometimes, however, your data model is not hierarchical. When your React components start to receive `props` that feel extraneous, or you have a small number of components starting to get very complex, then you might want to look into Flux.
+Komponenty React są ułożone hierachicznie. W większości przypadków, Twój model danych też przestrzega jakiejś hierarchii. W takich przypadkach, Flux nie jest potrzebny. Czasami jednak Twój model danych nie przestrzega specyficznej hierarchii. Jeśli Twoje komponenty React otrzymują parametry (`props`), które wydają się być z nim niezwiązane, lub masz małą ilość komponentów które zaczynają być coraz bardziej skomplikowane, wtedy pewnie powinieneś zacząć używać Flux.
 
-**You’ll know when you need Flux. If you aren’t sure if you need it, you don’t need it.**
+**Sam będziesz dobrze wiedział kiedy potrzebujesz użyć Flux. Jeśli nie jesteś pewien, najprawdopodobniej go wcale nie potrzebujesz.**
 
-If you have decided to use Flux, the most popular and well-documented Flux library is [Redux](http://redux.js.org/). There are *a lot* of alternatives out there, and you’ll be tempted to evaluate lots of them, but my advice is to just stick with the most popular one.
+Jeśli podjąłeś już decyzję użycia Flux, najpopularniejszą i świetnie udokumentowaną implementacją Flux jest [Redux](http://redux.js.org/). Jest *pełno* alternatyw, będziesz koniecznie chciał wypróbować wiele z nich, ale zalecam Ci skorzystanie z tej najbardziej popularnej biblioteki.
 
-## Learning inline styles
+## Nauka stylów inline
 
-Pre-React, a lot of people reused CSS styles with complicated style sheets built by preprocessors like SASS. Since React makes writing reusable components easy, your stylesheets can be less complicated. Many in the community (including myself) are experimenting with getting rid of stylesheets altogether.
+Przed erą React, dużo ludzi korzystało ze stylów CSS, budując skomplikowane arkusze stylów, budowane przez preprocesory jak SASS. Odkąd React sprawia, że pisanie komponentów wielokrotnego użytku stało się proste, Twoje arkusze stylów mogą być znacznie mniej skomplikowane. Dużo osób w społeczności React (wliczając również mnie) eksperymentuje, aby w ogóle zrezygnować z używania arkuszy stylów.
 
-This is a fairly crazy idea for a number of reasons. It makes media queries more difficult, and it's possible that there are  performance limitations using this technique. **When starting out with React, just style things the way you normally would.**
+Jest to dość szalony pomysł z kilku powodów. Sprawia, że media queries stają się trudniejsze w użyciu, oraz możliwe że są pewne limity wydajnościowe gdy używamy tej metody. **Jeśli dopiero zaczynasz z React, używaj stylów tak jak byś to robił w innych przypadkach.**
 
-Once you've got a feel for how React works, you can look at alternate techniques. One popular one is [BEM](https://en.bem.info/). I recommend phasing out your CSS preprocessor, since React gives you a more powerful way to reuse styles (by reusing components) and your JavaScript bundler can generate more efficient stylesheets for you (I gave [a talk about this at OSCON](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). With that said, React, like any other JavaScript library, will work just fine with a CSS preprocessor.
+Kiedy poczujesz się już pewnie w React, możesz wypróbować innych, alternatywnych technik. Jednym z popularnych jest [BEM](https://en.bem.info/). Polecam Ci zaprzestanie używania preprocesorów CSS, ponieważ React oferuje znacznie bardziej skuteczny sposób ponownego użycia stylów (poprzez ponowne użycie komponentów) a Twój bundler JavaScript potrafi wygenerować znacznie bardziej wydajne arkusze stylów (Mówiłem o tym na [OSCON](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). React, tak jak inne biblioteki JavaScript, będzi działał dobrze z preprocesorem CSS.
 
-Alternatively, you can also use [CSS Modules](http://glenmaddern.com/articles/css-modules), more specifically [react-css-modules](https://github.com/gajus/react-css-modules). With CSS Modules you'll still write CSS (or SASS/LESS/Stylus), but you can manage and compose your CSS files like you'd do with inline styles in React. And you don't need to worry about managing your class names using methodologies like BEM, as this will be handled for you under the hood by the module system.
+Alternatywnie, możesz też użyć tzw. ["CSS Modules"](http://glenmaddern.com/articles/css-modules), a dokładniej mówiąc [react-css-modules](https://github.com/gajus/react-css-modules). Nadal będziesz używał CSS (lub SASS/LESS/Stylus) pisząc w "CSS Modules", ale możesz zorganizować i komponować swoje pliki CSS w ten sam sposób jak byś to robił ze stylami inline. Wtedy nie musisz się też przejmować używaniem właściwych nazw klasy korzystając z metodologi BEMA, ponieważ będą one zarządzane poprzez moduły.
 
 ## Nauka renderowania po stronie serwera
 
