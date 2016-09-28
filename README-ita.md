@@ -110,7 +110,7 @@ Il server rendering richiede ancora molta configurazione per funzionare corretta
 ## Imparare Immutable.js
 
 [Immutable.js](https://facebook.github.io/immutable-js/) fornisce un insieme di strutture dati che ti aiutano a risolvere certi problemi di prestazioni mentre sviluppi applicazioni React.
-E' una grande libraria, e probablimente la userai molto andando avanti nelle tue apps, ma e' completamente non necessaria finche' non avrai problemi di performance.
+E' una grande libreria, e probablimente la userai molto andando avanti nelle tue apps, ma e' completamente non necessaria finche' non avrai problemi di performance.
 
 ## Imparare Relay, Falcor etc
 
