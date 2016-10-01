@@ -59,7 +59,7 @@ Una cosa a tener en cuenta: `CommonJS` utiliza la función `require()` para impo
 
 Aparte de JSX (el cual has aprendido en el tutorial de React), Es posible que aparezca alguna sintaxis "divertida" en ejemplos de React. Esto se llama ES6, y es la última versión de JavaScript así que seguramente no lo hayas aprendido aún. Al ser tan nuevo, no está soportado en los navegadores aún, pero tu bundler puede traducirlo por ti con la configuración adecuada.
 
-Si lo que desea es hacer las cosas con React, **puedes omitir el aprendizaje ES6**, o tratar de aprenderlo en el camino.
+Si lo que desea es hacer las cosas con React, **puedes omitir el aprendizaje de ES6**, o tratar de aprenderlo en el camino.
 
 ## Aprendiendo enrutamiento
 
@@ -75,7 +75,7 @@ Probablemente habrás oído hablar de Flux. Hay un *montón* de información err
 
 Muchas personas se sientan a construir una aplicación y quiere definir su modelo de datos, y piensan que necesitan Flux para hacerlo. **Esta es la manera incorrecta de adoptar Flux. Flux debería ser añadido sólo una vez que se han hecho ya algunos componentes.**
 
-Los componentes de React están organizado en una jerarquía. La mayoría de las veces, tu modelo de datos también sigue una jerarquía. Es estas situaciones Flux no te aporta demasiado. A veces, sin embargo, tu modelo de datos no es jerárquico. Cuando tus componentes de React empiezan a recibir `props` que parecen extrañas,  o tienes un pequeño número de componentes que empiezan a ser muy complejos, entonces puede que quieras considerar usar Flux.
+Los componentes de React están organizados en una jerarquía. La mayoría de las veces, tu modelo de datos también sigue una jerarquía. Es estas situaciones Flux no te aporta demasiado. A veces, sin embargo, tu modelo de datos no es jerárquico. Cuando tus componentes de React empiezan a recibir `props` que parecen extrañas, o tienes un pequeño número de componentes que empiezan a ser muy complejos, entonces puede que quieras considerar usar Flux.
 
 **Sabrás cuando necesitas Flux. Si no estás seguro de si lo necesitas, es que no lo necesitas.**
 
@@ -83,9 +83,9 @@ Si has decidido usar Flux, la librería más popular y bien documentada es [Redu
 
 ## Aprendiendo estilos Inline
 
-Antes de React, mucha gente reutilizaba hojas de estilos CSS con complicados estilos construidos con preprocesadores como SASS. React hace que escribir componentes reutilizables sea sencillo, tus hojas de estilo pueden ser menos complicadas. Muchos usuarios de la comunidad (incluido yo) están pensando deshacerse del todo de las hojas de estilo.
+Antes de React, mucha gente reutilizaba hojas de estilos CSS con complicados estilos construidos con preprocesadores como SASS. React hace que escribir componentes reutilizables sea sencillo, por lo que tus hojas de estilo pueden ser menos complicadas. Muchos usuarios de la comunidad (incluido yo) están pensando deshacerse del todo de las hojas de estilo.
 
-Puede parecer una idea bastante loca pero hay muchas razones. Hace las media queries más complicadas, y es posible que existan limitaciones en cuanto a rendimiento usando esta técnica. **Cuando empieces con React, sólo pone el estilo a las cosas de la forma que normalmente lo harías.**
+Puede parecer una idea bastante loca pero hay muchas razones. Hace las media queries más complicadas, y es posible que existan limitaciones en cuanto a rendimiento usando esta técnica. **Cuando empieces con React, sólo pon estilo a las cosas de la forma en la que lo harías normalmente.**
 
 Una vez entiendes cómo funciona React, puedes considerar técnicas alternativas. Una de las más populares es [BEM](https://en.bem.info/). Te recomiendo reducir gradualmente tus pre-procesadores CSS, ya que React te ofrece una manera más potente de reutilizar los estilos (reutilizacion de componentes) y tu bundler de JavaScript puede generar hojas de estilos más eficientes para ti (Yo di [una charla sobre esto en  OSCON](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). Dicho esto, React, como cualquier otra librería de JavaScript, funcionará bien con un preprocesador CSS.
 
