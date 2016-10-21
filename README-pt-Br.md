@@ -45,24 +45,24 @@ Eu ainda acho que a forma mais fácil para aprender React é o [tutorial oficial
 
 ## Aprendendo `npm`
 
-`npm` é o gerenciador de pacote Node.js(**N**ode.js **P**ackage **M**anager) e é a forma mais popular que engenheiros, designers e desenvolvedores front-end compartilhar código JavaScript. Isso inclui um sistema modular chamado `CommonJS` e permite você instalar ferramentas na linha de comando escritas em JavaScript. Leia [esse post](http://0fps.net/2013/01/22/commonjs-why-and-how/) para entender por que `CommonJS` é necessário para navegadores (browsers), ou o [CommonJS Spec Wiki](http://wiki.commonjs.org/wiki/Introduction) para mais informações da API do `CommonJS`.
+`npm` é o gerenciador de pacote Node.js(**N**ode.js **P**ackage **M**anager) e é a forma mais popular que engenheiros, designers e desenvolvedores front-end usam para compartilhar código JavaScript. Isso inclui um sistema modular chamado `CommonJS` e permite você instalar ferramentas escritas em JavaScript pela linha de comando. Leia [esse post](http://0fps.net/2013/01/22/commonjs-why-and-how/) para entender porque `CommonJS` é necessário para navegadores (browsers), ou o [CommonJS Spec Wiki](http://wiki.commonjs.org/wiki/Introduction) para mais informações da API do `CommonJS`.
 
-A Maioria dos componentes reutilizáveis, bibliotecas e ferramentas do ecossistema do React estão dispiníveis como módulos `CommonJS` e são instalados com `npm`.
+A Maioria dos componentes reutilizáveis, bibliotecas e ferramentas do ecossistema do React estão disponíveis como módulos `CommonJS` e são instalados com `npm`.
 
 ## Aprendendo JavaScript bundlers (empacotadores)
 
 Para um bom número de boas razões técnicas, módulos `CommonJS` (ex: tudo no `npm`) não pode ser usado nativamente no browser. Você precisa de um "empacotador" JavaScript para "empacotar" esses módulos dentro de arquivos `.js` que você pode incluir na sua página web com a tag `<script>`
 
-Exemplos de empacotadores JavaScript são `webpack` e `browserify`. Ambos são boas escolhas, mas eu prefiro `webpack` pois possue funcionalidades que fazem o desenvolvimento muito mais fácil. Mesmo a documentação sendo confusa, eu tenho um [plug-and-play template para começar](https://github.com/petehunt/react-webpack-template) e eu escrevi um guia webpack [como-fazer](https://github.com/petehunt/webpack-howto) para casos mais complexos.
+Exemplos de empacotadores JavaScript são `webpack` e `browserify`. Ambos são boas escolhas, mas eu prefiro `webpack`, pois possue funcionalidades que fazem o desenvolvimento muito mais fácil. Mesmo a documentação sendo confusa, eu tenho um [plug-and-play template para começar](https://github.com/petehunt/react-webpack-template) e eu escrevi um guia webpack [como-fazer](https://github.com/petehunt/webpack-howto) para casos mais complexos.
 
-Uma coisa para manter em mente: `CommonJS`usa a função `require()` para importar módulos, então muitas pessoas ficam confusas e pensam que tem algo haver com o projeto chamado `require.js`. Para um bom número de razões tecnicas, eu gostaria de sugerir que você evitasse `require.js`. Ele também não é muito popular no ecossistema do React.
+Uma coisa para manter em mente: `CommonJS`usa a função `require()` para importar módulos, então muitas pessoas ficam confusas e pensam que tem algo haver com o projeto chamado `require.js`. Por um bom número de razões técnicas, eu gostaria de sugerir que você evitasse `require.js`. Ele também não é muito popular no ecossistema do React.
 
 
 ## Aprendendo ES6
 
 Além do JSX (o qual você aprendeu no tutorial do React), você pode achar alguns exemplos engraçados no React. Isso é conhecido como ES6, que é a última versão do JavaScript que talvez você ainda não tenha aprendido. Já que é tão novo, não é suportado nos browsers ainda, mas o seu empacotador (bundler) pode traduzir pra você com a configuração adequada.
 
-Se você quer apenas fazer as coisas acontecerem no React, **você pode pular o aprendizado de ES6**, ou tentar entender no caminho.
+Se você quer apenas fazer as coisas acontecerem no React ou tentar entender o caminho, **você pode pular o aprendizado de ES6**.
 
 Talvez você tenha ouvido que classes ES6 são preferidas para criar componentes React. Isso não é verdade. A maioria das pessoas (incluindo o Facebook) estão usando `React.createClass()`.
 
@@ -78,23 +78,23 @@ O roteador mais popular no ecosistema do React é [react-router](https://github.
 
 Você provavelmente já ouviu falar sobre "head" do Flux. Tem uma *tonelada* de mal entendidos sobre Flux por aí.
 
-Muita gente começa a construir um app e gostaria de definir seu próprio modelo de dados, e pensam que precisam usar Flux para fazer isso. **Assim é uma forma errada de adotar o Flux. O Flux só deveria ser adicionado quando muitos componentes já foram cosntruídos.**
+Muita gente começa a construir um app e gostaria de definir seu próprio modelo de dados e pensam que precisam usar Flux para fazer isso. **Assim é uma forma errada de adotar o Flux. O Flux só deveria ser adicionado quando muitos componentes já foram cosntruídos.**
 
 Os componentes React são arranjados em hierarquia. A maioria das vezes, seu modelo de dados também segue uma hierarquia. Nessa situação o Flux te adiciona muita coisa. As vezes não há hierarquia no seu modelo de dados. Quando seus componentes React começam a receber `props` (propriedades) que parecem estranhas, ou você possue um pequeno número de componentes começando a ficar muito complexo, talvez você queira dar uma olhada no Flux.
 
 **Você saberá quando precisará do Flux. Se você não está certo se precisa disso, você realmente não precisa disso.**
 
-Se você decidiu usar Flux, a biblioteca mais popular e melhor documentada é [Redux](http://redux.js.org/). Há *muitas* outras alternativas por aí, e você ficará tentado a avalizar a maioria deles, mas meu conselho é para você ficar apenas no mais popular.
+Se você decidiu usar Flux, a biblioteca mais popular e melhor documentada é [Redux](http://redux.js.org/). Há *muitas* outras alternativas por aí e você ficará tentado a avalizar a maioria delas, mas meu conselho é para você ficar apenas no mais popular.
 
 ## Aprendendo inline styles 
 
-Antes do React, muita gente reutiliza estilos de CSS com complicados processadores de style sheets (folhas de estilo) como SASS. Como React faz escritas de componentes reutilizáveis facilmente, sua folha de estilo pode ser menos complicada. A maioria da comunidade (me incluindo) estão esperimentando se livrar de folhas de estilos altogether (tudo em uma só).
+Antes do React, muita gente reutiliza estilos de CSS com complicados processadores de style sheets (folhas de estilo) como SASS. Como React faz escritas de componentes reutilizáveis facilmente, sua folha de estilo pode ser menos complicada. A maioria da comunidade (me incluindo) estão experimentando se livrar de folhas de estilos _altogether_ (tudo em uma só).
 
-Essa é uma idéia bastante louca por bom número de razões. Faz com que media queries fiquem mais difíceis, e é possível que tenha uma limitação ao usar essa técnica. **Quando começando com React, apenas coloque estilho nas coisas como você geralmente faria.**
+Essa é uma idéia bastante louca por bom número de razões. Faz com que media queries fiquem mais difíceis, e é possível que tenha uma limitação ao usar essa técnica. **Quando começando com React, apenas coloque estilo nas coisas como você geralmente faria.**
 
-Uma vez que você já tem idéia de como React funciona, você pode olhar por técnicas alternativas. Uma bem popular é  [BEM](https://en.bem.info/). Eu recomendo você descartar seu pré-processador de CSS, já que React disponibiliza uma forma mais poderosa de reusar styles (reutilizando componentes), e o seu empacotador JavaScript pode gerar folhas de estilo mais eficientes pra você (Eu te dou [um exemplo sobre isso no OSCON](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). Dito isso, React, como toda biblioteca JavaScript, funcionará bem com um pré-processador CSS.
+Uma vez que você já tem idéia de como React funciona, você pode olhar por técnicas alternativas. Uma bem popular é o [BEM](https://en.bem.info/). Eu recomendo você descartar seu pré-processador de CSS, já que React disponibiliza uma forma mais poderosa de reutilizar styles (reutilizando componentes), e o seu empacotador JavaScript pode gerar folhas de estilo mais eficientes pra você (Eu te dou [um exemplo sobre isso no OSCON](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). Dito isso, React, como toda biblioteca JavaScript, funcionará bem com um pré-processador CSS.
 
-Alternativamente, você também pode usar [Módulos CSS](http://glenmaddern.com/articles/css-modules), mais especificamente [react-css-modules](https://github.com/gajus/react-css-modules). Com módulos CSS você ainda escreverá CSS (ou SASS/LESS/Stylus), mas você pode gereciar e fazer seus arquivos CSS como você faria inline styles no React. E você não precisará se preocupar em gerenciar o nom de de classes usando metodologias como BEM, pois isso será cuidado sob os panos quando utilizado o sistema de módulos.
+Alternativamente, você também pode usar [Módulos CSS](http://glenmaddern.com/articles/css-modules), mais especificamente [react-css-modules](https://github.com/gajus/react-css-modules). Com módulos CSS você ainda escreverá CSS (ou SASS/LESS/Stylus), mas você pode gereciar e fazer seus arquivos CSS como você faria inline styles no React. E você não precisará se preocupar em gerenciar o nome de classes usando metodologias como BEM, pois isso será cuidado por baixo dos panos quando utilizado o sistema de módulos.
 
 
 ## Aprendendo server rendering (renderização de servidor)
