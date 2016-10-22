@@ -16,9 +16,9 @@ Eu fui um dos membros do time original do Facebook que construiu e disponibilizo
 
 ## Como lidar com o ecossistema React?
 
-Todo software é construido em uma stack de tecnologias, e você precisa entender o suficiente dessa stack para construir seu app. A razão que o ecossistema de ferramentas do React parece esmagadora é porque é sempre explicada na ordem errada. 
+Todo software é construido em uma stack de tecnologias, e você precisa entender o suficiente dessa stack para construir seu app. A razão que o ecossistema de ferramentas do React parece esmagadora é porque é sempre explicada na ordem errada.
 
-Você deveria aprender, nessa ordem, **sem pular etapas ou estudar ao mesmo tempo**: 
+Você deveria aprender, nessa ordem, **sem pular etapas ou estudar ao mesmo tempo**:
 
 * [React em sí](#learning-react-itself)
 * [`npm`](#learning-npm)
@@ -55,7 +55,7 @@ Para um bom número de boas razões técnicas, módulos `CommonJS` (ex: tudo no 
 
 Exemplos de empacotadores JavaScript são `webpack` e `browserify`. Ambos são boas escolhas, mas eu prefiro `webpack` pois possue funcionalidades que fazem o desenvolvimento muito mais fácil. Mesmo a documentação sendo confusa, eu tenho um [plug-and-play template para começar](https://github.com/petehunt/react-webpack-template) e eu escrevi um guia webpack [como-fazer](https://github.com/petehunt/webpack-howto) para casos mais complexos.
 
-Uma coisa para manter em mente: `CommonJS`usa a função `require()` para importar módulos, então muitas pessoas ficam confusas e pensam que tem algo haver com o projeto chamado `require.js`. Para um bom número de razões tecnicas, eu gostaria de sugerir que você evitasse `require.js`. Ele também não é muito popular no ecossistema do React.
+Uma coisa para manter em mente: `CommonJS` usa a função `require()` para importar módulos, então muitas pessoas ficam confusas e pensam que tem algo haver com o projeto chamado `require.js`. Para um bom número de razões tecnicas, eu gostaria de sugerir que você evitasse `require.js`. Ele também não é muito popular no ecossistema do React.
 
 
 ## Aprendendo ES6
@@ -86,7 +86,7 @@ Os componentes React são arranjados em hierarquia. A maioria das vezes, seu mod
 
 Se você decidiu usar Flux, a biblioteca mais popular e melhor documentada é [Redux](http://redux.js.org/). Há *muitas* outras alternativas por aí, e você ficará tentado a avalizar a maioria deles, mas meu conselho é para você ficar apenas no mais popular.
 
-## Aprendendo inline styles 
+## Aprendendo inline styles
 
 Antes do React, muita gente reutiliza estilos de CSS com complicados processadores de style sheets (folhas de estilo) como SASS. Como React faz escritas de componentes reutilizáveis facilmente, sua folha de estilo pode ser menos complicada. A maioria da comunidade (me incluindo) estão esperimentando se livrar de folhas de estilos altogether (tudo em uma só).
 
@@ -99,9 +99,9 @@ Alternativamente, você também pode usar [Módulos CSS](http://glenmaddern.com/
 
 ## Aprendendo server rendering (renderização de servidor)
 
-Renderização de servidor é geralmente chamado de "universal" ou "isomorphic" JS. Isso quer dizer que você pode pegar seus componentes React e renderizá-los em um HTML estático no servidor. Isso melhora a performance inicial porque o usuário não precisa esperar pelo JS para fazer o download para visualizar a interface inicial, e o React pode reutilizar o HTML renderizado no servidor, logo não é necessário gerar isso no lado do cliente. 
+Renderização de servidor é geralmente chamado de "universal" ou "isomorphic" JS. Isso quer dizer que você pode pegar seus componentes React e renderizá-los em um HTML estático no servidor. Isso melhora a performance inicial porque o usuário não precisa esperar pelo JS para fazer o download para visualizar a interface inicial, e o React pode reutilizar o HTML renderizado no servidor, logo não é necessário gerar isso no lado do cliente.
 
-Você apenas precisa renderizar no servidor se você perceber que a renderização inicial está muito lenta ou se você voque quer melhorar o sistema de ranking de busca. Enquando for verdade que o Google agora indexa conteúdo renderizado no cliente, a partir de janeiro de 2016 todo tempo é mensurado e o ranking sofre um efeito negativamente, potencialemnte por causa da penalidade na renderização do lado do cliente.
+Você apenas precisa renderizar no servidor se você perceber que a renderização inicial está muito lenta ou se você quer melhorar o sistema de ranking de busca. Enquando for verdade que o Google agora indexa conteúdo renderizado no cliente, a partir de janeiro de 2016 todo tempo é mensurado e o ranking sofre um efeito negativamente, potencialmente por causa da penalidade na renderização do lado do cliente.
 
 Renderização no lado do servidor ainda requer uma grande quantidade de ferramentas para fazer corretamente. Já que transparentemente suporta componentes React escritos sem foco na renderização no lado do servidor, você deveria primeiramente construir seu app e se preocupar com a renderização do lado do servidor mais tarde. Você não precisa reescrever todos os seus componentes para suportar isso.
 
