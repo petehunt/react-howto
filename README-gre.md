@@ -1,12 +1,12 @@
 # react-howto
 
-If you’re new to React (or frontend in general) you may find the ecosystem confusing. There are a few reasons for this.
+Αν είσαι καινούριος στο React (ή στο frontend γενικότερα) μπορεί το οικοσύστημα να σου φαινεται δύσκολο. Υπάρχουν αρκετοί λόγοι που το προκαλούν αυτό.
 
-* React has historically been targeted at early-adopters and experts
-* Facebook only open-sources what it actually uses, so it doesn’t focus on tooling for smaller-than-Facebook projects
-* There’s a lot of bad marketing masquerading as React guides
+* Το React ιστορικά στοχεύει αυτόυς που το χρησιμοποίησαν εξ αρχής και ανθρώπους με μεγάλη εμπειρία
+* Το Facebook κάνει open-source ότι αυτό χρησιμοποιεί, οπότε δεν δίνει μεγάλη έμφαση στα εργαλεία που μπορούν να χρησιμοποιηθούν για μικρότερες από της Facebook εφαρμογές 
+* Υπάρχουν πολλοί React οδηγοί κακής ποιότητας που λειτουργούν ως κακή διαφήμιση του React
 
-Throughout this document, I’ll assume you’ve built a web page with HTML, CSS and JavaScript.
+Κατά τη διάρκεια αυτού του αρχείου, θα υποθέσω πως έχετε χτίσει μια εφαρμογή χρησιμοποιώντας HTML, CSS και Javascript.
 
 ## Why should you listen to me?
 
