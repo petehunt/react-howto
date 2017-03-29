@@ -59,11 +59,11 @@
 
 ## Μαθαίνοντας ES6
 
-Outside of JSX (which you learned in the React tutorial), you may see some funny syntax in React examples. This is called ES6, and it’s the latest version of JavaScript so you may not have learned it yet. Since it’s so new, it’s not supported in browsers yet, but your bundler can translate it for you with the proper configuration.
+Εκτός απο το JSX (που μάθατε στο React tutorial), μπορεί να είδατε κάποιο περίεργο συντακτικό στα React παραδδείγματα. Αυτό λέγεται ES6 και είναι η τελευταία έκδοση της Javascript, οπότε μπορεί να μην το έχετε μάθει ακόμα. Αφού είναι τόσο καινούριο δεν υποστηρίζεται στα προγράμματα περιήγησης ακόμα, αλλά το bundler σας μπορεί να το μεταφράσει για σας με την κατάλληλη παραμετροποίηση.
 
-If you just want to get things done with React, **you can skip learning ES6**, or try to pick it up along the way.
+Αν θέλετε απλά να κάνετε πράγματα με το React **μπορείτε να προσπεράσετε την εκμάθηση του ES6**, ή να προσπαθήσετε να το μάθετε στην πορεία.
 
-You may see some talk about ES6 classes being the preferred way to create React components. This is untrue. Most people (including Facebook) are using `React.createClass()`.
+Μπορεί να δείτε κάποιες συζητήσεις για ES6 κλάσεις να είναι ο αγαπημένος τρόπος για να δημιουργείτε τα React components. Αυτό δεν είναι αλήθεια. Οι περισσότεροι άνθρωποι (συμπεριλαμβάνοντας το Facebook) χρησιμοποιούν το `React.createClass()`.
 
 ## Learning routing
 
