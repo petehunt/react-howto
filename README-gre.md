@@ -20,20 +20,20 @@
 
 Θα πρέπει να τα μάθετε με αυτή τη σειρά **χωρίς να περάσετε κάποιο ή να μαθαίνετε πολλά ταυτόχρονα**:
 
-* [React το ίδιο](#learning-react-itself)
-* [`npm`](#learning-npm)
-* [JavaScript “bundlers”](#learning-javascript-bundlers)
-* [ES6](#learning-es6)
-* [Routing](#learning-routing)
-* [Flux](#learning-flux)
+* [React το ίδιο](#Μαθαίνοντας-το-ίδιο-το-react)
+* [`npm`](#Μαθαίνοντας-npm)
+* [JavaScript “bundlers”](#Μαθαίνοντας-javascript-bundlers)
+* [ES6](#Μαθαίνοντας-es6)
+* [Routing](#Μαθαίνοντας-το-routing)
+* [Flux](#Μαθαίνοντας-flux)
 
 **Δεν είναι ανάγκη να τα μάθετε όλα αυτά για να είστε έτοιμοι να φτιάξετε κάτι έτοιμο για παραγωγή με React.** Περάστε σε επόμενο βήμα μόνο αν έχετε ένα πρόβλημα που πρέπει να λύσετε.
 
 Επίσης υπάρχουν κάποιοι τομείς που αναφέρονται συχνά στην React κοινότητα και είναι στην "αιμορραγία άκρη". Οι παρακάτω τομείς είναι πολύ ενδιαφέροντες αλλά είναι δυσνόητοι, λιγότερο διαδεδομένοι από τους πάνω τομείς **και δεν χρειάζονται για τις περισσότερες εφαρμογές**.
-* [Inline styles](#learning-inline-styles)
-* [Server rendering](#learning-server-rendering)
-* [Immutable.js](#learning-immutablejs)
-* [Relay, Falcor, etc](#learning-relay-falcor-etc)
+* [Inline styles](#Μαθαίνοντας-inline-styles)
+* [Server rendering](#Μαθαίνοντας-server-rendering)
+* [Immutable.js](#Μαθαίνοντας-immutablejs)
+* [Relay, Falcor, etc](#Μαθαίνοντας-relay-falcor-etc)
 
 ## Μαθαίνοντας το ίδιο το React
 
