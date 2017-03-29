@@ -107,6 +107,6 @@
 
 Το [Immutable.js](https://facebook.github.io/immutable-js/) παρέχει ένα set από data structures που μπορούν να βοηθήσουν να λύσετε κάποια θέματα απόδοσης χτίζοντας React εφαρμογές. Είναι μια πολύ καλή βιβλιοθήκη και λογικά θα την χρησιμοποιήσετε πολύ καθώς θα προχωράτε, αλλά είναι εντελώς περιττή μέχρι να έχετε αυτά τα θέματα απόδοσης.
 
-## Learning Relay, Falcor etc
+## Μαθαίνοντας Relay, Falcor etc
 
-These are technologies that help you reduce the number of AJAX requests. They’re still very cutting-edge, so if you don’t have a problem with too many AJAX requests, you don’t need Relay or Falcor.
+Αυτές είναι τεχνολογίες που θα σας βοηθήσουν να μειώσετε τον αριθμό των AJAX requests. Είναι ακόμα στην αιχμή, οπότε αν δεν έχετ πρόβλημα με πολλά AJAX requests, δεν χρειάζεστε Relay ή Falcor.
