@@ -14,20 +14,20 @@
 
 Ήμουν ένα από τα αρχικά μέλη της ομάδας του Facebook που έχτισαν και έκαναν open-source το React. Δεν δουλέυω πια στο Facebook και είμαι πλέον σε μια μικρή startup, οπότε έχω και τη μη-Facebook οπτική.
 
-## How to tackle the React ecosystem
+## Πως να ξεκινήσετε με το οικοσύστημα του React
 
-All software is built on a stack of technologies, and you need to understand enough of that stack to build your app. The reason why the React ecosystem of tooling seems overwhelming is because it’s always explained in the wrong order.
+Όλο το software είναι χτισμένο βασισμένο σε ένα σύνολο τεχνολογιών και πρέπει να καταλάβετε πως λειτουργούν αυτές για να μπορέσετε να χτίσετε τη δική σας εφαρμογή. Ο λόγος για τον οποίο το οικοσύστημα του React είναι τόσο πολύπλοκο είναι επειδή πάντα διδάσκεται με λάθος σειρά.
 
-You should learn, in this order, **without skipping ahead or learning concurrently**:
+Θα πρέπει να τα μάθετε με αυτή τη σειρά **χωρίς να περάσετε κάποιο ή να μαθαίνετε πολλά ταυτόχρονα**:
 
-* [React itself](#learning-react-itself)
+* [React το ίδιο](#learning-react-itself)
 * [`npm`](#learning-npm)
 * [JavaScript “bundlers”](#learning-javascript-bundlers)
 * [ES6](#learning-es6)
 * [Routing](#learning-routing)
 * [Flux](#learning-flux)
 
-**You don't need to learn all of these to be productive with React.** Only move to the next step if you have a problem that needs to be solved.
+**Δεν είναι ανάγκη να τα μάθετε όλα αυτά για να είστε έτοιμοι να φτιάξετε κάτι έτοιμο για παραγωγή με React.** Περάστε σε επόμενο βήμα μόνο αν έχετε ένα πρόβλημα που πρέπει να λύσετε.
 
 Additionally, there are a few topics that are often mentioned in the React community that are "bleeding edge". The topics below are interesting, but they're difficult to understand, are far less popular than the above topics and **aren't required for most apps**.
 * [Inline styles](#learning-inline-styles)
