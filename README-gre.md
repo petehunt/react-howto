@@ -57,7 +57,7 @@
 
 Ένα πράγμα που πρέπει να κρατάτε στο μυαλό σας είναι: `CommonJS` χρησιμοποιεί την `require()` λειτουργία για να εισάγει νέα μέρη, οπότε πολλοί νομίζουν πως έχει να κάνει με ένα project που λέγεται `require.js`. Για ένα σύνολο λόγων, θα πρότεινα να αποφεύγετε το `require.js`. Επίσης δεν είναι πολύ διαδεδομένο στο React οικοσύστημα.
 
-## Learning ES6
+## Μαθαίνοντας ES6
 
 Outside of JSX (which you learned in the React tutorial), you may see some funny syntax in React examples. This is called ES6, and it’s the latest version of JavaScript so you may not have learned it yet. Since it’s so new, it’s not supported in browsers yet, but your bundler can translate it for you with the proper configuration.
 
