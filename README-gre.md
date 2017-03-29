@@ -35,11 +35,11 @@
 * [Immutable.js](#learning-immutablejs)
 * [Relay, Falcor, etc](#learning-relay-falcor-etc)
 
-## Learning React itself
+## Μαθαίνοντας το ίδιο το React
 
-It’s a common misconception that you need to waste a lot of time setting up tooling to start to learn React. In the official documentation you’ll find a [copy-paste HTML template](https://facebook.github.io/react/docs/getting-started.html#quick-start-without-npm) that you can save in an `.html` file and get started right away. **No tooling is required for this step, and don’t start learning extra tooling until you’re comfortable with React basics.**
+Είναι μια γνωστή παρανόηση πως πρέπει να ξοδέψετε πολύ χρόνο για να στήσετε τα εργαλεία για να ξεκινήσετε να μαθαίνετε React. Στα επίσημα έγγραφα θα βρείτε ένα [copy-paste HTML template](https://facebook.github.io/react/docs/getting-started.html#quick-start-without-npm) που μπορείτε να σώσετε σε ένα `.html` αρχείο και να ξεκινήσετε κατ' ευθείαν.  **Δεν χρειάζονται εργαλεία για αυτό το βήμα, και δεν θα χρειαστεί να μάθετε επιπλέον εργαλεία μέχρι να αισθάνεστε άνετα με τις βασικές ιδέες του React**
 
-I still think the easiest way to learn React is [the official tutorial](https://facebook.github.io/react/docs/tutorial.html).
+Ακόμα πιστεύω πως ο ευκολότερος τρόπος να μάθετε React είναι [ο επίσημος οδηγός](https://facebook.github.io/react/docs/tutorial.html).
 
 ## Learning `npm`
 
