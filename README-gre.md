@@ -95,13 +95,13 @@
 
 Διαφορετικά, μπορείτε επίσης να χρησιμοποιήσετε [CSS Modules](http://glenmaddern.com/articles/css-modules), πιο συγκεκριμένα [react-css-modules](https://github.com/gajus/react-css-modules). Με τα CSS Modules θα γράφετε ακόμα CSS (ή SASS/LESS/Stylus), αλλά θα μπορείτε να διαχειρίζεστε τα CSS αρχεία σας όπως θα κάνατε με τα inline styles στη React. Επίσης δεν θα χρειάζεται να ανησυχείτε για το πως να ονομάζετε τις κλάσεις σας χρησιμοποιώντας μεθοδολογίες σαν το BEM, αφού αυτό θα έχει διαχειριστεί για σας απο το module system.
 
-## Learning server rendering
+## Μαθαίνοντας server rendering
 
-Server rendering is often called "universal" or "isomorphic" JS. It means that you can take your React components and render them to static HTML on the server. This improves initial startup performance because the user does not need to wait for JS to download in order to see the initial UI, and React can re-use the server-rendered HTML so it doesn't need to generate it client-side.
+Το Server rendering συχνά καλείται και "universal" ή "isomorphic" JS. Σημαίνει ότι μπορείτε να πάρετε να React components και να τα κάνετε render ως στατικά HTML στον server. Αυτό βελτιώνει την αρχική απόδοση επειδή ο χρήστης δεν χρειάζεται να περιμένει να φορτώσει το Javascript για να δει το αρχικό UI, και το React μπορεί να ξαναχρησιμοποιήσει τα server-rendered HTML οπότε δεν είναι ανάγκη να τα δημιουργήσει στο client side.
 
-You need server rendering if you notice that your initial render is too slow or if you want to improve your search engine ranking. While it's true that Google now indexes client-rendered content, as of January 2016 every time it's been measured it's been shown to negatively affect ranking, potentially because of the performance penalty of client-side rendering.
+Χρειάζεστε server rendering αν θεωρείτε πως η αρχικό render είναι πολύ αργό ή αν θέλετε να βελτιώσετε το search engine ranking.
 
-Server rendering still requires a lot of tooling to get right. Since it transparently supports React components written without server rendering in mind, you should build your app first and worry about server rendering later. You won't need to rewrite all of your components to support it.
+Το server rendering ακόμα χρειάζεται πολλά εργαλεία για να γίνει σωστά. Αφού υποστηρίζει React components γραμμένα μην έχοντας στο μυαλό το server rendering, καλό είναι να χτίζετε την εφαρμογή σας πρώτα και μετά να ανησυχίσετε για αυτό. Δεν θα χρειαστεί να ξαναγράψετε όλα τα components για να το υποστηρίξετε.
 
 ## Learning Immutable.js
 
