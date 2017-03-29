@@ -49,13 +49,13 @@
 
 ## Μαθαίνοντας JavaScript bundlers
 
-For a number of good technical reasons `CommonJS` modules (i.e. everything in `npm`) cannot be used natively in the browser. You need a JavaScript “bundler” to “bundle” these modules into `.js` files that you can include in your web page with a `<script>` tag.
+Για ένα σύνολο καλών τεχνικών λόγων τα `CommonJS` μέρη (π.χ. τα πάντα μέσα στο `npm`) δεν μπορούν να χρησιμοποιηθούν άμεσα στην ιστοσελίδα σας. Χρειάζεστε ένα JavaScript “bundler” για να κάνετε “bundle” αυτά τα μέρη σε `.js` αρχεία που μπορείτε να εισάγετε στην ιστοσελίδα σας με ενα `<script>` tag.
 
-Examples of JavaScript bundlers include `webpack` and `browserify`. Both are good choices, but I prefer `webpack` since it has a lot of features that make development of large apps easier. Since its documentation can be confusing, I have a [plug-and-play template for getting started](https://github.com/petehunt/react-webpack-template) and I wrote a [how-to guide for webpack](https://github.com/petehunt/webpack-howto) for more complex use cases.
+Παραδείγματα JavaScript bundlers περιλαμβάνουν το `webpack` και το `browserify`. Και τα δυο είναι καλές επιλογές, αλλά προτιμώ το `webpack` διότι παρέχει πολλές επιλογές που κάνουν τον προγραμματισμό για μεγάλες εφαρμογές πιο εύκολο. Αφού τα έγγραφά τους είναι λίγο δυσνόητα έχω ένα [plug-and-play template για να ξεκινήσετε](https://github.com/petehunt/react-webpack-template) και έχω γράψει ένα [how-to οδηγό για το webpack](https://github.com/petehunt/webpack-howto) για πιο δύσκολες περιπτώσεις.
 
-React also now offers [an officially supported CLI tool called Create React App](https://github.com/facebookincubator/create-react-app). It lets you create React projects powered by `webpack` without any configuration. It has its limitations, but it can serve as a great starting point, and its updates will add more features over time. It also offers an "ejection" feature that copies all configs and dependencies into your project so you have full control over them.
+Το React επίσης προσφέρει πλέον [ένα επίσημο CLI εργαλείο που λέγεται Create React App](https://github.com/facebookincubator/create-react-app). Σε αφήνει να δημιουργείς React εφαρμογές χρησιμοποιώντας το `webpack` χωρίς καμία παραμετροποιήση. Έχει τους περιορισμούς του, αλλά μπορεί να χρησιμοποιηθεί σαν πολύ καλή αρχή και οι αναβαθμίσεις του θα προσθέσουν περισσότερες επιλογές με τον καιρό. Προσφέρει επίσης μια "ejection" επιλογή που αντιγράφει όλες τις παραμετροποιήσεις στην εφαρμογή οπότε έχετε απόλυτο έλεγχο πάνω τους.
 
-One thing to keep in mind: `CommonJS` uses the `require()` function to import modules, so a lot of people get confused and think that it has something to do with a project called `require.js`. For a number of technical reasons, I would suggest that you avoid `require.js`. It’s also not very popular in the React ecosystem.
+Ένα πράγμα που πρέπει να κρατάτε στο μυαλό σας είναι: `CommonJS` χρησιμοποιεί την `require()` λειτουργία για να εισάγει νέα μέρη, οπότε πολλοί νομίζουν πως έχει να κάνει με ένα project που λέγεται `require.js`. Για ένα σύνολο λόγων, θα πρότεινα να αποφεύγετε το `require.js`. Επίσης δεν είναι πολύ διαδεδομένο στο React οικοσύστημα.
 
 ## Learning ES6
 
