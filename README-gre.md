@@ -103,9 +103,9 @@
 
 Το server rendering ακόμα χρειάζεται πολλά εργαλεία για να γίνει σωστά. Αφού υποστηρίζει React components γραμμένα μην έχοντας στο μυαλό το server rendering, καλό είναι να χτίζετε την εφαρμογή σας πρώτα και μετά να ανησυχίσετε για αυτό. Δεν θα χρειαστεί να ξαναγράψετε όλα τα components για να το υποστηρίξετε.
 
-## Learning Immutable.js
+## Μαθαίνοντας Immutable.js
 
-[Immutable.js](https://facebook.github.io/immutable-js/) provides a set of data structures that can help to solve certain performance issues when building React apps. It's a great library, and you'll probably use it a lot in your apps moving forward, but it's completely unnecessary until you have an appreciation of the performance implications. 
+Το [Immutable.js](https://facebook.github.io/immutable-js/) παρέχει ένα set από data structures που μπορούν να βοηθήσουν να λύσετε κάποια θέματα απόδοσης χτίζοντας React εφαρμογές. Είναι μια πολύ καλή βιβλιοθήκη και λογικά θα την χρησιμοποιήσετε πολύ καθώς θα προχωράτε, αλλά είναι εντελώς περιττή μέχρι να έχετε αυτά τα θέματα απόδοσης.
 
 ## Learning Relay, Falcor etc
 
