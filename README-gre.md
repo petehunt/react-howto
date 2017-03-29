@@ -8,11 +8,11 @@
 
 Κατά τη διάρκεια αυτού του αρχείου, θα υποθέσω πως έχετε χτίσει μια εφαρμογή χρησιμοποιώντας HTML, CSS και Javascript.
 
-## Why should you listen to me?
+## Γιατί θα πρέπει να ακούσετε εμένα;
 
-There’s a ton of conflicting advice about React out there; why listen to me?
+Υπάρχουν χιλιάδες συμβουλές εκεί εξώ, γιατί να ακούσετε εμένα;
 
-I was one of the original members of the Facebook team that built and open-sourced React. I’m no longer at Facebook and I’m now at a small startup, so I have a non-Facebook perspective as well.
+Ήμουν ένα από τα αρχικά μέλη της ομάδας του Facebook που έχτισαν και έκαναν open-source το React. Δεν δουλέυω πια στο Facebook και είμαι πλέον σε μια μικρή startup, οπότε έχω και τη μη-Facebook οπτική.
 
 ## How to tackle the React ecosystem
 
