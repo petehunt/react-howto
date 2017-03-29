@@ -41,13 +41,13 @@
 
 Ακόμα πιστεύω πως ο ευκολότερος τρόπος να μάθετε React είναι [ο επίσημος οδηγός](https://facebook.github.io/react/docs/tutorial.html).
 
-## Learning `npm`
+## Μαθαίνοντας `npm`
 
-`npm` is the Node.js package manager and is the most popular way front-end engineers and designers share JavaScript code. It includes a module system called `CommonJS` and lets you install command-line tools written in JavaScript. Read [this post](http://0fps.net/2013/01/22/commonjs-why-and-how/) for background on why `CommonJS` is necessary for browsers, or the [CommonJS Spec Wiki](http://wiki.commonjs.org/wiki/Introduction) for more on the `CommonJS` API.
+`npm` είναι ο διαχειριστής πακέτων του Node.js και είναι ο πιο διαδεδομένος τρόπος οι frontend προγραμματιστές και οι σχεδιαστές μοιράζονται Javascript κώδικα. Περιλαμβάνει ένα σύστημα μονάδας που λέγεται `CommonJS` και σε αφήνει να εγκαταστήσεις εργαλεία γραμμής εντολών που είναι γραμμένα σε Javascript. Διαβάστε [αυτό το άρθρο](http://0fps.net/2013/01/22/commonjs-why-and-how/) για να δείτε γιατί το `CommonJS` είναι απαραίτητο για τα προγράμματα περιήγησης, ή το [CommonJS Spec Wiki](http://wiki.commonjs.org/wiki/Introduction) για περισσότερες πληροφορίες για το `CommonJS` API.
 
-Most reusable components, libraries and tools in the React ecosystem are available as `CommonJS` modules and are installed with `npm`.
+Τα περισσότερα επαναχρησιμοποιήμενα μέρη, βιβλιοθήκες και εργαλεία στο React οικοσύστημα μπορούν να βρεθούν ως `CommonJS` μέρη και εγκαταστώνται μέσω του `npm`.
 
-## Learning JavaScript bundlers
+## Μαθαίνοντας JavaScript bundlers
 
 For a number of good technical reasons `CommonJS` modules (i.e. everything in `npm`) cannot be used natively in the browser. You need a JavaScript “bundler” to “bundle” these modules into `.js` files that you can include in your web page with a `<script>` tag.
 
