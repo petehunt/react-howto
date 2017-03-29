@@ -65,13 +65,13 @@
 
 Μπορεί να δείτε κάποιες συζητήσεις για ES6 κλάσεις να είναι ο αγαπημένος τρόπος για να δημιουργείτε τα React components. Αυτό δεν είναι αλήθεια. Οι περισσότεροι άνθρωποι (συμπεριλαμβάνοντας το Facebook) χρησιμοποιούν το `React.createClass()`.
 
-## Learning routing
+## Μαθαίνοντας το routing
 
-“Single-page applications” are all the rage these days. These are web pages that load once, and when the user clicks on a link or a button, JavaScript running on the page updates the address bar, but the web page is not refreshed. Management of the address bar is done by something called a **router**.
+Τα “single-page applications” είναι πολυσυζητημένα αυτές τις μέρες. Αυτά είναι σελίδες που φορτώνουν μια φορά και όταν ο χρήστης πατάει σε ένα link ή ένα κουμπί, το Javascript που τρέχει στη σελίδα ανανεώνει το address bar, αλλά η σελίδα δεν ξαναφορτώνει. Η διαχείριση του address bar γίνεται με κάτι που λέγεται **router**.
 
-The most popular router in the React ecosystem is [react-router](https://github.com/rackt/react-router). If you’re building a single-page application, use it unless you have a good reason not to.
+Το πιο διαδεδομένο router στο React οικοσύστημα είναι το [react-router](https://github.com/rackt/react-router). Αν χτίζετε ένα single-page application, χρησιμοποιήστε το εκτός αν έχετε κάποιο καλό λόγο να μην το κάνετε.
 
-**Don’t use a router if you aren’t building a single-page application**. Most projects start out as smaller components inside of a larger application anyway.
+**Μην χρησιμοποιείτε router αν δεν χτίζετε ένα single-page application**. Τα περισσότερα projects ξεκινάνε ως μικρότερα μέρη μέσα σε μια μεγαλύτερη εφαρμογή έτσι κι αλλιώς.
 
 ## Learning Flux
 
