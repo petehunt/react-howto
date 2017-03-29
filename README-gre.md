@@ -29,7 +29,7 @@
 
 **Δεν είναι ανάγκη να τα μάθετε όλα αυτά για να είστε έτοιμοι να φτιάξετε κάτι έτοιμο για παραγωγή με React.** Περάστε σε επόμενο βήμα μόνο αν έχετε ένα πρόβλημα που πρέπει να λύσετε.
 
-Additionally, there are a few topics that are often mentioned in the React community that are "bleeding edge". The topics below are interesting, but they're difficult to understand, are far less popular than the above topics and **aren't required for most apps**.
+Επίσης υπάρχουν κάποιοι τομείς που αναφέρονται συχνά στην React κοινότητα και είναι στην "αιμορραγία άκρη". Οι παρακάτω τομείς είναι πολύ ενδιαφέροντες αλλά είναι δυσνόητοι, λιγότερο διαδεδομένοι από τους πάνω τομείς **και δεν χρειάζονται για τις περισσότερες εφαρμογές**.
 * [Inline styles](#learning-inline-styles)
 * [Server rendering](#learning-server-rendering)
 * [Immutable.js](#learning-immutablejs)
