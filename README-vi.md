@@ -18,7 +18,7 @@ Tôi là một trong những thành viên đầu tiên của nhóm Facebook tham
 
 Tất cả các phần mềm đều được xây dựng dựa trên một tập hợp các nền tảng công nghệ, và bạn cần phải hiểu rõ về chúng đủ để xây dựng ứng dụng. Nguyên nhân khiến cho công cụ trong hệ sinh thái của React trở nên phức tạp là vì luôn bị giải thích sai thứ tự.
 
-Bạn nền học, theo thứ tự này, **không cần bỏ qua phía trước hoặc học đồng thời**:
+Bạn nên học, theo thứ tự này, **không cần bỏ qua phía trước hoặc học đồng thời**:
 
 * [Thư viện React](#tìm-hiểu-về-react)
 * [`npm`](#tìm-hiểu-về-npm)
