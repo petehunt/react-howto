@@ -12,11 +12,11 @@ In questo documento, assumero'che tu abbia gia' fatto una pagina web con HTML, C
 
 Ci sono migliaia di consigli su React in conflitto tra di loro in giro, perche' dovresti ascoltarmi?
 
-Sono stato uno dei membri originari del Facebook team che ha costruito e rilasciato open source React. Non lavoro piu' a Facebook, al momento lavoro in una piccola start up, quindi ho anche una prospettiva estranea a Facebook.
+Sono stato uno dei membri originari del team Facebook che ha costruito e rilasciato open source React. Non lavoro piu' a Facebook, al momento lavoro in una piccola start up, quindi ho anche una prospettiva estranea a Facebook.
 
 ## Come affrontare l'ecosistema di React
 
-Tutto il software e' costruito su uno stack di tecnologie, e tu devi saperne abbastanza di quello stack da essere in grado di creare la tua app. I tools di React sembrano troppo complicati perche' sono sempre spiegati nell'ordine sbagliato.
+Tutto il software e' costruito su uno stack di tecnologie, e tu devi saperne abbastanza di quello stack cosi' da essere in grado di creare la tua app. I tool di React sembrano troppo complicati perche' sono sempre spiegati nell'ordine sbagliato.
 
 Doveresti imparare, in questo orgine, **senza saltare niente o imparare contemporaneamente**: 
 
@@ -74,15 +74,15 @@ Il router piu' popolare nell'ecosistema di React e' il [react-router](https://gi
 
 ## Imparare Flux
 
-Probabilmente ai sentito parlare di Flux. Ci sono  *tonnellate* di false informazioni riguardo Flux.
+Probabilmente hai sentito parlare di Flux. Ci sono *tonnellate* di false informazioni riguardo Flux.
 
 Molte persone iniziano a costruire una app e vogliono definire il loro Modello di dati, e pensano che sia necessario usare Flux per farlo. ** Questo e' il modo sbagliato di adottare Flux. Flux dovrebbe essere aggiunto solamente dopo che molti componenti sono stati create **
 
-I Componenti React sono organizzati in una  gerarchia. Molte bolte, il tuo data model  segue una gerarchia a sua volta. In queste situazioni Flux non aiuta molto. A volte, invece, il tuo data model non e' gerarchico. Quando i tuoi componenti React iniziano a ricevere `props` che sembrano estranee, o hai un piccolo numero di componenti che iniziano a diventare molto complessi, allora potresti voler dare un'occhiata a Flux. 
+I Componenti React sono organizzati in una gerarchia. Molte volte, il tuo data model segue una gerarchia a sua volta. In queste situazioni Flux non aiuta molto. A volte, invece, il tuo data model non e' gerarchico. Quando i tuoi componenti React iniziano a ricevere `props` che sembrano estranee, o hai un piccolo numero di componenti che iniziano a diventare molto complessi, allora potresti voler dare un'occhiata a Flux. 
 
 **Quando Flux ti servira', lo saprai. Se non sei sicuro di averne bisogno, non ti serve.**
 
-Se hai deciso di usare Flux, La piu' famosa e meglio documentata libreria Flux e' [Redux](http://redux.js.org/). Ci sono  *un sacco* di alternative, e sarati tentatoto di provarne molte. Il mio consiglio e' di affidarti a quella piu' popolare.
+Se hai deciso di usare Flux, La piu' famosa e meglio documentata libreria Flux e' [Redux](http://redux.js.org/). Ci sono  *un sacco* di alternative, e sarai tentatoto di provarne molte. Il mio consiglio e' di affidarti a quella piu' popolare.
 
 ## Imparare gli  inline styles
 
@@ -100,17 +100,17 @@ In alternativa, puoi anche utilizzare i [CSS Modules](http://glenmaddern.com/art
 
 ## Imparare il server rendering
 
-Il Server rendering e' spesso chiamato  "universal"(universale) o "isomorphic"(isomorfico) JS. Vuold dire che poi prendere i tuoi componenti React e renderizzarli come HTML statico sul server. Questo migliora la prestazione iniziale perche' l'utente non deve aspettare che il JS sia scaricato per vedere la UI iniziale, inoltre React puo' riutilizzare l'HTML renderizzato lato server che non deve essere quindi generato lato client
+Il Server rendering e' spesso chiamato "universal"(universale) o "isomorphic"(isomorfo) JS. Vuold dire che poi prendere i tuoi componenti React e renderizzarli come HTML statico sul server. Questo migliora la prestazione iniziale perche' l'utente non deve aspettare che il JS sia scaricato per vedere la UI iniziale, inoltre React puo' riutilizzare l'HTML renderizzato lato server che non deve essere quindi generato lato client
 
-Hai bisongno sel server rendering se noti che il tuo rendering iniziale e' troppo lento o se vuoi migliorare il tuo ranking sui motori di ricerca. Se e' vero che Goodle adesso indicizza il contenuto generato dal client, al Gennaio 2016 ogni volta che e' stato misurato a mostrato di influenzare negativamente il ranking, potenzialmente per via delle penalita' nella performance intodotte la client side rendering.
+Hai bisongno del server rendering se noti che il tuo rendering iniziale e' troppo lento o se vuoi migliorare il tuo ranking sui motori di ricerca. Se e' vero che Goodle adesso indicizza il contenuto generato dal client, al Gennaio 2016 ogni volta che e' stato misurato a mostrato di influenzare negativamente il ranking, potenzialmente per via delle penalita' nella performance intodotte la client side rendering.
 
-Il server rendering richiede ancora molta configurazione per funzionare correttamente. Sicoome e' supportato in maniera trasparente dai componenti React scritti senza il server side rendieng in mente, dovresti prima fare la tua app e solo successivamente preoccuparti del server rendering. Non ti servira' riscrivere ogni tuo componente per supportarlo.
+Il server rendering richiede ancora molta configurazione per funzionare correttamente. Poiche' e' supportato in maniera trasparente dai componenti React scritti senza il server side rendieng in mente, dovresti prima fare la tua app e solo successivamente preoccuparti del server rendering. Non ti servira' riscrivere ogni tuo componente per supportarlo.
 
 
 ## Imparare Immutable.js
 
 [Immutable.js](https://facebook.github.io/immutable-js/) fornisce un insieme di strutture dati che ti aiutano a risolvere certi problemi di prestazioni mentre sviluppi applicazioni React.
-E' una grande libraria, e probablimente la userai molto andando avanti nelle tue apps, ma e' completamente non necessaria finche' non avrai problemi di performance.
+E' una grande libreria, e probablimente la userai molto andando avanti nelle tue app, ma e' completamente non necessaria finche' non avrai problemi di performance.
 
 ## Imparare Relay, Falcor etc
 
