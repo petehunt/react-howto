@@ -20,20 +20,20 @@
 
 다음과 같은 순서로 배우셔야 합니다. **순서를 뛰어넘거나 동시에 하시면 안됩니다**:
 
-* [React 자체를 배우기](#learning-react-itself)
-* [`npm`](#learning-npm)
-* [JavaScript “번들러”](#learning-javascript-bundlers)
-* [ES6](#learning-es6)
-* [Routing](#learning-routing)
-* [Flux](#learning-flux)
+* [React 자체를 배우기](#react-자체를-배우기)
+* [`npm`](#npm-배우기)
+* [JavaScript “번들러”](#javascript-번들러-배우기)
+* [ES6](#es6-배우기)
+* [Routing 배우기](#routing-배우기)
+* [Flux 배우기](#flux-배우기)
 
 **React를 잘하기 위해서 이 모든 걸 할 필요는 없습니다.** 단지 문제 해결을 위해서만 다음 단계로 이동하세요.
 
 좀더 추가하자면, 안정적이지는 않지만 React 커뮤니티에서 종종 언급되는 (소위 "bleeding edge") 토픽들이 몇 가지 있습니다. 아래 보이는 토픽들은 흥미롭기는 하지만, 이해하기 힘들고 앞에 언급된 토픽들에비해 대중적이지 않습니다. 그리고 **대부분의 앱에서는 필요하지 않습니다.**
-* [Inline styles](#learning-inline-styles)
-* [Server rendering](#learning-server-rendering)
-* [Immutable.js](#learning-immutablejs)
-* [Relay, Falcor, etc](#learning-relay-falcor-etc)
+* [Inline styles](#인라인-스타일-배우기)
+* [Server rendering](#서버-렌더링-배우기)
+* [Immutable.js](#immutablejs-배우기)
+* [Relay, Falcor, etc](#relay-falcor-등등)
 
 ## React 자체를 배우기
 
