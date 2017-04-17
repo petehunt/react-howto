@@ -32,6 +32,7 @@ You should learn, in this order, **without skipping ahead or learning concurrent
 Additionally, there are a few topics that are often mentioned in the React community that are "bleeding edge". The topics below are interesting, but they're difficult to understand, are far less popular than the above topics and **aren't required for most apps**.
 * [Inline styles](#learning-inline-styles)
 * [Server rendering](#learning-server-rendering)
+* [React Unit Testing](#learning-react-unit-testing)
 * [Immutable.js](#learning-immutablejs)
 * [Relay, Falcor, etc](#learning-relay-falcor-etc)
 
@@ -103,9 +104,13 @@ You need server rendering if you notice that your initial render is too slow or 
 
 Server rendering still requires a lot of tooling to get right. Since it transparently supports React components written without server rendering in mind, you should build your app first and worry about server rendering later. You won't need to rewrite all of your components to support it.
 
+## Learning React Unit Testing
+
+[Jest](http://facebook.github.io/jest/) and [Karma](https://github.com/karma-runner/karma) are JavaScript test runners. You'll find people using these with a technique called [shallow rendering](http://facebook.github.io/react/docs/test-utils.html#shallow-rendering) to test React components. [Unit testing](https://en.wikipedia.org/wiki/Unit_testing) should be part of any good development process, but learning these specific tools may not be part of your workflow. At the very least, learning them should wait until you have a good grasp of React and Flux.
+
 ## Learning Immutable.js
 
-[Immutable.js](https://facebook.github.io/immutable-js/) provides a set of data structures that can help to solve certain performance issues when building React apps. It's a great library, and you'll probably use it a lot in your apps moving forward, but it's completely unnecessary until you have an appreciation of the performance implications. 
+[Immutable.js](https://facebook.github.io/immutable-js/) provides a set of data structures that can help to solve certain performance issues when building React apps. It's a great library, and you'll probably use it a lot in your apps moving forward, but it's completely unnecessary until you have an appreciation of the performance implications.
 
 ## Learning Relay, Falcor etc
 
