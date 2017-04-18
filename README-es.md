@@ -1,6 +1,6 @@
 # react-howto
 
-Sí eres nuevo en React (o con el desarrollo front-end en general) puedes encontrarte con que este ecosistema sea confuso. Existen unas cuantas razones para ello.
+Si eres nuevo en React (o con el desarrollo front-end en general) puedes encontrarte con que este ecosistema sea confuso. Existen unas cuantas razones para ello.
 
 * Históricamente React se ha enfocado en early-adopters y expertos.
 * Facebook sólo libera lo que realmente usa, por lo que no se centra en herramientas para proyectos "más pequeños que Facebook"
@@ -49,7 +49,7 @@ La mayoría de componentes reusables, librerías y herramientas en el ecosistema
 
 ## Aprendiendo JavaScript bundlers
 
-Hay muchas razones razones técnicas por la que los módulos `CommonJS` (p.ej. cualquiera en `npm`) no pueden ser usados nativamente en el navegador. Necesitas un  JavaScript “bundler” para "convertir" estos módulos en ficheros `.js` que puedas incluir en tus páginas web con un tag `<script>`.
+Hay muchas razones técnicas por la que los módulos `CommonJS` (p.ej. cualquiera en `npm`) no pueden ser usados nativamente en el navegador. Necesitas un  JavaScript “bundler” para "convertir" estos módulos en ficheros `.js` que puedas incluir en tus páginas web con un tag `<script>`.
 
 Ejemplos de JavaScript bundlers incluye `webpack` y `browserify`. Ambos son buenas opciones, pero prefiero `webpack` ya que tiene muchas características que hacen que el desarrollo de aplicaciones grandes se más sencillo. Ya que su documentación puede ser confusa, les traigo una [plantilla plug-and-play para empezar](https://github.com/petehunt/react-webpack-template) y una [guía how-to para webpack](https://github.com/petehunt/webpack-howto) para usos mas complejos.
 
