@@ -70,12 +70,16 @@ Reusable component, library และเครื่องมือต่าง 
 ## Learning JavaScript bundlers
 
 For a number of good technical reasons `CommonJS` modules (i.e. everything in `npm`) cannot be used natively in the browser. You need a JavaScript “bundler” to “bundle” these modules into `.js` files that you can include in your web page with a `<script>` tag.
+ในเชิงเทคนิคแล้วสิ่งต่าง ๆ ใน module `CommonJS` นั้นไม่สามารถใช้งานใน browser ได้ ดังนั้นจำเป็นต้องใช้งาน JavaScript “bundler” เพื่อทำการ “bundle” สิ่งต่างของ module นี้ไปเป็นไฟล์ `.js` ซึ่งถูกเรียกใช้จาก web page ด้วย tag `<script>`
 
 Examples of JavaScript bundlers include `webpack` and `browserify`. Both are good choices, but I prefer `webpack` since it has a lot of features that make development of large apps easier. Since its documentation can be confusing, I have a [plug-and-play template for getting started](https://github.com/petehunt/react-webpack-template) and I wrote a [how-to guide for webpack](https://github.com/petehunt/webpack-howto) for more complex use cases.
+ตัวอย่างของ JavaScript bundlers เช่น `webpack` และ `browserify` โดยทั้งสองเป็นตัวเลือกที่ดี แต่ทางผู้เขียนแนะนำให้ใช้ `webpack` เพราะว่ามีความสามารถมากมายและง่ายต่อการพัฒนาระบบที่มีขนาดใหญ่ แต่ข้อเสียคือ เอกสารมันแย่มาก ๆ ทำให้เกิดความสับสนได้ จึงได้เขียนเอกสารอธิบายไว้ประกอบไปด้วย [plug-and-play template for getting started](https://github.com/petehunt/react-webpack-template) สำหรับการเริ่มต้น และ [how-to guide for webpack](https://github.com/petehunt/webpack-howto) สำหรับระบบที่มีความซับซ้อน
 
 React also now offers [an officially supported CLI tool called Create React App](https://github.com/facebookincubator/create-react-app). It lets you create React projects powered by `webpack` without any configuration. It has its limitations, but it can serve as a great starting point, and its updates will add more features over time. It also offers an "ejection" feature that copies all configs and dependencies into your project so you have full control over them.
+ทีมพัฒนาของ React มี CLI tool ชื่อว่า [Create React App] (https://github.com/facebookincubator/create-react-app) ให้ใช้งาน ช่วยทำให้สามารถสร้าง React project ที่มาพร้อมกับ `webpack` โดยที่ไม่ต้องทำการ configuration อะไรเลย แน่นอนว่าย่อมมีข้อจำกัด แต่ว่าเป็นจุดเริ่มต้นที่ดีมาก ๆ ที่สำคัญเครื่องมือนี้มีการเพิ่มเติมและปรับปรุงแก้ไขความสามารถต่าง ๆ อยู่เป็นประจำ เช่น "ejection" ทำให้สามารถ copy พวก configuration และ dependency/library ต่าง ๆ เข้ามายัง project ได้
 
 One thing to keep in mind: `CommonJS` uses the `require()` function to import modules, so a lot of people get confused and think that it has something to do with a project called `require.js`. For a number of technical reasons, I would suggest that you avoid `require.js`. It’s also not very popular in the React ecosystem.
+มีสิ่งหนึ่งที่ต้องเข้าใจคือ ใน module `CommonJS` นั้นจะใช้งาน function `require()` เพื่อ import หรือเรียกใช้งาน module อื่น ๆ ซึ่งเรื่องนี้ทำให้นักพัฒนาจำนวนมากเข้าใจผิดหรือสับสนกับ project `require.js` ซึ่งมันเป็นคนละเรื่องกันเลย  ที่สำคัญทางผู้เขียนยังแนะนำให้หลีกเลี่ยงการใช้งาน `require.js` อีกด้วยเนื่องจากไม่ค่อยได้รับความนิยมใน React มากนัก
 
 ## Learning ES6
 
