@@ -79,14 +79,16 @@ Reusable component, library และเครื่องมือต่าง 
 ## Learning Flux
 
 You’ve probably heard of Flux. There’s a *ton* of misinformation about Flux out there.
+อาจจะเคยได้ยินคำว่า Flux มาบ้าง ซึ่งมีข้อมูลที่ผิดจำนวนมากมาย !!
 
 A lot of people sit down to build an app and want to define their data model, and they think they need to use Flux to do it. **This is the wrong way to adopt Flux. Flux should only be added once many components have already been built.**
+มีนักพัฒนาจำนวนมากคิดว่า ถ้าต้องการสร้างระบบงานและทำการกำหนด data model ต่าง ๆ ขึ้นมา จากนั้นก็นำ Flux มาใช้งานเพื่อสร้างระบบงานขึ้นมาเลย **เป็นความคิดที่ผิดมาก ๆ สำหรับการนำ Flux มาใช้**
 
-React components are arranged in a hierarchy. Most of the time, your data model also follows a hierarchy. In these situations Flux doesn’t buy you much. Sometimes, however, your data model is not hierarchical. When your React components start to receive `props` that feel extraneous, or you have a small number of components starting to get very complex, then you might want to look into Flux.
+React component นั้นจะถูกจัดเรียงเป็นลำดับชั้น ดังนั้น data model จึงอยู่ในรูปแบบเดียวกัน ซึ่งในกรณีนี้ Flux อาจจะไม่เหมาะสมเท่าไร แต่ในบางครั้ง data model อาจจะไม่เป็นลำดับชั้นก็ได้ มาดูการทำงานของ React กัน เริ่มจาก React component รับข้อมูลผ่าน `props` ซึ่งดูแล้วไม่มีอะไรถ้าจำนวน component ไม่เยอะ แต่ถ้าระบบงานเริ่มซับซ้อน จำนวน component เริ่มเยอะ ดังนั้นการส่งข้อมูลผ่าน props น่าจะไม่เหมาะสมเท่าไร ดังนั้นถึงเวลาที่ต้องนำ Flux มาใช้งาน
 
-**You’ll know when you need Flux. If you aren’t sure if you need it, you don’t need it.**
+**คนใช้งานต้องรู้ว่าเมื่อไรต้องใช้ Flux ถ้ายังไม่แน่ใจยังไม่เข้าใจ แสดงว่ายังไม่จไเป็นต้องใช้งาน**
 
-If you have decided to use Flux, the most popular and well-documented Flux library is [Redux](http://redux.js.org/). There are *a lot* of alternatives out there, and you’ll be tempted to evaluate lots of them, but my advice is to just stick with the most popular one.
+แต่ถ้าตัดสินใจแล้วว่าต้องใช้งาน Flux แนะนำให้ใช้งาน library ที่ชื่อว่า [Redux](http://redux.js.org/) แถมยังมีทางเลือกอื่น ๆ อีกมากมาย แต่แนะนำให้ใช้ library ที่ได้รับความนิยมจะดีกว่า
 
 ## Learning inline styles
 
