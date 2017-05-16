@@ -54,7 +54,9 @@ Additionally, there are a few topics that are often mentioned in the React commu
 
 It’s a common misconception that you need to waste a lot of time setting up tooling to start to learn React. In the official documentation you’ll find a [copy-paste HTML template](https://facebook.github.io/react/docs/getting-started.html#quick-start-without-npm) that you can save in an `.html` file and get started right away. **No tooling is required for this step, and don’t start learning extra tooling until you’re comfortable with React basics.**
 
-I still think the easiest way to learn React is [the official tutorial](https://facebook.github.io/react/docs/tutorial.html).
+ความเข้าใจผิดในการเริ่มเรียนรู้ React คือการเสียเวลามากมายไปกับการติดตั้งเครื่องมือ และ configuration ระบบงาน สามารถหาได้จากเอกสารของ React เอง โดยทำการ [copy-paste HTML template](https://facebook.github.io/react/docs/getting-started.html#quick-start-without-npm) และบันทึกไฟล์ด้วยนามสกุล `.html` นี่คือการเริ่มต้นศึกษาที่ถูกต้อง **ในขั้นตอนนี้ไม่ต้องการเครื่องมือใด ๆ ทั้งสิ้น เป็นเพียงการศึกษาพื้นฐานของ React เท่านั้น จนกว่าเราจะพร้อมและเข้าใจจึงเริ่มต้นศึกษาเครื่องมืออื่น ๆ ต่อไป**
+
+เส้นทางการเรียนรู้ React ที่ง่ายที่สุดอยู่ที่ [the official tutorial](https://facebook.github.io/react/docs/tutorial.html)
 
 ## Learning `npm`
 
