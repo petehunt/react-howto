@@ -62,11 +62,11 @@ Reusable component, library และเครื่องมือต่าง 
 
 ## Learning ES6
 
-Outside of JSX (which you learned in the React tutorial), you may see some funny syntax in React examples. This is called ES6, and it’s the latest version of JavaScript so you may not have learned it yet. Since it’s so new, it’s not supported in browsers yet, but your bundler can translate it for you with the proper configuration.
+นอกเหนือจาก JSX ซึ่งเรียนรู้มาจาก React tutorial แล้ว อาจะพบเจอรูปแบบของ code ที่แปลกตาจากตัวอย่างต่าง ๆ ของ React โดยรูปแบบ code เหล่านั้นเรียกว่า ES6 ซึ่งเป็นภาษา JavaScript เวอร์ชันล่าสุด ที่ไม่จำเป็นต้องเรียนรู้ในตอนนี้ก็ได้ เนื่องจากว่ายังใหม่มาก ๆ แถม broser ต่าง ๆ ก็ยังไม่รองรับ แต่ที่สามารถใช้งานได้เนื่องจาก bundler ทำการแปลงให้นั่นเอง
 
-If you just want to get things done with React, **you can skip learning ES6**, or try to pick it up along the way.
+ถ้าผู้ศึกษาเพียงต้องการศึกษาเพียง React เท่านั้น **สามารถข้ามหัวข้อนี้ไปได้เลย** หรือลองศึกษาเพิ่มเติมได้
 
-You may see some talk about ES6 classes being the preferred way to create React components. This is untrue. Most people (including Facebook) are using `React.createClass()`.
+อาจจะเคยดูและฟังมาว่า แนะนำให้สร้าง React component ด้วย ES6 แต่ว่ามันไม่จริงเลย เนื่องจากคนส่วนใหญ่รวมทั้ง Facebook ด้วยยังใช้ `React.createClass()` อยู่เลย
 
 ## Learning routing
 
