@@ -111,9 +111,15 @@ Alternatively, you can also use [CSS Modules](http://glenmaddern.com/articles/cs
 
 Server rendering is often called "universal" or "isomorphic" JS. It means that you can take your React components and render them to static HTML on the server. This improves initial startup performance because the user does not need to wait for JS to download in order to see the initial UI, and React can re-use the server-rendered HTML so it doesn't need to generate it client-side.
 
+Server rendering นั้นมักจะถูกเรียกว่า "universal" หรือ "isomorphic" คือการที่ render React component ไปอยู่ในรูปแบบของ static HTML เพื่อปรับปรุงประสิทธิภาพของระบบงาน เนื่องจากไม่ต้องทำการ download JavaScript มาเพื่อทำงาน อีกทั้ง React สามารถ reuse static HTML เหล่านี้มาใช้ได้อีกด้วย
+
 You need server rendering if you notice that your initial render is too slow or if you want to improve your search engine ranking. While it's true that Google now indexes client-rendered content, as of January 2016 every time it's been measured it's been shown to negatively affect ranking, potentially because of the performance penalty of client-side rendering.
 
+Server rendering จะมีประโยชน์เมื่อการ render ของระบบช้า หรือต้องการปรับปรุง search ranking จาก Google
+
 Server rendering still requires a lot of tooling to get right. Since it transparently supports React components written without server rendering in mind, you should build your app first and worry about server rendering later. You won't need to rewrite all of your components to support it.
+
+โดยที่ Server rendering นั้นต้องการเครื่องมือจำนวนมาก ดังนั้นสำหรับผู้เริ่มต้นให้สนใจกับการพัฒนาระบบก่อน จากนั้นค่อยมาดูเรื่อง server rendering ต่อไป เนื่องจากหลาย ๆ  component อาจจะไม่ต้องการก็ได้
 
 ## Learning Immutable.js
 
