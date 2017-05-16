@@ -41,10 +41,13 @@ You should learn, in this order, **without skipping ahead or learning concurrent
 **You don't need to learn all of these to be productive with React.** Only move to the next step if you have a problem that needs to be solved.
 
 Additionally, there are a few topics that are often mentioned in the React community that are "bleeding edge". The topics below are interesting, but they're difficult to understand, are far less popular than the above topics and **aren't required for most apps**.
+
+ใน community ของ React นั้นมีหัวข้อหรือเรื่องใหม่ ๆ เกิดขึ้นอยู่เป็นประจำ แถมยากต่อการทำความเข้าใจ โดยมีความข้อที่น่าสนใจดังนี้ *** บางระบบไม่จำเป็นต้องใช้ ***
 * [Inline styles](#learning-inline-styles)
 * [Server rendering](#learning-server-rendering)
 * [Immutable.js](#learning-immutablejs)
 * [Relay, Falcor, etc](#learning-relay-falcor-etc)
+
 
 ## Learning React itself
 
