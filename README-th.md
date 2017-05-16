@@ -70,11 +70,12 @@ Reusable component, library และเครื่องมือต่าง 
 
 ## Learning routing
 
-“Single-page applications” are all the rage these days. These are web pages that load once, and when the user clicks on a link or a button, JavaScript running on the page updates the address bar, but the web page is not refreshed. Management of the address bar is done by something called a **router**.
+“Single-page applications”  นั้นได้รับความนิยมอย่างมาก โดยที่หน้า web ทำการโหลดเพียงครั้งเดียวเท่านั้น จากนั้นเมื่อเกิดเหตุการณ์ต่าง ๆ จากผู้ใช้งาน เช่น กดปุ่ม กด link แล้ว JavaScript จะทำเปลี่ยนแปลงและ update สิ่งต่าง ๆ บน browser โดยไม่ refresh หน้า web เลย ส่วนการจัดการ url ต่าง ๆ บน address bar ใน browser นั้น ถูกจัดการด้วยสิ่งที่เรียกว่า **router**
 
 The most popular router in the React ecosystem is [react-router](https://github.com/rackt/react-router). If you’re building a single-page application, use it unless you have a good reason not to.
+โดยที่ router ที่ได้รับความนิยมใน React คือ [react-router](https://github.com/rackt/react-router)
 
-**Don’t use a router if you aren’t building a single-page application**. Most projects start out as smaller components inside of a larger application anyway.
+***อย่าใช้ router ถ้าไม่ได้สร้าง single-page applications*** โดยที่ระบบส่วนใหญ่เริ่มจาก component เล็ก ๆ ซึ่งอยู่ภายในระบบใหญ่นั่นเอง
 
 ## Learning Flux
 
