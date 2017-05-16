@@ -62,7 +62,10 @@ It’s a common misconception that you need to waste a lot of time setting up to
 
 `npm` is the Node.js package manager and is the most popular way front-end engineers and designers share JavaScript code. It includes a module system called `CommonJS` and lets you install command-line tools written in JavaScript. Read [this post](http://0fps.net/2013/01/22/commonjs-why-and-how/) for background on why `CommonJS` is necessary for browsers, or the [CommonJS Spec Wiki](http://wiki.commonjs.org/wiki/Introduction) for more on the `CommonJS` API.
 
+`npm` เป็นเครื่องมือในการจัดการ package ต่าง ๆ ของ Node.js ซึ่งได้รับความนิยมจากนักพัฒนาและนักออกแบบ ซึ่งจะมี module สำคัญชื่อว่า `CommonJS` และทำการติดตั้ง commad-line tool ต่าง ๆ ที่เขียนด้วยภาษา JavaScript สามารถอ่านเรื่อง `CommonJS` เพิ่มเติมได้จาก [this post](http://0fps.net/2013/01/22/commonjs-why-and-how/) ว่าทำไมจึงมีความสำคัญ หรืออ่านเพิ่มเติมเกี่ยวกับ `CommonJS` API ได้จาก [CommonJS Spec Wiki](http://wiki.commonjs.org/wiki/Introduction)
+
 Most reusable components, libraries and tools in the React ecosystem are available as `CommonJS` modules and are installed with `npm`.
+Reusable component, library และเครื่องมือต่าง ๆ ของ React นั้นจะมาจาก module `CommonJS` ซึ่งสามารถติดตั้งผ่าน `npm`
 
 ## Learning JavaScript bundlers
 
