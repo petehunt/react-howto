@@ -8,7 +8,7 @@ Ako niste upoznati s Reactom (ili s frontendom generalno), ovaj ekosistem će va
 
 Kroz ovaj dokument, pretpostavit ću da ste već pravili web stranice koristeći HTML, CSS i JavaScript.
 
-## Zašto da slušate mene?
+## Zašto poslušati mene?
 
 Mnogo je savjeta i uputstava za React; zašto poslušati mene?
 
@@ -55,7 +55,7 @@ Primjeri JavaScript bundlera uključuju `webpack` i `browserify`. Oba su dobre o
 
 React takođe pruža [zvanični CLI alat zvani Create React App](https://github.com/facebookincubator/create-react-app). Omogućuje vam da napravite vaše React projekte s `webpack`-om bez ikakve konfiguracije. Ima svoja ograničenja, ali dobro služi kao početna tačka, i stalni update-i će dodavati više opcija s vremenom. Također, pruža opcija "ejection" koja kopira sve konfiguracije i zavisnosti u vaš projekat, tako da imate potpunu kontrolu nad njima.
 
-Jednu stvar treba imati na umu: `CommonJS` koristi `require()` funkciju da importuje module, pa se dosta ljudi zbuni i misli da je to zbog projekta pod imenom `require.js`. Zbog dosta tehničkih razloga, preporučujem da se klonite `require.js`-a. Također, nije popularno u React ekosistemu.
+Jednu stvar treba imati na umu: `CommonJS` koristi `require()` funkciju da importuje module, pa se dosta developera zbuni i misli da je to zbog projekta pod imenom `require.js`. Zbog dosta tehničkih razloga, preporučujem da se klonite `require.js`-a. Također, nije popularno u React ekosistemu.
 
 ## ES6
 
@@ -63,7 +63,7 @@ Izvan JSX-a (kojeg ste naučili u React tutorijalu), možete naći neke čudne s
 
 Ako želite da uradite nešto s Reactom, **možete preskočiti učenje ES6**, ili početi da ga učite usput.
 
-Možda ste slušali neku priču o ES6 klasama kao preferirani način kreiranja React komponenti. To nije istina. Većina ljudina (uključujući Facebook) koriste `React.createClass()`.
+Možda ste slušali neku priču o ES6 klasama kao preferirani način kreiranja React komponenti. To nije istina. Većina developera (uključujući Facebook) koriste `React.createClass()`.
 
 ## Rutiranje
 
@@ -89,7 +89,7 @@ Ako ste se odlučili da koristite Flux, najpopularnija i najbolje dokumentovana 
 
 Prije Reacta, dosta developera je ponovno iskorištavalo CSS stilove sa komplikovanim stilovima generisanih pretprocesorima kao što su SASS. Pošto React čini pisanje ponovo iskoristivih komponenti veoma lakim, vaši CSS fajlovi će biti manje komplikovani. Mnogi u zajednici (uključujući i mene) eksperimentišu idejom uklanjanja CSS fajlova u potpunosti.
 
-Ovo je suluda ideja zbog mnogo razloga. Ono čini media upite mnogo težima, i moguće je da postoje  ograničenja s performansama koristeći tu tehniku. **Kada počinjete s Reactom, radite stilove kao što ste inače radili.**
+Ovo je suluda ideja zbog mnogo razloga. Ono čini media upite mnogo težima, i moguće je da postoje ograničenja s performansama koristeći tu tehniku. **Kada počinjete s Reactom, radite stilove kao što ste inače radili.**
 
 Nakon što steknete malo osjećaja s načinom rada Reacta, možete pogledati neke od alternativnih tehnika. Najpopularnija je [BEM](https://en.bem.info/). Preporučujem da ukinete vaš CSS pretprocesor, pošto vam React nudi moćniji način korištenja stilova (ponovnim iskorištavanjem komponenti) i vaš JavaScript bundler može efikasnije generisati CSS za vas (o čemu sam pričao [na OSCON-u](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). Na kraju, React, kao i svaka druga JavaScript biblioteka, funkcionisat će bez problema i sa nekim od CSS pretprocesora.
 
