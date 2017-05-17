@@ -123,7 +123,7 @@ Server rendering still requires a lot of tooling to get right. Since it transpar
 
 ## Learning Immutable.js
 
-[Immutable.js](https://facebook.github.io/immutable-js/) provides a set of data structures that can help to solve certain performance issues when building React apps. It's a great library, and you'll probably use it a lot in your apps moving forward, but it's completely unnecessary until you have an appreciation of the performance implications.
+[Immutable.js](https://facebook.github.io/immutable-js/) เตรียมชุดของโครงสร้างข้อมูลสำหรับช่วยแก้ไขปัญหาเรื่องประสิทธิภาพการทำงานของระบบที่พัฒนาด้วย React ไว้ให้ เป็นชุด library ที่ดีมาก ๆ ช่วยทำให้การพัฒนารวดเร็วขึ้น แต่สิ่งที่ควรจำไว้คือ ใช้เมื่อเจอปัญหาเรื่องประสิทธิภาพการทำงานของระบบ (ใช้เมื่อจำเป็นจริง ๆ เท่านั้น)
 
 ## Learning Relay, Falcor etc
 
