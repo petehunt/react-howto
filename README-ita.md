@@ -37,7 +37,7 @@ Inoltre, ci sono alguni argomenti che sono spesso citati dalla comunita' React, 
 
 ## Imparare React Stesso
 
-E' un errore comune che sia necessario configurare un sacco di strumenti per iniziare ad imparara React. Nella guida ufficiale troverai [un template HTML da copiare-incollare](https://facebook.github.io/react/docs/getting-started.html#quick-start-without-npm) puoi salvarlo come file  `.html` ed iniziare subio. **Non hai bisogno di configurare nessuno strumento particolare per fare questo, E non cominciare a studiare nessun altro tool finche' non padroneggi le basi di React.**
+E' un errore comune che sia necessario configurare un sacco di strumenti per iniziare ad imparare React. Nella guida ufficiale troverai [un template HTML da copiare-incollare](https://facebook.github.io/react/docs/getting-started.html#quick-start-without-npm) puoi salvarlo come file  `.html` ed iniziare subito. **Non hai bisogno di configurare nessuno strumento particolare per fare questo, E non cominciare a studiare nessun altro tool finche' non padroneggi le basi di React.**
 
 
 Penso ancora che il modo piu' facile di imparare React sia [Il Tutorial Ufficiale](https://facebook.github.io/react/docs/tutorial.html).
@@ -62,7 +62,7 @@ Oltre a JSX (che hai imparato nel tutorial React) potresti vedere un po' di sint
 
 Se vuoi iniziare velocemente con React, **puoi evitare di imparare ES6**, o puoi provare ad utilizzarlo strada facendo.
 
-Potresti vedere qualche discussione sul fatto che le classi ES6 sono il modo principlare per creare i componenti React. Questo e' falso. Molta gente (Facebook inclusa) sta utilizzando `React.createClass()`.
+Potresti vedere qualche discussione sul fatto che le classi ES6 sono il modo principale per creare i componenti React. Questo e' falso. Molta gente (Facebook inclusa) sta utilizzando `React.createClass()`.
 
 ## Imparare il Routing
 
@@ -78,17 +78,16 @@ Probabilmente ai sentito parlare di Flux. Ci sono  *tonnellate* di false informa
 
 Molte persone iniziano a costruire una app e vogliono definire il loro Modello di dati, e pensano che sia necessario usare Flux per farlo. ** Questo e' il modo sbagliato di adottare Flux. Flux dovrebbe essere aggiunto solamente dopo che molti componenti sono stati create **
 
-I Componenti React sono organizzati in una  gerarchia. Molte bolte, il tuo data model  segue una gerarchia a sua volta. In queste situazioni Flux non aiuta molto. A volte, invece, il tuo data model non e' gerarchico. Quando i tuoi componenti React iniziano a ricevere `props` che sembrano estranee, o hai un piccolo numero di componenti che iniziano a diventare molto complessi, allora potresti voler dare un'occhiata a Flux. 
+I Componenti React sono organizzati in una  gerarchia. Molte volte, il tuo data model  segue una gerarchia a sua volta. In queste situazioni Flux non aiuta molto. A volte, invece, il tuo data model non e' gerarchico. Quando i tuoi componenti React iniziano a ricevere `props` che sembrano estranee, o hai un piccolo numero di componenti che iniziano a diventare molto complessi, allora potresti voler dare un'occhiata a Flux. 
 
 **Quando Flux ti servira', lo saprai. Se non sei sicuro di averne bisogno, non ti serve.**
 
-Se hai deciso di usare Flux, La piu' famosa e meglio documentata libreria Flux e' [Redux](http://redux.js.org/). Ci sono  *un sacco* di alternative, e sarati tentatoto di provarne molte. Il mio consiglio e' di affidarti a quella piu' popolare.
+Se hai deciso di usare Flux, La piu' famosa e meglio documentata libreria Flux e' [Redux](http://redux.js.org/). Ci sono  *un sacco* di alternative, e sarai tentato di provarne molte. Il mio consiglio e' di affidarti a quella piu' popolare.
 
 ## Imparare gli  inline styles
 
-nell'era pre-React, molte persone riutilizzavano gli stili CSS conc complicati fogli di stile costruita da preprocessori come SASS. Visto che react rende lo scrivere componenti riutilizzabili facile, i tuoi fogli di stile possono essere meno complicati. Molti all'interno della comuniti (io compreso) stanno sperimentando il completo abbandono dei fogli di stile.
+nell'era pre-React, molte persone riutilizzavano gli stili CSS con complicati fogli di stile costruita da preprocessori come SASS. Visto che react rende lo scrivere componenti riutilizzabili facile, i tuoi fogli di stile possono essere meno complicati. Molti all'interno della comunità (io compreso) stanno sperimentando il completo abbandono dei fogli di stile.
 
-Pre-React, a lot of people reused CSS styles with complicated style sheets built by preprocessors like SASS. Since React makes writing reusable components easy, your stylesheets can be less complicated. Many in the community (including myself) are experimenting with getting rid of stylesheets altogether.
 E' un'idea abbastanza folle per diverse ragioni. Rende le media queries difficili, ed e' possibile imbattersi in qualche problema di perfomance utilizzando qusta tecnica. **Quando inizi con React, utilizza gli stili come faresti normalmente.**
 
 Una volta che capisci come funziona React, puoi dare un occhio a tecniche alternative. Una molto popolare e' [BEM](https://en.bem.info/).
@@ -100,11 +99,11 @@ In alternativa, puoi anche utilizzare i [CSS Modules](http://glenmaddern.com/art
 
 ## Imparare il server rendering
 
-Il Server rendering e' spesso chiamato  "universal"(universale) o "isomorphic"(isomorfico) JS. Vuold dire che poi prendere i tuoi componenti React e renderizzarli come HTML statico sul server. Questo migliora la prestazione iniziale perche' l'utente non deve aspettare che il JS sia scaricato per vedere la UI iniziale, inoltre React puo' riutilizzare l'HTML renderizzato lato server che non deve essere quindi generato lato client
+Il Server rendering e' spesso chiamato  "universal"(universale) o "isomorphic"(isomorfico) JS. Vuold dire che poi prendere i tuoi componenti React e renderizzarli come HTML statico sul server. Questo migliora la prestazione iniziale perche' l'utente non deve aspettare che il JS sia scaricato per vedere la UI iniziale, inoltre React puo' riutilizzare l'HTML renderizzato lato server che non deve essere quindi generato lato client.
 
-Hai bisongno sel server rendering se noti che il tuo rendering iniziale e' troppo lento o se vuoi migliorare il tuo ranking sui motori di ricerca. Se e' vero che Goodle adesso indicizza il contenuto generato dal client, al Gennaio 2016 ogni volta che e' stato misurato a mostrato di influenzare negativamente il ranking, potenzialmente per via delle penalita' nella performance intodotte la client side rendering.
+Hai bisogno del server rendering se noti che il tuo rendering iniziale e' troppo lento o se vuoi migliorare il tuo ranking sui motori di ricerca. Se e' vero che Google adesso indicizza il contenuto generato dal client, al Gennaio 2016 ogni volta che e' stato misurato ha mostrato di influenzare negativamente il ranking, potenzialmente per via delle penalita' nella performance introdotte dal client side rendering.
 
-Il server rendering richiede ancora molta configurazione per funzionare correttamente. Sicoome e' supportato in maniera trasparente dai componenti React scritti senza il server side rendieng in mente, dovresti prima fare la tua app e solo successivamente preoccuparti del server rendering. Non ti servira' riscrivere ogni tuo componente per supportarlo.
+Il server rendering richiede ancora molta configurazione per funzionare correttamente. Siccome e' supportato in maniera trasparente dai componenti React scritti senza il server side rendering in mente, dovresti prima fare la tua app e solo successivamente preoccuparti del server rendering. Non ti servira' riscrivere ogni tuo componente per supportarlo.
 
 
 ## Imparare Immutable.js
@@ -114,4 +113,4 @@ E' una grande libraria, e probablimente la userai molto andando avanti nelle tue
 
 ## Imparare Relay, Falcor etc
 
-Sono tecnologie che ti aiutano a ridurre il numero di richieste AJAX. Sono ancora molto sperimentali, quindi se non hai un problema di troppe chiamate AJAX, non ti serve usare Realy o Falcor.
+Sono tecnologie che ti aiutano a ridurre il numero di richieste AJAX. Sono ancora molto sperimentali, quindi se non hai un problema di troppe chiamate AJAX, non ti serve usare Relay o Falcor.
