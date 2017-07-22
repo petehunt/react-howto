@@ -45,45 +45,45 @@ saya pikir bahwa cara termudah dalam mempelajari React yaitu dengan berdasarkan 
 
 `npm` merupakan Node.js package manager dan merupakan cara paling populer yang digunakan orang front-end dan designer dalam membagikan JavaScript code mereka. termasuk system modul yang disebut `CommonJS` dan sehingga memungkinkan untuk menginstall command-line tools yang ditulis dalam JavaScript. Baca [post ini](http://0fps.net/2013/01/22/commonjs-why-and-how/) untuk dasar kenapa `CommonJS` dibutuhkan untuk browser, atau [CommonJS Wiki](http://wiki.commonjs.org/wiki/Introduction) untuk memahami lebih lanjut tentang `CommonJS` API.
 
-Component, libaray, dan modul lain yang paling sering digunakan dan terkait dengan ekosistem React juga tersedia seperti modul `CommonJS` dan dapat di install dengan `npm`.
+Component, library, dan modul lain yang paling sering digunakan dan terkait dengan ekosistem React juga tersedia seperti modul `CommonJS` dan dapat di install dengan `npm`.
 
 ## Learning JavaScript bundlers
 
-For a number of good technical reasons `CommonJS` modules (i.e. everything in `npm`) cannot be used natively in the browser. You need a JavaScript “bundler” to “bundle” these modules into `.js` files that you can include in your web page with a `<script>` tag.
+Untuk beberapa alasan teknikal yang baik modul `CommonJS` (dan semua yang ada di `npm`) tidak dapat digunakan secara native (di implementasikan secara spesifik) di dalam browser. kamu perlu JavaScript “bundler” untuk mem-“bundle” modul tersebut ke `.js` file yang nantinya di include ke dalam webpage dengan tag `<script>` .
 
-Examples of JavaScript bundlers include `webpack` and `browserify`. Both are good choices, but I prefer `webpack` since it has a lot of features that make development of large apps easier. Since its documentation can be confusing, I have a [plug-and-play template for getting started](https://github.com/petehunt/react-webpack-template) and I wrote a [how-to guide for webpack](https://github.com/petehunt/webpack-howto) for more complex use cases.
+Contoh dari JavaScript bundlers adalah `webpack` and `browserify`. Keduanya merupakan pilihan yang bagus, tetapi saya lebih memilih `webpack` karena mempunyai banyak fitur yang membuat proses development dari aplikasi yang besar dan kompleks menjadi lebih mudah. karena dokumentasinya cukup rumit, saya punya [plug-and-play template untuk memulai](https://github.com/petehunt/react-webpack-template) dam saya juga menulis [panduan untuk webpack](https://github.com/petehunt/webpack-howto) untuk study kasus yang kompleks.
 
-React also now offers [an officially supported CLI tool called Create React App](https://github.com/facebookincubator/create-react-app). It lets you create React projects powered by `webpack` without any configuration. It has its limitations, but it can serve as a great starting point, and its updates will add more features over time. It also offers an "ejection" feature that copies all configs and dependencies into your project so you have full control over them.
+React juga menawarkan [secara resmi CLI tool yang disebut Create React App](https://github.com/facebookincubator/create-react-app). hal tersebut membuat kamu dapat membuat React project yang didukung oleh `webpack` tanpa configurasi. Tool tersebut terdapat batasan, tetapi dapat memberikanmu titik mulai yang bagus, dan Pembaruannya akan memberikan fitur tambahan. dan terdapat sebuah fitur "ejection" yang membuat semua konfigurasi dan dependensi yang ada di salin ke project mu, sehingga kamu punya kontrol penuh terhadap konfigurasi tersebut.
 
-One thing to keep in mind: `CommonJS` uses the `require()` function to import modules, so a lot of people get confused and think that it has something to do with a project called `require.js`. For a number of technical reasons, I would suggest that you avoid `require.js`. It’s also not very popular in the React ecosystem.
+Perlu diingat: `CommonJS` menggunakan `require()` untuk import modul yang ada, sehingga banyak orang bingung dan berfikir bahwa perlu dependensi/modul dari `require.js`. Untuk beberapa alasan teknikal, saya menyarankan untuk menghindari modul `require.js`. dan modul tersebut tidak populer di Ekositem React.
 
 ## Learning ES6
 
-Outside of JSX (which you learned in the React tutorial), you may see some funny syntax in React examples. This is called ES6, and it’s the latest version of JavaScript so you may not have learned it yet. Since it’s so new, it’s not supported in browsers yet, but your bundler can translate it for you with the proper configuration.
+Terlepas dari JSX (yang telah kamu pelajari di tutorial React), kamu mungkin menemukan beberapa syntax yang aneh dalam contohnya. Hal ini disebut ES6, dan merupakan versi terbaru dari JavaScript sehingga kamu belum mempelajarinya. Karena hal baru, teknologi tersebut belum di support oleh browser, tetapi modul “bundler” dapat menerjemahkannya untuk kamu dengan configurasi yang benar.
 
-If you just want to get things done with React, **you can skip learning ES6**, or try to pick it up along the way.
+jika kamu ingin menyelesaikan sesuatu dengan React secara cepat, **kamu dapat melewati ES6**, atau mencoba memahaminya dengan mengaplikasikannya langsung.
 
-You may see some talk about ES6 classes being the preferred way to create React components. This is untrue. Most people (including Facebook) are using `React.createClass()`.
+kamu mungkin mendengar bahwa ES6 class menjadi pilihan utama dalam membuat React component. hal ini salah. Kebanyakan orang (termasuk tim Facebook) menggunakan `React.createClass()`.
 
 ## Learning routing
 
-“Single-page applications” are all the rage these days. These are web pages that load once, and when the user clicks on a link or a button, JavaScript running on the page updates the address bar, but the web page is not refreshed. Management of the address bar is done by something called a **router**.
+Istilah “Single-page applications” sedang booming belakangan ini. SPA merupakan web pages yang di load sekali, dan ketika pengguna meng-click sebuah link atau tombol, JavaScript yang berjalan pada halaman tersebut meng-update address bar, tetapi web page tidak di refresh. Pengaturan dari address bar diatur oleh **router**.
 
-The most popular router in the React ecosystem is [react-router](https://github.com/rackt/react-router). If you’re building a single-page application, use it unless you have a good reason not to.
+Router paling populer di Ekosistem React adalah [react-router](https://github.com/rackt/react-router). jika kamu membuat SPA, gunakan react-router kecuali kamu memiliki alasan yang bagus untuk tidak menggunakannya.
 
-**Don’t use a router if you aren’t building a single-page application**. Most projects start out as smaller components inside of a larger application anyway.
+**jangan menggunakan router jika tidak membuat single-page application**. lagipula, Kebanyakan project dimulai dari komponen yang kecil yang nantinya membentuk aplikasi yang kompleks.
 
 ## Learning Flux
 
-You’ve probably heard of Flux. There’s a *ton* of misinformation about Flux out there.
+Kamu mungkin telah mengenal Flux. Terdapat *banyak sekali* misinformasi tentang Flux diluar sana.
 
-A lot of people sit down to build an app and want to define their data model, and they think they need to use Flux to do it. **This is the wrong way to adopt Flux. Flux should only be added once many components have already been built.**
+Banyak orang membuat aplikasi dan ingin mendefinisikan data model mereka, dan mereka berfikir untuk harus menggunakan Flux untuk melakukannya **Ini merupkan cara berfikir yang salah dalam mengadopsi teknologi Flux. Flux hanya harus ditambahkan saat telah terdapat banyak komponen.**
 
-React components are arranged in a hierarchy. Most of the time, your data model also follows a hierarchy. In these situations Flux doesn’t buy you much. Sometimes, however, your data model is not hierarchical. When your React components start to receive `props` that feel extraneous, or you have a small number of components starting to get very complex, then you might want to look into Flux.
+React komponen disusun sesuai hirarki. Kebanyakan, data model kamu juga tersusun dalam hirarki. didalam situasi seperti ini Flux tidak terlalu berguna. Terkadang, bagaimanapun data model kamu tidak tersusun secara hirarki. Ketika React komponen memulai menerima `props` yang besar, atau kamu memiliki beberapa komponen yang nantinya akan menjadi lebih kompleks, saat itulah kamu perlu menggunakan Flux.
 
-**You’ll know when you need Flux. If you aren’t sure if you need it, you don’t need it.**
+**Kamu akan tahu kapan membutuhkan Flux. Jika kamu tidak yakin untuk memerlukannya, kamu tidak perlu menggunakan Flux**
 
-If you have decided to use Flux, the most popular and well-documented Flux library is [Redux](http://redux.js.org/). There are *a lot* of alternatives out there, and you’ll be tempted to evaluate lots of them, but my advice is to just stick with the most popular one.
+jika kamu memutuskan untuk menggunakan Flux, librari yang sangat populer dan terdokumentasi secara baik adalah [Redux](http://redux.js.org/). Terdapat *banyak sekali* alternatif yang ada diluar sana, dan kamu akan kebingungan untuk mengevaluasinya, tetapi saran saya, pilihlah librari yang paling populer.
 
 ## Learning inline styles
 
