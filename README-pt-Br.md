@@ -2,17 +2,17 @@
 
 Se React é novo para você (ou frontend no geral) você pode achar o ambiente um pouco confuso. Aqui está algumas razões para isso.
 
-* React vem sendo historicamente alvo de recém chegados e especialistas.
+* React vem sendo historicamente alvo de iniciantes e especialistas.
 * O Facebook deixa open-source somente o que realmente utiliza, então não foca em desenvolver ferramentas para projetos menores que o Facebook em si.
-* Há muitos marketing mascarados ruins como guias do React.
+* Existem muitos guias ruins do React máscarados pelo marketing.
 
-Ao decorrer deste documento, Eu irei assumir que você já criou uma página web com HTML, CSS e JavaScript.
+Ao decorrer deste documento, vou assumir que você já criou uma página web com HTML, CSS e JavaScript.
 
-## Por que você deveria me ouvir?
+## Por que você deveria me escutar?
 
-Há toneladas de conselhos conflitantes sobre o React por aí. Por que me ouvir?
+Há toneladas de conselhos conflitantes sobre o React por aí. Por que me escutar?
 
-Eu fui um dos membros do time original do Facebook que construiu e disponibilizou o React como open-source. Eu não estou mais no Facebook e agora estou em uma pequena startup, logo eu tenho uma perspectiva diferente do Facebook.
+Eu fui um dos membros do time original do Facebook que construiu e disponibilizou o React como open-source. Eu não estou mais no Facebook e agora estou em uma pequena startup, logo eu tenho uma perspectiva diferente sobre o Facebook.
 
 ## Como lidar com o ecossistema React?
 
@@ -45,7 +45,7 @@ Eu ainda acho que a forma mais fácil para aprender React é o [tutorial oficial
 
 ## Aprendendo `npm`
 
-`npm` é o gerenciador de pacote Node.js(**N**ode.js **P**ackage **M**anager) e é a forma mais popular que engenheiros, designers e desenvolvedores front-end compartilhar código JavaScript. Isso inclui um sistema modular chamado `CommonJS` e permite você instalar ferramentas na linha de comando escritas em JavaScript. Leia [esse post](http://0fps.net/2013/01/22/commonjs-why-and-how/) para entender por que `CommonJS` é necessário para navegadores (browsers), ou o [CommonJS Spec Wiki](http://wiki.commonjs.org/wiki/Introduction) para mais informações da API do `CommonJS`.
+`npm` é o gerenciador de pacote Node.js(**N**ode.js **P**ackage **M**anager) e é a forma mais popular que engenheiros, designers e desenvolvedores front-end compartilham código JavaScript. Isso inclui um sistema modular chamado `CommonJS` e permite você instalar ferramentas na linha de comando escritas em JavaScript. Leia [esse post](http://0fps.net/2013/01/22/commonjs-why-and-how/) para entender por que `CommonJS` é necessário para navegadores (browsers), ou o [CommonJS Spec Wiki](http://wiki.commonjs.org/wiki/Introduction) para mais informações da API do `CommonJS`.
 
 A Maioria dos componentes reutilizáveis, bibliotecas e ferramentas do ecossistema do React estão dispiníveis como módulos `CommonJS` e são instalados com `npm`.
 
@@ -53,7 +53,7 @@ A Maioria dos componentes reutilizáveis, bibliotecas e ferramentas do ecossiste
 
 Para um bom número de boas razões técnicas, módulos `CommonJS` (ex: tudo no `npm`) não pode ser usado nativamente no browser. Você precisa de um "empacotador" JavaScript para "empacotar" esses módulos dentro de arquivos `.js` que você pode incluir na sua página web com a tag `<script>`
 
-Exemplos de empacotadores JavaScript são `webpack` e `browserify`. Ambos são boas escolhas, mas eu prefiro `webpack` pois possue funcionalidades que fazem o desenvolvimento muito mais fácil. Mesmo a documentação sendo confusa, eu tenho um [plug-and-play template para começar](https://github.com/petehunt/react-webpack-template) e eu escrevi um guia webpack [como-fazer](https://github.com/petehunt/webpack-howto) para casos mais complexos.
+Exemplos de empacotadores JavaScript são `webpack` e `browserify`. Ambos são boas escolhas, mas eu prefiro `webpack` pois possue funcionalidades que fazem o desenvolvimento muito mais fácil. Mesmo a documentação sendo confusa, eu tenho um [template plug-and-play para começar](https://github.com/petehunt/react-webpack-template) e eu escrevi um guia webpack [como-fazer](https://github.com/petehunt/webpack-howto) para casos mais complexos.
 
 Uma coisa para manter em mente: `CommonJS`usa a função `require()` para importar módulos, então muitas pessoas ficam confusas e pensam que tem algo haver com o projeto chamado `require.js`. Para um bom número de razões tecnicas, eu gostaria de sugerir que você evitasse `require.js`. Ele também não é muito popular no ecossistema do React.
 
@@ -76,32 +76,32 @@ O roteador mais popular no ecosistema do React é [react-router](https://github.
 
 ## Aprendendo Flux
 
-Você provavelmente já ouviu falar sobre "head" do Flux. Tem uma *tonelada* de mal entendidos sobre Flux por aí.
+Você provavelmente já ouviu falar sobre "head" do Flux. Tem uma *tonelada* de mal entendedores de Flux por aí.
 
-Muita gente começa a construir um app e gostaria de definir seu próprio modelo de dados, e pensam que precisam usar Flux para fazer isso. **Assim é uma forma errada de adotar o Flux. O Flux só deveria ser adicionado quando muitos componentes já foram cosntruídos.**
+Muita gente começa a construir um app e gostaria de definir seu próprio modelo de dados, e pensam que precisam usar Flux para fazer isso. **Isso é uma forma errada de adotar o Flux. O Flux só deveria ser adicionado quando muitos componentes já foram cosntruídos.**
 
 Os componentes React são arranjados em hierarquia. A maioria das vezes, seu modelo de dados também segue uma hierarquia. Nessa situação o Flux te adiciona muita coisa. As vezes não há hierarquia no seu modelo de dados. Quando seus componentes React começam a receber `props` (propriedades) que parecem estranhas, ou você possue um pequeno número de componentes começando a ficar muito complexo, talvez você queira dar uma olhada no Flux.
 
 **Você saberá quando precisará do Flux. Se você não está certo se precisa disso, você realmente não precisa disso.**
 
-Se você decidiu usar Flux, a biblioteca mais popular e melhor documentada é [Redux](http://redux.js.org/). Há *muitas* outras alternativas por aí, e você ficará tentado a avalizar a maioria deles, mas meu conselho é para você ficar apenas no mais popular.
+Se você decidiu usar Flux, a biblioteca mais popular e melhor documentada é [Redux](http://redux.js.org/). Há *muitas* outras alternativas por aí, e você ficará tentado a avalizar a maioria delas, mas meu conselho é para você ficar apenas com a mais popular.
 
 ## Aprendendo inline styles 
 
-Antes do React, muita gente reutiliza estilos de CSS com complicados processadores de style sheets (folhas de estilo) como SASS. Como React faz escritas de componentes reutilizáveis facilmente, sua folha de estilo pode ser menos complicada. A maioria da comunidade (me incluindo) estão esperimentando se livrar de folhas de estilos altogether (tudo em uma só).
+Antes do React, muita gente reutiliza estilos de CSS com complicados processadores de style sheets (folhas de estilo) como SASS. Como React faz escritas de componentes reutilizáveis facilmente, sua folha de estilo pode ser menos complicada. A maioria da comunidade (me incluindo) estão experimentando se livrar de folhas de estilos altogether (tudo em uma só).
 
 Essa é uma idéia bastante louca por bom número de razões. Faz com que media queries fiquem mais difíceis, e é possível que tenha uma limitação ao usar essa técnica. **Quando começando com React, apenas coloque estilho nas coisas como você geralmente faria.**
 
 Uma vez que você já tem idéia de como React funciona, você pode olhar por técnicas alternativas. Uma bem popular é  [BEM](https://en.bem.info/). Eu recomendo você descartar seu pré-processador de CSS, já que React disponibiliza uma forma mais poderosa de reusar styles (reutilizando componentes), e o seu empacotador JavaScript pode gerar folhas de estilo mais eficientes pra você (Eu te dou [um exemplo sobre isso no OSCON](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). Dito isso, React, como toda biblioteca JavaScript, funcionará bem com um pré-processador CSS.
 
-Alternativamente, você também pode usar [Módulos CSS](http://glenmaddern.com/articles/css-modules), mais especificamente [react-css-modules](https://github.com/gajus/react-css-modules). Com módulos CSS você ainda escreverá CSS (ou SASS/LESS/Stylus), mas você pode gereciar e fazer seus arquivos CSS como você faria inline styles no React. E você não precisará se preocupar em gerenciar o nom de de classes usando metodologias como BEM, pois isso será cuidado sob os panos quando utilizado o sistema de módulos.
+Outra alternativa, é você usar [Módulos CSS](http://glenmaddern.com/articles/css-modules), mais especificamente [react-css-modules](https://github.com/gajus/react-css-modules). Com módulos CSS você ainda escreverá CSS (ou SASS/LESS/Stylus), mas você pode gereciar e fazer seus arquivos CSS como você faria inline styles no React. E você não precisará de se preocupar em gerenciar o nom de classes usando metodologias como BEM, pois isso será cuidado sob os panos quando utilizado o sistema de módulos.
 
 
 ## Aprendendo server rendering (renderização de servidor)
 
 Renderização de servidor é geralmente chamado de "universal" ou "isomorphic" JS. Isso quer dizer que você pode pegar seus componentes React e renderizá-los em um HTML estático no servidor. Isso melhora a performance inicial porque o usuário não precisa esperar pelo JS para fazer o download para visualizar a interface inicial, e o React pode reutilizar o HTML renderizado no servidor, logo não é necessário gerar isso no lado do cliente. 
 
-Você apenas precisa renderizar no servidor se você perceber que a renderização inicial está muito lenta ou se você voque quer melhorar o sistema de ranking de busca. Enquando for verdade que o Google agora indexa conteúdo renderizado no cliente, a partir de janeiro de 2016 todo tempo é mensurado e o ranking sofre um efeito negativamente, potencialemnte por causa da penalidade na renderização do lado do cliente.
+Você apenas precisa renderizar no servidor se você perceber que a renderização inicial está muito lenta ou se você quer melhorar o sistema de ranking de busca. Enquando for verdade que o Google agora indexa conteúdo renderizado no cliente, a partir de janeiro de 2016 todo tempo é mensurado e o ranking sofre um efeito negativamente, potencialemnte por causa da penalidade na renderização do lado do cliente.
 
 Renderização no lado do servidor ainda requer uma grande quantidade de ferramentas para fazer corretamente. Já que transparentemente suporta componentes React escritos sem foco na renderização no lado do servidor, você deveria primeiramente construir seu app e se preocupar com a renderização do lado do servidor mais tarde. Você não precisa reescrever todos os seus componentes para suportar isso.
 
