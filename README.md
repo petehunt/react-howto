@@ -39,7 +39,7 @@ Additionally, there are a few topics that are often mentioned in the React commu
 
 It’s a common misconception that you need to waste a lot of time setting up tooling to start to learn React. In the official documentation you’ll find a [copy-paste HTML template](https://facebook.github.io/react/docs/getting-started.html#quick-start-without-npm) that you can save in an `.html` file and get started right away. **No tooling is required for this step, and don’t start learning extra tooling until you’re comfortable with React basics.**
 
-I still think the easiest way to learn React is [the official tutorial](https://facebook.github.io/react/docs/tutorial.html).
+I still think the easiest way to learn React is [the official tutorial](https://reactjs.org/tutorial/tutorial.html).
 
 ## Learning `npm`
 
@@ -105,7 +105,7 @@ Server rendering still requires a lot of tooling to get right. Since it transpar
 
 ## Learning Immutable.js
 
-[Immutable.js](https://facebook.github.io/immutable-js/) provides a set of data structures that can help to solve certain performance issues when building React apps. It's a great library, and you'll probably use it a lot in your apps moving forward, but it's completely unnecessary until you have an appreciation of the performance implications. 
+[Immutable.js](https://facebook.github.io/immutable-js/) provides a set of data structures that can help to solve certain performance issues when building React apps. It's a great library, and you'll probably use it a lot in your apps moving forward, but it's completely unnecessary until you have an appreciation of the performance implications.
 
 ## Learning Relay, Falcor etc
 
