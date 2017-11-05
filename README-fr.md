@@ -13,7 +13,7 @@ Tout au long de ce document, je vais partir du principe que vous avez déjà ré
 
 Il y a énormément de conseils contradictoires dans la nature ; pourquoi m'écouter ?
 
-Je fais parti de l'équipe de Facebook qui a construit React et l'a ouvert au public. Je ne travaille plus pour Facebook mais pour une petite start-up donc j'ai également un point de vue externe.
+Je fais partie de l'équipe de Facebook qui a construit React et l'a ouvert au public. Je ne travaille plus pour Facebook mais pour une petite start-up donc j'ai également un point de vue externe.
 
 ## Comment aborder l'écosystème React
 
