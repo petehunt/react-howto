@@ -51,9 +51,11 @@
 
 몇가지 많은 기술적 이유들 때문에 `CommonJS` 모듈 (`npm` 에 있는 모든 모듈)들은 브라우저에서 그대로 사용할 수 없습니다. 이 모듈들을 웹페이지의 `<script>` 태그에 포함된 `.js` 파일들을 포함하기 위해서는 Javascript 번들러가 필요합니다.
 
-Javascript 번들러의 예를 들자면 `webpack` 과 `browserify`가 있습니다. 모두 좋은 선택입니다. 하지만 저는 큰 애플리케이션의 개발을 쉽게 도와주는 기능이 많은 `webpack` 을 선호합니다. 문서화가 좀 헷갈린다면 [개발 시작을 위한 플러그앤 플레이 템플릿](https://github.com/petehunt/react-webpack-template)이 있고, 조금 더 복잡한 경우에는 제가 작성한 [webpack 사용기](https://github.com/petehunt/webpack-howto)도 있습니다.
+Javascript 번들러의 예를 들자면 `webpack` 과 `browserify`가 있습니다. 모두 좋은 선택입니다. 하지만 저는 큰 애플리케이션의 개발을 쉽게 도와주는 기능이 많은 `webpack` 을 선호합니다. webpack의 문서가 헷갈린다면 [개발 시작을 위한 플러그앤 플레이 템플릿](https://github.com/petehunt/react-webpack-template)이 있고, 조금 더 복잡한 경우에는 제가 작성한 [webpack 사용기](https://github.com/petehunt/webpack-howto)도 있습니다.
 
-명심할 점 : `CommonJS`는 `require()` 함수를 모듈 임포트에 사용합니다. 그래서 많은 사람들이 `require.js`로 불리는 프로젝트와 뭔가 해야하는 지 헷갈립니다. 여러가지 기술적 이유로 `require.js`를 쓰지 말것을 추천해 드립니다. React생태계에서도 일반적이지는 않습니다.
+React는 현재 Create React App 이라는 공식 CLI tool을 제공합니다. 이 tool은 아무런 설정 없이 webpack을 사용하는 React 프로젝트를 만들게 해줍니다. 이 툴에도 한계는 있지만, 좋은 시작점을 제공하며 차후 업데이트를 통해 더욱 많은 기능을 갖게 될 것입니다. 또한 "ejection" 기능을 제공하는데, 기존의 설정과 의존성을 복사하여 당신의 프로젝트에 완전한 통제를 갖도록 합니다.
+
+명심할 점 : `CommonJS`는 `require()` 함수를 모듈 임포트에 사용합니다. 그래서 많은 사람들이 `require.js`로 불리는 프로젝트와 관련이 있다고 생각하며 혼란스러워합니다. 여러가지 기술적 이유로 `require.js`를 쓰지 말것을 추천해 드립니다. React 생태계에서도 일반적이지는 않습니다.
 
 ## ES6 배우기
 
