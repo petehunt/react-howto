@@ -14,7 +14,7 @@ Existe uma tonelada de conselhos conflituosos sobre React por aí; porque me ouv
 
 Eu fiz parte da equipa original do Facebook que criou React como open-source. Já não estou no Facebook. Agora estou numa pequena startup por isso acrescento ainda uma prespetiva de alguém de fora do facebook.
 
-## Como lidar com o ecossistema de Rect
+## Como lidar com o ecossistema de React
 
 Todo o software é criado usando uma stack de Tecnologia e por isso, precisas de conhecer o suficiente dessa stack para desenvolveres a tua aplicação. A razão pela qual o ecossistema de React é tão confuso deve-se ao facto de ser explicado pela ordem errada.
 
