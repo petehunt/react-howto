@@ -1,14 +1,13 @@
 # react-howto
+Se você é novo no React (ou no desenvolvimento frontend geral), você talvez o ache um pouco confuso. Aqui há algums motivos para isso:
 
-Se React é novo para você (ou frontend no geral) você pode achar o ambiente um pouco confuso. Aqui está algumas razões para isso.
+* React ten sido o alvo de iniciantes e especialistas
+* O Facebok apenas libera o código fonte do que ultiliza, então não foca em projetos que sejam menores que o Facebook
+* Tem muitos guias sobre React que na verdade são um marketing mascarado
 
-* React vem sendo historicamente alvo de recém chegados e especialistas.
-* O Facebook deixa open-source somente o que realmente utiliza, então não foca em desenvolver ferramentas para projetos menores que o Facebook em si.
-* Há muitos marketing mascarados ruins como guias do React.
+Ao decorrer desse guia, eu vou aceitar que você já construiu uma página com HTML, CSS e JavaScript
 
-Ao decorrer deste documento, Eu irei assumir que você já criou uma página web com HTML, CSS e JavaScript.
-
-## Por que você deveria me ouvir?
+## Por que você deveria me escutar?
 
 Há toneladas de conselhos conflitantes sobre o React por aí. Por que me ouvir?
 
