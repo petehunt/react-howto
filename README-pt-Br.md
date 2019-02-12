@@ -1,6 +1,6 @@
-# react-howto
+﻿# react-howto
 
-Se React é novo para você (ou frontend no geral) você pode achar o ambiente um pouco confuso. Aqui está algumas razões para isso.
+Se React é novo para você (ou frontend no geral) você pode achar o ambiente um pouco confuso. Aqui estão algumas razões para isso.
 
 * React vem sendo historicamente alvo de recém chegados e especialistas.
 * O Facebook deixa open-source somente o que realmente utiliza, então não foca em desenvolver ferramentas para projetos menores que o Facebook em si.
@@ -16,7 +16,7 @@ Eu fui um dos membros do time original do Facebook que construiu e disponibilizo
 
 ## Como lidar com o ecossistema React?
 
-Todo software é construido em uma stack de tecnologias, e você precisa entender o suficiente dessa stack para construir seu app. A razão que o ecossistema de ferramentas do React parece esmagadora é porque é sempre explicada na ordem errada. 
+Todo software é construido em uma stack de tecnologias, e você precisa entender o suficiente dessa stack para construir seu app. A razão pela qual o ecossistema de ferramentas do React parece esmagadora é porque é sempre explicada na ordem errada. 
 
 Você deveria aprender, nessa ordem, **sem pular etapas ou estudar ao mesmo tempo**: 
 
@@ -80,28 +80,28 @@ Você provavelmente já ouviu falar sobre "head" do Flux. Tem uma *tonelada* de 
 
 Muita gente começa a construir um app e gostaria de definir seu próprio modelo de dados, e pensam que precisam usar Flux para fazer isso. **Assim é uma forma errada de adotar o Flux. O Flux só deveria ser adicionado quando muitos componentes já foram cosntruídos.**
 
-Os componentes React são arranjados em hierarquia. A maioria das vezes, seu modelo de dados também segue uma hierarquia. Nessa situação o Flux te adiciona muita coisa. As vezes não há hierarquia no seu modelo de dados. Quando seus componentes React começam a receber `props` (propriedades) que parecem estranhas, ou você possue um pequeno número de componentes começando a ficar muito complexo, talvez você queira dar uma olhada no Flux.
+Os componentes React são arranjados em hierarquia. A maioria das vezes, seu modelo de dados também segue uma hierarquia. Nessa situação o Flux te adiciona muita coisa. Às vezes não há hierarquia no seu modelo de dados. Quando seus componentes React começam a receber `props` (propriedades) que parecem estranhas, ou você possue um pequeno número de componentes começando a ficar muito complexo, talvez você queira dar uma olhada no Flux.
 
 **Você saberá quando precisará do Flux. Se você não está certo se precisa disso, você realmente não precisa disso.**
 
-Se você decidiu usar Flux, a biblioteca mais popular e melhor documentada é [Redux](http://redux.js.org/). Há *muitas* outras alternativas por aí, e você ficará tentado a avalizar a maioria deles, mas meu conselho é para você ficar apenas no mais popular.
+Se você decidiu usar Flux, a biblioteca mais popular e melhor documentada é [Redux](http://redux.js.org/). Há *muitas* outras alternativas por aí, e você ficará tentado a avalizar a maioria delas, mas meu conselho é para você ficar apenas na mais popular.
 
 ## Aprendendo inline styles 
 
 Antes do React, muita gente reutiliza estilos de CSS com complicados processadores de style sheets (folhas de estilo) como SASS. Como React faz escritas de componentes reutilizáveis facilmente, sua folha de estilo pode ser menos complicada. A maioria da comunidade (me incluindo) estão esperimentando se livrar de folhas de estilos altogether (tudo em uma só).
 
-Essa é uma idéia bastante louca por bom número de razões. Faz com que media queries fiquem mais difíceis, e é possível que tenha uma limitação ao usar essa técnica. **Quando começando com React, apenas coloque estilho nas coisas como você geralmente faria.**
+Essa é uma idéia bastante louca por bom número de razões. Faz com que media queries fiquem mais difíceis, e é possível que tenha uma limitação ao usar essa técnica. **Quando estiver começando com React, apenas coloque estilo nas coisas como você geralmente faria.**
 
-Uma vez que você já tem idéia de como React funciona, você pode olhar por técnicas alternativas. Uma bem popular é  [BEM](https://en.bem.info/). Eu recomendo você descartar seu pré-processador de CSS, já que React disponibiliza uma forma mais poderosa de reusar styles (reutilizando componentes), e o seu empacotador JavaScript pode gerar folhas de estilo mais eficientes pra você (Eu te dou [um exemplo sobre isso no OSCON](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). Dito isso, React, como toda biblioteca JavaScript, funcionará bem com um pré-processador CSS.
+Uma vez que você já tem ideia de como React funciona, você pode olhar por técnicas alternativas. Uma bem popular é  [BEM](https://en.bem.info/). Eu recomendo você descartar seu pré-processador de CSS, já que React disponibiliza uma forma mais poderosa de reusar styles (reutilizando componentes), e o seu empacotador JavaScript pode gerar folhas de estilo mais eficientes pra você (Eu te dou [um exemplo sobre isso no OSCON](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)). Dito isso, React, como toda biblioteca JavaScript, funcionará bem com um pré-processador CSS.
 
-Alternativamente, você também pode usar [Módulos CSS](http://glenmaddern.com/articles/css-modules), mais especificamente [react-css-modules](https://github.com/gajus/react-css-modules). Com módulos CSS você ainda escreverá CSS (ou SASS/LESS/Stylus), mas você pode gereciar e fazer seus arquivos CSS como você faria inline styles no React. E você não precisará se preocupar em gerenciar o nom de de classes usando metodologias como BEM, pois isso será cuidado sob os panos quando utilizado o sistema de módulos.
+Alternativamente, você também pode usar [Módulos CSS](http://glenmaddern.com/articles/css-modules), mais especificamente [react-css-modules](https://github.com/gajus/react-css-modules). Com módulos CSS você ainda escreverá CSS (ou SASS/LESS/Stylus), mas você pode gereciar e fazer seus arquivos CSS como você faria inline styles no React. E você não precisará se preocupar em gerenciar o nome de classes usando metodologias como BEM, pois isso será cuidado sob os panos quando utilizado o sistema de módulos.
 
 
 ## Aprendendo server rendering (renderização de servidor)
 
 Renderização de servidor é geralmente chamado de "universal" ou "isomorphic" JS. Isso quer dizer que você pode pegar seus componentes React e renderizá-los em um HTML estático no servidor. Isso melhora a performance inicial porque o usuário não precisa esperar pelo JS para fazer o download para visualizar a interface inicial, e o React pode reutilizar o HTML renderizado no servidor, logo não é necessário gerar isso no lado do cliente. 
 
-Você apenas precisa renderizar no servidor se você perceber que a renderização inicial está muito lenta ou se você voque quer melhorar o sistema de ranking de busca. Enquando for verdade que o Google agora indexa conteúdo renderizado no cliente, a partir de janeiro de 2016 todo tempo é mensurado e o ranking sofre um efeito negativamente, potencialemnte por causa da penalidade na renderização do lado do cliente.
+Você apenas precisa renderizar no servidor se você perceber que a renderização inicial está muito lenta ou se você quer melhorar o sistema de ranking de busca. Enquando for verdade que o Google agora indexa conteúdo renderizado no cliente, a partir de janeiro de 2016 todo tempo é mensurado e o ranking sofre um efeito negativo, potencialemnte por causa da penalidade na renderização do lado do cliente.
 
 Renderização no lado do servidor ainda requer uma grande quantidade de ferramentas para fazer corretamente. Já que transparentemente suporta componentes React escritos sem foco na renderização no lado do servidor, você deveria primeiramente construir seu app e se preocupar com a renderização do lado do servidor mais tarde. Você não precisa reescrever todos os seus componentes para suportar isso.
 
